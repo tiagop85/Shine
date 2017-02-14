@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GAME_EVENTS</name>
+    <events>
+        <variable constant="1" name="CT_VEL_PASSARO_X_A" sid="267125588878804" static="0" type="number">400</variable>
+        <variable constant="1" name="CT_VEL_PASSARO_X_B" sid="190611704130018" static="0" type="number">200</variable>
+        <variable constant="1" name="CT_VEL_PASSARO_Y_A" sid="838562660175407" static="0" type="number">400</variable>
+        <variable constant="1" name="CT_VEL_PASSARO_Y_B" sid="677508196421749" static="0" type="number">150</variable>
+        <variable constant="1" name="CT_TEMPO_PASSARO_CRIACAO" sid="336557428524957" static="0" type="number">2</variable>
+        <variable constant="1" name="CT_OPACIDADE_DELTA" sid="824493558812994" static="0" type="number">10</variable>
+        <variable constant="0" name="TEMPO_PASSARO_DELTA" sid="462446907674713" static="0" type="number">0.1</variable>
+        <variable constant="1" name="CT_TEMPO_PASSARO_DELTA" sid="760678436164550" static="0" type="number">1.5</variable>
+        <variable constant="1" name="CT_MAX_TEMPO_PASSARO_DELTA" sid="930183153686915" static="0" type="number">1.5</variable>
+        <variable constant="0" name="STATUS_JOGO" sid="822400607069572" static="0" type="number">0</variable>
+        <variable constant="1" name="CT_STATUS_GAME_STARTED" sid="966405773029048" static="0" type="number">1</variable>
+        <variable constant="1" name="CT_STATUS_GAME_OVER" sid="611864205139506" static="0" type="number">2</variable>
+        <comment>&gt; Inicialização de variáveis</comment>
+        <event-block sid="474046295914867">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="851583563433726" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="726888635569807" type="System">
+                    <param id="0" name="Variable">STATUS_JOGO</param>
+                    <param id="1" name="Value">CT_STATUS_GAME_STARTED</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>&gt; Spawn de pássaros - a Idéia é que os pássaros surjam mais rápido a cada vez que a vida é diminuída</comment>
+        <event-group description="" sid="349927752212866" title="Pássaros">
+            <sub-events>
+                <comment>&gt; Spawn de pássaro</comment>
+                <event-block sid="451843014420360">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="896096331987683" type="System">
+                            <param id="0" name="Interval (seconds)">2-TEMPO_PASSARO_DELTA</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="912100686971905" type="System">
+                            <param id="0" name="Variable">STATUS_JOGO</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CT_STATUS_GAME_STARTED</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="277890450165296" type="System">
+                            <param id="0" name="Object to create">spPassaro</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="280645666729508" type="spPassaro">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Bullet_x" id="0" name="Set speed" sid="706510476423379" type="spPassaro">
+                            <param id="0" name="Speed">CT_VEL_PASSARO_X_A</param>
+                        </action>
+                        <action behavior="Bullet_x" id="5" name="Set enabled" sid="874455116861597" type="spPassaro">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="613997734461942" type="spPassaro">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet_y" id="0" name="Set speed" sid="461291038385976" type="spPassaro">
+                            <param id="0" name="Speed">CT_VEL_PASSARO_Y_A</param>
+                        </action>
+                        <action behavior="Bullet_y" id="5" name="Set enabled" sid="951535404555375" type="spPassaro">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Procurar Player</comment>
+                <event-block sid="466204086589779">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="437706052029675" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="176711252043184">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="112555432306391" type="spPassaro">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">spJogador.X -10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="167666664950733" type="spPassaro">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="498607281354286">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="586633522776807" type="spPassaro">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">spJogador.X + 10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="412006562790705" type="spPassaro">
+                                    <param id="0" name="Angle">-180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="500229572540252">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="689175687605472" type="spPassaro">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">spJogador.Y -10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="528377323968404" type="spPassaro">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="102307658985463">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="356108324676139" type="spPassaro">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">spJogador.Y -10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="445360661685888" type="spPassaro">
+                                    <param id="0" name="Angle">-90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="844412013525307">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="511267781372277" type="spPassaro">
+                            <param id="0" name="Object">spJogador</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="765677147482565" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="445852823606964" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="141025734859296" type="spPassaro">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="112028794015822" type="spPassaro">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="831951922519190" type="spPassaro">
+                            <param id="0" name="Instance variable">retornando</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet_x" id="0" name="Set speed" sid="674735116208046" type="spPassaro">
+                            <param id="0" name="Speed">CT_VEL_PASSARO_X_B</param>
+                        </action>
+                        <action behavior="Bullet_y" id="0" name="Set speed" sid="835809154679711" type="spPassaro">
+                            <param id="0" name="Speed">CT_VEL_PASSARO_Y_B</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="852990882602751" type="spSombra">
+                            <param id="0" name="Opacity">Self.Opacity + CT_OPACIDADE_DELTA</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="330659972138798" type="spPassaro">
+                            <param id="0" name="Duration">0.5+random(0.30)</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;VOAR_BAIXO&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>&gt; Delta Pássaro: diminuir tempo de spawn dos pássaros</comment>
+                        <event-block sid="805605700979823">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="644373940504955" type="System">
+                                    <param id="0" name="Variable">TEMPO_PASSARO_DELTA</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">CT_MAX_TEMPO_PASSARO_DELTA</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="705217291873961" type="System">
+                                    <param id="0" name="Variable">TEMPO_PASSARO_DELTA</param>
+                                    <param id="1" name="Value">TEMPO_PASSARO_DELTA * CT_TEMPO_PASSARO_DELTA</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>&gt; Efeito Voo pássaro após bicar player</comment>
+                <event-block sid="423939835494226">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="718796691927590" type="spPassaro">
+                            <param id="0" name="Tag">&quot;VOAR_BAIXO&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="208739369759884" type="spPassaro">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="345416143608137" type="spPassaro">
+                            <param id="0" name="Duration">random(0.30)</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;VOAR_CIMA&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="371033748805181">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="473999772885266" type="spPassaro">
+                            <param id="0" name="Tag">&quot;VOAR_CIMA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="205935517936949" type="spPassaro">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="454663032401957" type="spPassaro">
+                            <param id="0" name="Duration">0.5+random(0.30)</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;VOAR_BAIXO&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>&gt; Game over: Bicadas</comment>
+        <event-block sid="399916653467037">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="592836531012027" type="spSombra">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="852896145657279" type="System">
+                    <param id="0" name="Variable">STATUS_JOGO</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">CT_STATUS_GAME_OVER</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="260225878755947" type="System">
+                    <param id="0" name="Variable">STATUS_JOGO</param>
+                    <param id="1" name="Value">CT_STATUS_GAME_OVER</param>
+                </action>
+                <action id="-15" name="Set visible" sid="527513169884284" type="spTempGameOver">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="995818835299397" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="406850122327404" type="System" />
+                <action id="-26" name="Restart layout" sid="520091822536124" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
