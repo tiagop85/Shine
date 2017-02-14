@@ -15,8 +15,10 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -52,6 +54,12 @@
                 <behavior-type name="Platform" sid="387364589603584">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="856809511067073">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="996150983013531">
+                    <behavior id="Physics" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459429964536469" speed="5">
@@ -64,6 +72,9 @@
             <behaviors>
                 <behavior-type name="Solid" sid="821691372419039">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="964144035013928">
+                    <behavior id="Physics" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -103,7 +114,61 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="spTempGameOver" sid="407076942548419">
+        <object-type name="txTempGameOver" sid="407076942548419">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="spEnergia" sid="231403393938823">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Timer" sid="222531560611282">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965407182737368" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spBloco" sid="411755533541199">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="677707324403319">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="312675632614567">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="140989053289962" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spForca" sid="798911275007600">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="tempo" sid="892327881185248" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Timer" sid="673206498875142">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946133326773580" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spTempGameOver2" sid="851060209258160">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txTempForca" sid="116022277417122">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txTempLife" sid="273321385164126">
             <plugin id="Text" />
         </object-type>
     </object-folder>
