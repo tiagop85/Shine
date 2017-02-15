@@ -171,13 +171,81 @@
         <object-type name="txTempLife" sid="273321385164126">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite" sid="854326832002714">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="117401672492963" speed="5">
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.1" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.1" />
+                    <frame duration="1" hotspotX="0.56" hotspotY="0.1" />
+                </animation>
+                <animation framecount="4" loop="1" name="andar" pingpong="0" repeatcount="1" repeatto="0" sid="247141562447622" speed="5">
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                </animation>
+                <animation framecount="12" loop="1" name="pular" pingpong="0" repeatcount="1" repeatto="0" sid="182094837738956" speed="5">
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                    <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="c30748014c16fefe325b313bd3803d6e" sid="849548694059966">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612369807432548" speed="5">
+                    <frame duration="1" hotspotX="0.500498" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0139303" y="0.016055" />
+                            <point x="0.499502" y="0.108945" />
+                            <point x="0.977114" y="0.0263761" />
+                            <point x="0.961194" y="0.5" />
+                            <point x="0.797015" y="0.766055" />
+                            <point x="0.499502" y="0.861239" />
+                            <point x="0.0109453" y="0.987385" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="952663653434558">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116296065178092" speed="5">
+                    <frame duration="1" hotspotX="0.500498" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Pictures\c30748014c16fefe325b313bd3803d6e.gif">
+                        <collision-poly>
+                            <point x="0.0139303" y="0.016055" />
+                            <point x="0.499502" y="0.108945" />
+                            <point x="0.977114" y="0.0263761" />
+                            <point x="0.961194" y="0.5" />
+                            <point x="0.797015" y="0.766055" />
+                            <point x="0.499502" y="0.861239" />
+                            <point x="0.0109453" y="0.987385" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>GAME_FASE_01.xml</layout>
+        <layout>MAQ_ESTADO_JOGADOR.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GAME_EVENTS.xml</event-sheet>
+        <event-sheet>MAQ_ESTADO_JOGADOR.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
