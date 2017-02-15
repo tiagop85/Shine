@@ -199,6 +199,36 @@
                     <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
                     <frame duration="1" hotspotX="0.62" hotspotY="0.09" />
                 </animation>
+                <animation framecount="3" loop="1" name="agachar" pingpong="0" repeatcount="1" repeatto="0" sid="416582796057167" speed="5">
+                    <frame duration="1" hotspotX="0.78" hotspotY="0.1" />
+                    <frame duration="1" hotspotX="0.78" hotspotY="0.1" />
+                    <frame duration="1" hotspotX="0.78" hotspotY="0.1" />
+                </animation>
+                <animation framecount="3" loop="1" name="atacar" pingpong="0" repeatcount="1" repeatto="0" sid="638566670244061" speed="5">
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.07" />
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.07" />
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.07" />
+                </animation>
+                <animation framecount="9" loop="1" name="escalar" pingpong="0" repeatcount="1" repeatto="0" sid="797249828574358" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.16" />
+                </animation>
+                <animation framecount="1" loop="0" name="puxar" pingpong="0" repeatcount="1" repeatto="0" sid="497229842838599" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="empurrar" pingpong="0" repeatcount="1" repeatto="0" sid="100213846858361" speed="5">
+                    <frame duration="1" hotspotX="2.4" hotspotY="2.27" />
+                </animation>
+                <animation framecount="1" loop="0" name="coletar" pingpong="0" repeatcount="1" repeatto="0" sid="700408280724354" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="c30748014c16fefe325b313bd3803d6e" sid="849548694059966">
@@ -223,7 +253,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116296065178092" speed="5">
-                    <frame duration="1" hotspotX="0.500498" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Pictures\c30748014c16fefe325b313bd3803d6e.gif">
+                    <frame duration="1" hotspotX="0.737313" hotspotY="0.341743" original-source="C:\Users\irlan.gomes\Pictures\c30748014c16fefe325b313bd3803d6e.gif">
                         <collision-poly>
                             <point x="0.0139303" y="0.016055" />
                             <point x="0.499502" y="0.108945" />
