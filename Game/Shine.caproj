@@ -175,9 +175,11 @@
     <families />
     <layout-folder>
         <layout>GAME_FASE_01.xml</layout>
+        <layout>GAME_FASE_02.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GAME_EVENTS.xml</event-sheet>
+        <event-sheet>FASE_02_EVENTS.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />

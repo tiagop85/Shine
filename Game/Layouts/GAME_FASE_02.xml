@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>GAME_FASE_01</name>
-    <sid>453079178199487</sid>
-    <event-sheet>GAME_EVENTS</event-sheet>
+    <name>GAME_FASE_02</name>
+    <sid>290737196885760</sid>
+    <event-sheet>FASE_02_EVENTS</event-sheet>
     <size>
         <width>854</width>
         <height>480</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Background" sid="413506547200683">
+        <layer name="Background" sid="516250802181790">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spChao" uid="1">
+                <instance type="spChao" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -60,10 +60,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>177</x>
-                        <y>411</y>
+                        <x>428.5</x>
+                        <y>481</y>
                         <z>0</z>
-                        <width>598</width>
+                        <width>878</width>
                         <height>138</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -72,50 +72,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spChao" uid="7">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Physics">
-                            <properties>
-                                <immovable>Yes</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
-                                <density>1</density>
-                                <friction>0.5</friction>
-                                <elasticity>0.2</elasticity>
-                                <linear-damping>0</linear-damping>
-                                <angular-damping>0.01</angular-damping>
-                                <bullet>No</bullet>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>817.5</x>
-                        <y>411</y>
-                        <z>0</z>
-                        <width>295</width>
-                        <height>138</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spPassaro" uid="2">
+                <instance type="spPassaro" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -164,53 +121,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spChao" uid="9">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Physics">
-                            <properties>
-                                <immovable>Yes</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
-                                <density>1</density>
-                                <friction>0.5</friction>
-                                <elasticity>0.2</elasticity>
-                                <linear-damping>0</linear-damping>
-                                <angular-damping>0.01</angular-damping>
-                                <bullet>No</bullet>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>569</x>
-                        <y>486.5</y>
-                        <z>0</z>
-                        <width>295</width>
-                        <height>25</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
-        <layer name="Objects" sid="635666049454937">
+        <layer name="Objects" sid="128448515678592">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -226,7 +140,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spEnergia" uid="5">
+                <instance type="spEnergia" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -239,8 +153,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>270</x>
-                        <y>263</y>
+                        <x>400</x>
+                        <y>280</y>
                         <z>0</z>
                         <width>26.458000183</width>
                         <height>26.458000183</height>
@@ -251,7 +165,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spJogador" uid="0">
+                <instance type="spJogador" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -296,8 +210,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>125</x>
-                        <y>312</y>
+                        <x>128</x>
+                        <y>387</y>
                         <z>0</z>
                         <width>19</width>
                         <height>47</height>
@@ -308,7 +222,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spBloco" uid="6">
+                <instance type="spBloco" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -339,8 +253,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>409</x>
-                        <y>266</y>
+                        <x>448</x>
+                        <y>335</y>
                         <z>0</z>
                         <width>130.215209961</width>
                         <height>150</height>
@@ -351,7 +265,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spForca" uid="8">
+                <instance type="spForca" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -367,8 +281,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>34</x>
-                        <y>261</y>
+                        <x>269</x>
+                        <y>397</y>
                         <z>0</z>
                         <width>26.457513809</width>
                         <height>26.457513809</height>
@@ -382,7 +296,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="HUD" sid="332594392867112">
+        <layer name="HUD" sid="755507002720643">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -398,7 +312,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spSombra" uid="3">
+                <instance type="spSombra" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -420,7 +334,7 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
-                <instance type="txTempGameOver" uid="4">
+                <instance type="txTempGameOver" uid="21">
                     <properties>
                         <text>GAME OVER</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -447,7 +361,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempForca" uid="10">
+                <instance type="txTempForca" uid="22">
                     <properties>
                         <text>FORÇA</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -474,7 +388,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempLife" uid="11">
+                <instance type="txTempLife" uid="23">
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>
