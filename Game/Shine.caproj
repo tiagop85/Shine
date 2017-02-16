@@ -328,6 +328,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="txWin" sid="126535744692157">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="964873012917387">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="winPoint" sid="898377154009053">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231006464023898" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

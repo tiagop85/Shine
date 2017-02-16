@@ -114,5 +114,20 @@
                 <action id="-9" name="Destroy" sid="694520144851693" type="plataformaFase3" />
             </actions>
         </event-block>
+        <event-block sid="215587680181898">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="685252155354521" type="spJogador">
+                    <param id="0" name="Object">winPoint</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="524625910831560" type="txWin">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="902778280082544" type="txAgilidade">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
