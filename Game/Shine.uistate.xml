@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2uistate>
     <!--This is a UI state file - its content describes the user interface settings when the project was last open.
@@ -39,3 +40,48 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spForca/" />
     </folders-expanded>
 </c2uistate>
+=======
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">MAQ_ESTADO_JOGADOR</layout>
+        <layout order="2">GAME_FASE_01</layout>
+        <event-sheet order="1">MAQ_ESTADO_JOGADOR</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/spJogador/" />
+        <folder expanded="1" path="animation-folder/spChao/" />
+        <folder expanded="1" path="animation-folder/spPassaro/" />
+        <folder expanded="1" path="animation-folder/spSombra/" />
+        <folder expanded="1" path="animation-folder/spEnergia/" />
+        <folder expanded="1" path="animation-folder/spBloco/" />
+        <folder expanded="1" path="animation-folder/spForca/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/c30748014c16fefe325b313bd3803d6e/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+    </folders-expanded>
+</c2uistate>
+>>>>>>> 1e806c83fd3338f2fabceac7ded43a72d368e972
