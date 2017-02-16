@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GAME_TUTORIAL_AGILIDADE</name>
+    <events>
+        <variable constant="0" name="timeAgility" sid="790532514453546" static="0" type="number">5</variable>
+        <variable constant="0" name="isWithAgility" sid="881828371400508" static="0" type="number">0</variable>
+        <variable constant="0" name="AGILITY_ORB_TAG" sid="121481379303234" static="0" type="number">0</variable>
+        <variable constant="0" name="increasedSpeed" sid="190125858879807" static="0" type="number">600</variable>
+        <variable constant="0" name="normalSpeed" sid="311189222799825" static="0" type="number">330</variable>
+        <event-block sid="346707144570825">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="793671723580367" type="spJogador">
+                    <param id="0" name="Object">plataformaFase3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="21" name="Set immovable" sid="607143945276037" type="plataformaFase3">
+                    <param id="0" name="Setting">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="849749405546956">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="297553578050743" type="spJogador">
+                    <param id="0" name="Object">orbAgilidade</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="524688824096251" type="System">
+                    <param id="0" name="Variable">isWithAgility</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="807933909822775" type="spJogador">
+                    <param id="0" name="Max Speed">increasedSpeed</param>
+                </action>
+                <action id="-9" name="Set value" sid="529615646286697" type="System">
+                    <param id="0" name="Variable">isWithAgility</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="895741658465886" type="txAgilidade">
+                    <param id="0" name="Text">&quot;Agilidade: &quot;&amp;timeAgility</param>
+                </action>
+                <action id="-15" name="Set visible" sid="378016624586446" type="txAgilidade">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="170445614453430">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="943480105264650" type="System">
+                    <param id="0" name="Variable">timeAgility</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="563400479315613" type="txAgilidade">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="801890435234399" type="System">
+                    <param id="0" name="Variable">timeAgility</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-9" name="Set value" sid="964826243323555" type="System">
+                    <param id="0" name="Variable">isWithAgility</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="966196039966620" type="spJogador">
+                    <param id="0" name="Max Speed">normalSpeed</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="589886116733026">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="601374520545357" type="System">
+                    <param id="0" name="Variable">isWithAgility</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="287795388184647" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="231457139947671" type="txAgilidade">
+                    <param id="0" name="Text">&quot;Agilidade: &quot;&amp;timeAgility</param>
+                </action>
+                <action id="-9" name="Set value" sid="408040221574668" type="System">
+                    <param id="0" name="Variable">timeAgility</param>
+                    <param id="1" name="Value">timeAgility - 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="780447022308929">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="811726432830521" type="spJogador">
+                    <param id="0" name="Object">killableGround</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="333589167334109" type="System" />
+                <action id="-26" name="Restart layout" sid="314211026030026" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="872674761700320">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="606818927748008" type="plataformaFase3">
+                    <param id="0" name="Object">killableGround</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="694520144851693" type="plataformaFase3" />
+            </actions>
+        </event-block>
+        <event-block sid="215587680181898">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="685252155354521" type="spJogador">
+                    <param id="0" name="Object">winPoint</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="524625910831560" type="txWin">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="902778280082544" type="txAgilidade">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

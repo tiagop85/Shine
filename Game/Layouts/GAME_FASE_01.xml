@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>GAME_FASE_01</name>
     <sid>453079178199487</sid>
@@ -289,6 +289,11 @@
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
