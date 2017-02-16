@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">GAME_FASE_03</layout>
-        <layout order="2">GAME_TUTORIAL_AGILIDADE</layout>
+        <layout active="1" order="0">GAME_TUTORIAL_AGILIDADE</layout>
+        <layout order="2">GAME_FASE_01</layout>
         <event-sheet order="1">GAME_TUTORIAL_AGILIDADE</event-sheet>
         <event-sheet order="3">GAME_EVENTS</event-sheet>
         <event-sheet order="4">MAQ_ESTADO_JOGADOR</event-sheet>

@@ -347,9 +347,9 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>GAME_TUTORIAL_AGILIDADE.xml</layout>
+        <layout>GAME_FASE_01.xml</layout>
         <layout>MAQ_ESTADO_JOGADOR.xml</layout>
-        <layout>GAME_FASE_03.xml</layout>
+        <layout>GAME_TUTORIAL_AGILIDADE.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GAME_EVENTS.xml</event-sheet>
