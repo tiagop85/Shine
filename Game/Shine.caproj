@@ -14,11 +14,13 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -59,6 +61,9 @@
                 </behavior-type>
                 <behavior-type name="Physics" sid="996150983013531">
                     <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="583128835351543">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -267,15 +272,73 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite4" sid="201072595823350">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312502857046460" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plataformaFase3" sid="248608175496356">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="411029404518116">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="954259198382196">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341516174084776" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="orbAgilidade" sid="895114097247814">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297269712735198" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txAgilidade" sid="962046796774214">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="249304895921745">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="killableGround" sid="690266605249103">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="257317234609460">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="127675697874667">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239705522070296" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>GAME_FASE_01.xml</layout>
         <layout>MAQ_ESTADO_JOGADOR.xml</layout>
+        <layout>GAME_FASE_03.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GAME_EVENTS.xml</event-sheet>
         <event-sheet>MAQ_ESTADO_JOGADOR.xml</event-sheet>
+        <event-sheet>GAME_FASE_03.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
