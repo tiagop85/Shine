@@ -2,7 +2,7 @@
 <c2layout>
     <name>GAME_FASE_03</name>
     <sid>259078006013411</sid>
-    <event-sheet>GAME_FASE_03</event-sheet>
+    <event-sheet>GAME_TUTORIAL_AGILIDADE</event-sheet>
     <size>
         <width>1400</width>
         <height>480</height>

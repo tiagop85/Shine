@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>GAME_FASE_03</name>
+    <name>GAME_TUTORIAL_AGILIDADE</name>
     <events>
         <variable constant="0" name="timeAgility" sid="790532514453546" static="0" type="number">5</variable>
         <variable constant="0" name="isWithAgility" sid="881828371400508" static="0" type="number">0</variable>

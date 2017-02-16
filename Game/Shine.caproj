@@ -347,14 +347,14 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>GAME_FASE_01.xml</layout>
+        <layout>GAME_TUTORIAL_AGILIDADE.xml</layout>
         <layout>MAQ_ESTADO_JOGADOR.xml</layout>
         <layout>GAME_FASE_03.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>GAME_EVENTS.xml</event-sheet>
         <event-sheet>MAQ_ESTADO_JOGADOR.xml</event-sheet>
-        <event-sheet>GAME_FASE_03.xml</event-sheet>
+        <event-sheet>GAME_TUTORIAL_AGILIDADE.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />

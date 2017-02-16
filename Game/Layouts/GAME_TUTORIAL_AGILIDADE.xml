@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>GAME_FASE_01</name>
+    <name>GAME_TUTORIAL_AGILIDADE</name>
     <sid>453079178199487</sid>
     <event-sheet>GAME_EVENTS</event-sheet>
     <size>
