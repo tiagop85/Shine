@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Shine</name>
     <description></description>
@@ -10,6 +10,7 @@
     <unique-id>e9dy22538vrk</unique-id>
     <saved-with-version>24200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
@@ -344,6 +345,102 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="jogador" sid="210293235285040">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="CORRER" sid="286041569549284" type="number" />
+                <instance-variable name="VIDA" sid="330546251575691" type="number" />
+                <instance-variable name="POR_VIDA" sid="148195080843568" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="693648824195317">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="327962409740558">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="parar" pingpong="0" repeatcount="1" repeatto="0" sid="853456583929015" speed="3">
+                    <frame duration="1" hotspotX="0.519231" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.519231" hotspotY="0" />
+                </animation>
+                <animation framecount="2" loop="1" name="andar" pingpong="0" repeatcount="1" repeatto="0" sid="713491624501289" speed="3">
+                    <frame duration="1" hotspotX="0.519231" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.519231" hotspotY="0" />
+                </animation>
+                <animation framecount="2" loop="1" name="correr" pingpong="0" repeatcount="1" repeatto="0" sid="424469233948023" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                </animation>
+                <animation framecount="2" loop="1" name="agachar" pingpong="0" repeatcount="1" repeatto="0" sid="136334964003528" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                </animation>
+                <animation framecount="4" loop="1" name="pular" pingpong="0" repeatcount="1" repeatto="0" sid="430546333397456" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                </animation>
+                <animation framecount="2" loop="1" name="cair" pingpong="0" repeatcount="1" repeatto="0" sid="595797741452331" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                </animation>
+                <animation framecount="1" loop="1" name="atacar" pingpong="0" repeatcount="1" repeatto="0" sid="357073337706711" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Imagepoint 1" x="1" y="0.46" />
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="1" name="enfraquecer" pingpong="0" repeatcount="1" repeatto="0" sid="722620172936751" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                </animation>
+                <animation framecount="1" loop="1" name="morrer" pingpong="0" repeatcount="1" repeatto="0" sid="655180865792830" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                </animation>
+                <animation framecount="2" loop="1" name="escalar" pingpong="0" repeatcount="1" repeatto="0" sid="103305392242986" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="258770207024377">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="piso" sid="525154594115942">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="869840061961263">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878622496386047" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="576969293625996">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="178007718066682">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767481309738469" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="escada" sid="447156760784524">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724668837997338" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -356,7 +453,9 @@
         <event-sheet>MAQ_ESTADO_JOGADOR.xml</event-sheet>
         <event-sheet>GAME_TUTORIAL_AGILIDADE.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="26" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>

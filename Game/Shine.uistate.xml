@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2uistate>
     <!--This is a UI state file - its content describes the user interface settings when the project was last open.
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
@@ -10,11 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">GAME_TUTORIAL_AGILIDADE</layout>
-        <layout order="2">GAME_FASE_01</layout>
-        <event-sheet order="1">GAME_TUTORIAL_AGILIDADE</event-sheet>
-        <event-sheet order="3">GAME_EVENTS</event-sheet>
-        <event-sheet order="4">MAQ_ESTADO_JOGADOR</event-sheet>
+        <layout order="0">MAQ_ESTADO_JOGADOR</layout>
+        <event-sheet active="1" order="1">MAQ_ESTADO_JOGADOR</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -46,5 +43,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/orbAgilidade/" />
         <folder expanded="1" path="animation-folder/killableGround/" />
         <folder expanded="1" path="animation-folder/winPoint/" />
+        <folder expanded="1" path="animation-folder/jogador/" />
+        <folder expanded="1" path="animation-folder/piso/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/escada/" />
     </folders-expanded>
 </c2uistate>
