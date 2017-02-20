@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">MAQ_ESTADO_JOGADOR</layout>
-        <event-sheet order="1">MAQ_ESTADO_JOGADOR</event-sheet>
+        <layout active="1" order="0">LEVEL SELECT</layout>
+        <event-sheet order="1">EVENTS_LEVEL_SELECT</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -47,5 +47,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/piso/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/escada/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/LevelSelect/" />
+        <folder expanded="1" path="animation-folder/FASE01/" />
+        <folder expanded="1" path="animation-folder/FASE02/" />
     </folders-expanded>
 </c2uistate>

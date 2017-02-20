@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EVENTS_TUTORIAL_FORCA</name>
+    <events>
+        <event-block sid="405456668434029">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="515624265658716" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="153688635524582" type="System">
+                    <param id="0" name="Variable">STATUS_JOGO</param>
+                    <param id="1" name="Value">CT_STATUS_GAME_STARTED</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="525788617323970" type="spJogador">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Set text" sid="640445155523816" type="txTempLife">
+                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="234756482906171" title="Controle2">
+            <sub-events>
+                <comment>&gt; Game over: Bicadas</comment>
+                <event-block sid="312232761801295">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="980385606105796" type="spSombra">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="218684847639788" type="System">
+                            <param id="0" name="Variable">STATUS_JOGO</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">CT_STATUS_GAME_OVER</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="909453692830928" type="System">
+                            <param id="0" name="Variable">STATUS_JOGO</param>
+                            <param id="1" name="Value">CT_STATUS_GAME_OVER</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="671777405987541" type="spJogador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="329165556262977" type="txTempGameOver">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="779651622938032" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="542107999231320" type="System" />
+                        <action id="-26" name="Restart layout" sid="613364119966198" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="265327041046741" title="Itens2">
+            <sub-events>
+                <event-block sid="527469848405087">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="446434213630797" type="spEnergia">
+                            <param id="0" name="Object">spJogador</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="346737461908904" type="spEnergia" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="618991134167460" type="spEnergia">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="895450398560650" type="System">
+                            <param id="0" name="Variable">TEMPO_PASSARO_DELTA</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="252540249065129" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="437753069029615" type="spSombra">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="822567444186941" type="txTempLife">
+                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="572679831824799">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="861557089828301" type="System">
+                                    <param id="0" name="Count">5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="742455260745172">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="309540093419846" type="spSombra">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Opacity">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="634712025420942" type="spSombra">
+                                            <param id="0" name="Opacity">self.Opacity - 20</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="298417828679280" type="txTempLife">
+                                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="850016358687108" type="spPassaro">
+                                            <param id="0" name="Instance variable">bateu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="271352297275365" type="System">
+                                            <param id="0" name="Seconds">0.25</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="715781241302593">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="931827398781938" type="spSombra">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Opacity">20</param>
+                                        </condition>
+                                        <condition id="-10" name="Compare opacity" sid="864795675857035" type="spSombra">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Opacity">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="528094659787339" type="spSombra">
+                                            <param id="0" name="Opacity">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="138950248105951" type="txTempLife">
+                                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="429337096445346" type="spPassaro">
+                                            <param id="0" name="Instance variable">bateu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="500773515627450">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="518962175742479" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="897191824600897" type="spPassaro">
+                                    <param id="0" name="Instance variable">bateu</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="706921140256056" type="spSombra">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="914166771225738" type="txTempLife">
+                                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="594027917297793" type="spEnergia">
+                                    <param id="0" name="Duration">5.0</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;SPAWN_ENERGIA&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="762205733059181">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="526085370302282" type="spEnergia">
+                            <param id="0" name="Tag">&quot;SPAWN_ENERGIA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="668592676991520" type="spEnergia">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="871437332312638">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="919509322064860" type="spForca">
+                            <param id="0" name="Object">spJogador</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="936100255199532" type="spForca" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="792383367610823" type="spForca">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="640604590807789" type="spForca">
+                            <param id="0" name="Duration">10</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;SPAWN_FORCA&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="921906590066996" type="spForca">
+                            <param id="0" name="Instance variable">tempo</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="0" name="Set text" sid="215429790816789" type="txTempForca">
+                            <param id="0" name="Text">&quot;Força&quot; &amp; spForca.tempo</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="771989208448000" type="txTempForca">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="280087618497444" type="spForca">
+                            <param id="0" name="Duration">1</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;HABILIDADE_FORCA&quot;</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="885500967449457" type="spBloco">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="323213459305238">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="445008152441645" type="spForca">
+                            <param id="0" name="Tag">&quot;SPAWN_FORCA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="240429851355569" type="spForca">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="933844955719779">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="735548570505048" type="spForca">
+                            <param id="0" name="Tag">&quot;HABILIDADE_FORCA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="210965088793643">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="158029071227162" type="spForca">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="488337704975879" type="spBloco">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="361608468633245" type="txTempForca">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="757229168066284" type="txTempForca">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="367830145967870">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="538467254404510" type="spForca">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="445775307208480" type="spForca">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="998110113207202" type="spForca">
+                                    <param id="0" name="Duration">1</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;HABILIDADE_FORCA&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="900487847929893" type="txTempForca">
+                                    <param id="0" name="Text">&quot;Força&quot; &amp; spForca.tempo</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="764903167353706" type="txTempForca">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

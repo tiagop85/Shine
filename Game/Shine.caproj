@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
@@ -34,6 +35,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>LEVEL SELECT</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -441,10 +443,57 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite5" sid="539936690103214">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204435494612398" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500132" original-source="C:\Users\Administrador.EST-CTIC006\Downloads\freefantasygui\png\Windows.png">
+                        <collision-poly>
+                            <point x="0.019926" y="0.0256139" />
+                            <point x="0.5" y="0.0250858" />
+                            <point x="0.803205" y="0.252971" />
+                            <point x="0.78636" y="0.499868" />
+                            <point x="0.942071" y="0.925535" />
+                            <point x="0.0238291" y="0.969369" />
+                            <point x="0.591619" y="0.499868" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LevelSelect" sid="490069853671107">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169758070647900" speed="5">
+                    <frame duration="1" hotspotX="0.506208" hotspotY="0.505364" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FASE01" sid="699967941271366">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282398794287554" speed="5">
+                    <frame duration="1" hotspotX="0.93985" hotspotY="0.766871" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FASE02" sid="453026515817344">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708093283406200" speed="5">
+                    <frame duration="1" hotspotX="0.93985" hotspotY="0.766871" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="316208232661412">
+            <plugin id="Touch" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
+        <layout>LEVEL SELECT.xml</layout>
         <layout>GAME_FASE_01.xml</layout>
+        <layout>GAME_TUTORIAL_FORCA.xml</layout>
         <layout>MAQ_ESTADO_JOGADOR.xml</layout>
         <layout>GAME_TUTORIAL_AGILIDADE.xml</layout>
     </layout-folder>
@@ -452,9 +501,16 @@
         <event-sheet>GAME_EVENTS.xml</event-sheet>
         <event-sheet>MAQ_ESTADO_JOGADOR.xml</event-sheet>
         <event-sheet>GAME_TUTORIAL_AGILIDADE.xml</event-sheet>
+        <event-sheet>EVENTS_TUTORIAL_FORCA.xml</event-sheet>
+        <event-sheet>EVENTS_LEVEL_SELECT.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="26" />
+        <global-instance type="Touch" uid="42">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />
