@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FASE_06_LUZFIMTUNEL</name>
+    <events>
+        <include>EVENTOS_GAME_GLOBAL</include>
+        <include>EVENTOS_MUSICA</include>
+        <include>EVENTOS_NAVEGACAO</include>
+        <event-block sid="921498088229421">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="791958474183204" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="144758077974005" type="arControl">
+                    <param id="0" name="Instance variable">FASE_ATUAL</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-10" name="Set value" sid="961806758093308" type="arControl">
+                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                    <param id="1" name="Value">CT_MUSICA_GAME</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

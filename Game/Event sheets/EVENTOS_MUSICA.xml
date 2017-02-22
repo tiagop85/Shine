@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EVENTOS_MUSICA</name>
+    <events>
+        <variable constant="1" name="CT_MUSICA_MENU" sid="393104493657867" static="0" type="number">1</variable>
+        <variable constant="1" name="CT_MUSICA_GAME" sid="869621893411763" static="0" type="number">2</variable>
+        <event-block sid="784968236956656">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="961953161900386" type="arControl">
+                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">arControl.FAIXA_TOCANDO</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="163866506667437">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="279975395246521" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CT_MUSICA_MENU</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="245458343960642" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_TOCANDO</param>
+                            <param id="1" name="Value">CT_MUSICA_MENU</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="676236062122539" type="Audio" />
+                        <action id="0" name="Play" sid="938520990849412" type="Audio">
+                            <param id="0" name="Audio file">Menu - Kevin MacLeod - Zanzibar</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music_menu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="635616417701902">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="336216965226742" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CT_MUSICA_GAME</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="959591660813214" type="arControl">
+                            <param id="0" name="Instance variable">FAIXA_TOCANDO</param>
+                            <param id="1" name="Value">CT_MUSICA_GAME</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="193631720723591" type="Audio" />
+                        <action id="0" name="Play" sid="549798391310114" type="Audio">
+                            <param id="0" name="Audio file">Jogo - Kevin MacLeod - Allada</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music_game&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="648334777916316">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="645339906797913" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="378922509495718" type="Audio">
+                    <param id="0" name="Audio file">Menu - Kevin MacLeod - Zanzibar</param>
+                </action>
+                <action id="4" name="Preload" sid="549234407230052" type="Audio">
+                    <param id="0" name="Audio file">Jogo - Kevin MacLeod - Allada</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

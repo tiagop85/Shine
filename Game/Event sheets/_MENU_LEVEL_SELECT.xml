@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>_MENU_LEVEL_SELECT</name>
+    <events>
+        <include>EVENTOS_MUSICA</include>
+        <include>EVENTOS_NAVEGACAO</include>
+        <event-block sid="531609059662195">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="441408812369160" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="650100507180939" type="arControl">
+                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                    <param id="1" name="Value">CT_MUSICA_MENU</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="743111006951852">
+            <conditions>
+                <condition id="17" name="On tap object" sid="139740870693263" type="Touch">
+                    <param id="0" name="Object">FASE01</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="132978629726755" type="System">
+                    <param id="0" name="Layout">FASE_03_TUTORIAL_AGILIDADE</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="147420557577155">
+            <conditions>
+                <condition id="17" name="On tap object" sid="165041169228031" type="Touch">
+                    <param id="0" name="Object">FASE02</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MENU_CREDITOS</name>
+    <events>
+        <include>EVENTOS_MUSICA</include>
+        <include>EVENTOS_NAVEGACAO</include>
+        <event-block sid="595957324905306">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="587359163587054" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="775267765524042" type="arControl">
+                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                    <param id="1" name="Value">CT_MUSICA_MENU</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

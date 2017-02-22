@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>_EVENTOS_JOGADOR</name>
+    <events>
+        <event-group description="" sid="180581755696708" title="Teclas de Movimento do Jogador">
+            <sub-events>
+                <event-block sid="634238988258113">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="673275210337415" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="157732221961794" type="spTempJogador">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="439084999701416" type="spTempJogador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="675230058836353">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="824512998854681" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="640329321230131" type="spTempJogador">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="636839692687514" type="spTempJogador">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="657564322656301">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="518113565147773" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="901487772781322" type="spTempJogador">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="588535999603124" type="spTempJogador">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="238121190550455">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="226602918741614" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="547083817473590" type="spTempJogador">
+                            <param id="0" name="Animation">&quot;agachar&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="328724409730129" type="spTempJogador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Acelera o jogador - só quando pegar orbi de velocidade</comment>
+                <event-block sid="185389048613798">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="619767882221737" type="spTempJogador">
+                            <param id="0" name="Instance variable">CORRER</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="352310864654776" type="spTempJogador">
+                            <param id="0" name="Max Speed">150</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="493686396339520">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="111439212287363" type="spTempJogador">
+                            <param id="0" name="Instance variable">CORRER</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="183539827874859" type="spTempJogador">
+                            <param id="0" name="Max Speed">350</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="794996630792971">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="941700882678195" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="635699573554238" type="spTempJogador">
+                            <param id="0" name="Instance variable">CORRER</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="544462017520105">
+                    <conditions>
+                        <condition id="2" inverted="1" name="Key is down" sid="346256584400112" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="193076333896174" type="spTempJogador">
+                            <param id="0" name="Instance variable">CORRER</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="734425121585267" title="ANIMAÇÕES DO JOGADOR">
+            <sub-events>
+                <comment>Evento: Quando o jogador se movimentar, estiver no chão e a variavel correr for igual a 0.&#x0D;&#x0A;Ação: Setar animação de andar</comment>
+                <event-block sid="140105733066866">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="943655727036308" type="spTempJogador" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="401787795724365" type="spTempJogador" />
+                        <condition id="-7" name="Compare instance variable" sid="181116308088351" type="spTempJogador">
+                            <param id="0" name="Instance variable">CORRER</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="750625494206308" type="spTempJogador">
+                            <param id="0" name="Animation">&quot;andar&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Evento: Quando o jogador se movimentar, estiver no chão e a variavel correr for igual a 1.&#x0D;&#x0A;Ação: Setar animação de correr</comment>
+                <event-block sid="814332494611537">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="325594773658621" type="spTempJogador" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="764884796727371" type="spTempJogador" />
+                        <condition id="-7" name="Compare instance variable" sid="405338718947930" type="spTempJogador">
+                            <param id="0" name="Instance variable">CORRER</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="212865146411628" type="spTempJogador">
+                            <param id="0" name="Animation">&quot;correr&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Evento: Quando o jogador parado e no chão.&#x0D;&#x0A;Ação: Setar animação de parar</comment>
+                <event-block sid="200271458259451">
+                    <conditions>
+                        <condition behavior="Platform" id="7" name="On stopped" sid="601542690555187" type="spTempJogador" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="683860301411510" type="spTempJogador" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="833370440430046" type="spTempJogador">
+                            <param id="0" name="Animation">&quot;parar&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Evento: Quando o jogador pular.&#x0D;&#x0A;Ação: Setar animação de pular</comment>
+                <event-block sid="864076308396868">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="365121393790997" type="spTempJogador" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="321687881813389" type="spTempJogador">
+                            <param id="0" name="Animation">&quot;pular&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Evento: Quando o jogador estiver no chão.</comment>
+                <event-block sid="178743439237722">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="473795789479676" type="spTempJogador" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>Evento: Quando o jogador estiver se movendo.&#x0D;&#x0A;Ação: Setar animação de andar</comment>
+                        <event-block sid="565451726511221">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="372996105723113" type="spTempJogador" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="505480355526927" type="spTempJogador">
+                                    <param id="0" name="Animation">&quot;andar&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Evento: Quando o jogador NÃO estiver se movendo.&#x0D;&#x0A;Ação: Setar animação de parar</comment>
+                        <event-block sid="878453554040016">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="842866700403692" type="spTempJogador" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="711923151664433" type="spTempJogador">
+                                    <param id="0" name="Animation">&quot;parar&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="695469245831040" title="AÇÕES DO JOGADOR">
+            <sub-events>
+                <event-block sid="857902597074350">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="501911279049329" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="551627035823470" type="spTempJogador">
+                            <param id="0" name="Animation">&quot;parar&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="893551472832101">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Is mirrored" sid="911895248248602" type="spTempJogador" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="590351027565535" type="spTempJogador">
+                                    <param id="0" name="Animation">&quot;atacar&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="791265491984592" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="814227821954090" type="spTempJogador">
+                                    <param id="0" name="Animation">&quot;parar&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="274691136618601">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="374356273049088" type="spTempJogador" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="317163636669199" type="spTempJogador">
+                                    <param id="0" name="Animation">&quot;atacar&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="910583757434144" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="173954216926264" type="spTempJogador">
+                                    <param id="0" name="Animation">&quot;parar&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="442449215171164">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="260491138247968" type="spTempJogador">
+                    <param id="0" name="Object">spEscada</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="332734304144093" type="spTempJogador">
+                    <param id="0" name="Animation">&quot;escalar&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

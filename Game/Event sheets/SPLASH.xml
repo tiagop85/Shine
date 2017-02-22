@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SPLASH</name>
+    <events>
+        <include>EVENTOS_MUSICA</include>
+        <include>EVENTOS_NAVEGACAO</include>
+        <event-block sid="362014941149647">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="477277986885735" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="416103953102427" type="arControl">
+                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                    <param id="1" name="Value">CT_MUSICA_MENU</param>
+                </action>
+                <action id="0" name="Set text" sid="920831955219253" type="txTempSplash">
+                    <param id="0" name="Text">&quot;SPLASH SCREEN...3...&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="305792212291674" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="0" name="Set text" sid="459126806885268" type="txTempSplash">
+                    <param id="0" name="Text">&quot;SPLASH SCREEN...2...&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="340740146927846" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="0" name="Set text" sid="757022230449590" type="txTempSplash">
+                    <param id="0" name="Text">&quot;SPLASH SCREEN...1...&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="631959003028048" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="985353623729465" type="System">
+                    <param id="0" name="Layout">MENU_PRINCIPAL</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

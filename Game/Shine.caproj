@@ -10,13 +10,14 @@
     <unique-id>e9dy22538vrk</unique-id>
     <saved-with-version>24200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -35,14 +36,14 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>LEVEL SELECT</first-layout>
-    <use-loader-layout>0</use-loader-layout>
+    <first-layout>SPLASH</first-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
-        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Fullscreen scaling">Low quality</prop>
         <prop name="Loader style">Construct 2 splash</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
@@ -53,124 +54,340 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="spJogador" sid="235589077589363">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="387364589603584">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="BoundToLayout" sid="856809511067073">
-                    <behavior id="bound" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="996150983013531">
-                    <behavior id="Physics" />
-                </behavior-type>
-                <behavior-type name="ScrollTo" sid="583128835351543">
-                    <behavior id="scrollto" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459429964536469" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="spChao" sid="771380683516883">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="821691372419039">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="964144035013928">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="163702402543791" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="spPassaro" sid="634631606526308">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="bateu" sid="876214346470053" type="boolean" />
-                <instance-variable name="retornando" sid="352089109765942" type="boolean" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Bullet_x" sid="691941782426109">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="Bullet_y" sid="840845425477869">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="Timer" sid="334037626529932">
-                    <behavior id="Timer" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585218620408556" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="spSombra" sid="611139153240358">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256698543319380" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
+        <object-folder name="buttons">
+            <object-type name="btConfAudio" sid="117326518535492">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="ON" pingpong="0" repeatcount="1" repeatto="0" sid="629783023703226" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="OFF" pingpong="0" repeatcount="1" repeatto="0" sid="416562789224143" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btConfGame" sid="148366855307183">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Touched" sid="218837822875614" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908218891930217" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btCreditos" sid="309154688595900">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Touched" sid="139709399207328" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="433093552085158" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btMenuPrincipal" sid="805923040761854">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264818795119981" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btStartGame" sid="200020589927915">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Touched" sid="608563526574516" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Timer" sid="735558802988696">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="875135301742691" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btSkip" sid="437824990922020">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Touched" sid="277805990217005" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143091928476838" speed="5">
+                        <frame duration="1" hotspotX="0.548936" hotspotY="0.905882">
+                            <collision-poly>
+                                <point x="0.00425532" y="0.0117647" />
+                                <point x="0.710638" y="0.0117647" />
+                                <point x="0.710638" y="0.988235" />
+                                <point x="0.00425532" y="0.988235" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btConfAudio_Jogo" sid="323875139203125">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="ON" pingpong="0" repeatcount="1" repeatto="0" sid="148458746045113" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="OFF" pingpong="0" repeatcount="1" repeatto="0" sid="679418262289653" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btPausa" sid="351052431333569">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Touched" sid="944399469364352" type="boolean" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="ON" pingpong="0" repeatcount="1" repeatto="0" sid="104302076547830" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="OFF" pingpong="0" repeatcount="1" repeatto="0" sid="187183511762483" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="system">
+            <object-type name="Audio" sid="321884059870014">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="Keyboard" sid="258770207024377">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="Touch" sid="316208232661412">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type global="1" name="arControl" sid="215567331532953">
+                <plugin id="Arr" />
+                <instance-variables>
+                    <instance-variable name="FASE_ATUAL" sid="956267867322022" type="number" />
+                    <instance-variable name="FAIXA_A_TOCAR" sid="930166861236003" type="number" />
+                    <instance-variable name="FAIXA_TOCANDO" sid="124909891692119" type="number" />
+                </instance-variables>
+            </object-type>
+        </object-folder>
+        <object-folder name="cenario">
+            <object-folder name="orbs">
+                <object-type name="spOrbAgilidade" sid="895114097247814">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="tempo" sid="438762401897875" type="number" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Timer" sid="526112944607876">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297269712735198" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spOrbEnergia" sid="231403393938823">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Timer" sid="222531560611282">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965407182737368" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spOrbForca" sid="798911275007600">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="tempo" sid="892327881185248" type="number" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Timer" sid="673206498875142">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946133326773580" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="npcs">
+                <object-type name="spPassaro" sid="634631606526308">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="bateu" sid="876214346470053" type="boolean" />
+                        <instance-variable name="retornando" sid="352089109765942" type="boolean" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Bullet_x" sid="691941782426109">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                        <behavior-type name="Bullet_y" sid="840845425477869">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                        <behavior-type name="Timer" sid="334037626529932">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585218620408556" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spJogador" sid="235589077589363">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="387364589603584">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                        <behavior-type name="BoundToLayout" sid="856809511067073">
+                            <behavior id="bound" />
+                        </behavior-type>
+                        <behavior-type name="Physics" sid="996150983013531">
+                            <behavior id="Physics" />
+                        </behavior-type>
+                        <behavior-type name="ScrollTo" sid="583128835351543">
+                            <behavior id="scrollto" />
+                        </behavior-type>
+                        <behavior-type name="Timer" sid="956644133744306">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459429964536469" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="controle">
+                <object-type name="spSombra" sid="611139153240358">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256698543319380" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spChegada" sid="242351499875679">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549721088416318" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="spChaoEspinhos" sid="690266605249103">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="257317234609460">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="127675697874667">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239705522070296" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spEscada" sid="447156760784524">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724668837997338" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spChao" sid="771380683516883">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="821691372419039">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="964144035013928">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="163702402543791" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spBlocoPesado" sid="411755533541199">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="677707324403319">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="312675632614567">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="140989053289962" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spPlataformaFixa" sid="559456657546128">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="169383860290953">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="427488594919499">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860382796522068" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="spPlataformaMovel" sid="248608175496356">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Physics" sid="411029404518116">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="954259198382196">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341516174084776" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="txTempGameOver" sid="407076942548419">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="spEnergia" sid="231403393938823">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Timer" sid="222531560611282">
-                    <behavior id="Timer" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965407182737368" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="spBloco" sid="411755533541199">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="677707324403319">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="312675632614567">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="140989053289962" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="spForca" sid="798911275007600">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="tempo" sid="892327881185248" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Timer" sid="673206498875142">
-                    <behavior id="Timer" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946133326773580" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="spTempGameOver2" sid="851060209258160">
             <plugin id="Text" />
         </object-type>
         <object-type name="txTempForca" sid="116022277417122">
@@ -179,7 +396,7 @@
         <object-type name="txTempLife" sid="273321385164126">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite" sid="854326832002714">
+        <object-type name="spTempSprite01" sid="854326832002714">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="3" loop="1" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="117401672492963" speed="5">
@@ -239,25 +456,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="c30748014c16fefe325b313bd3803d6e" sid="849548694059966">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612369807432548" speed="5">
-                    <frame duration="1" hotspotX="0.500498" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.0139303" y="0.016055" />
-                            <point x="0.499502" y="0.108945" />
-                            <point x="0.977114" y="0.0263761" />
-                            <point x="0.961194" y="0.5" />
-                            <point x="0.797015" y="0.766055" />
-                            <point x="0.499502" y="0.861239" />
-                            <point x="0.0109453" y="0.987385" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite2" sid="952663653434558">
+        <object-type name="spTempSprite03" sid="952663653434558">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116296065178092" speed="5">
@@ -275,79 +474,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="201072595823350">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312502857046460" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="plataformaFase3" sid="248608175496356">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Physics" sid="411029404518116">
-                    <behavior id="Physics" />
-                </behavior-type>
-                <behavior-type name="Solid" sid="954259198382196">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341516174084776" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="orbAgilidade" sid="895114097247814">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297269712735198" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="txAgilidade" sid="962046796774214">
-            <plugin id="Text" />
-            <behaviors>
-                <behavior-type name="Anchor" sid="249304895921745">
-                    <behavior id="Anchor" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
-        <object-type name="killableGround" sid="690266605249103">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="257317234609460">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="127675697874667">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239705522070296" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="txWin" sid="126535744692157">
-            <plugin id="Text" />
-            <behaviors>
-                <behavior-type name="Anchor" sid="964873012917387">
-                    <behavior id="Anchor" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
-        <object-type name="winPoint" sid="898377154009053">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231006464023898" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="jogador" sid="210293235285040">
+        <object-type name="spTempJogador" sid="210293235285040">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="CORRER" sid="286041569549284" type="number" />
@@ -406,10 +533,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Keyboard" sid="258770207024377">
-            <plugin id="Keyboard" />
-        </object-type>
-        <object-type name="piso" sid="525154594115942">
+        <object-type name="spTempPiso" sid="525154594115942">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="869840061961263">
@@ -422,7 +546,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="576969293625996">
+        <object-type name="spTempSprite02" sid="576969293625996">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="178007718066682">
@@ -435,15 +559,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="escada" sid="447156760784524">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724668837997338" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite5" sid="539936690103214">
+        <object-type name="spTempSprite04" sid="539936690103214">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="204435494612398" speed="5">
@@ -485,24 +601,79 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Touch" sid="316208232661412">
-            <plugin id="Touch" />
+        <object-type name="txTempSplash" sid="112991788505214">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txTempAgilidade" sid="966888488047161">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txTempConfiguracoes" sid="958129906535992">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txTempCreditos" sid="700597799703748">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btMenuPrincipal_jogo" sid="350869216995828">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643080135566774" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.486486" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">
+            <members>
+                <member>btMenuPrincipal</member>
+                <member>btMenuPrincipal_jogo</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="Touched" sid="466099626032568" type="boolean" />
+            </instance-variables>
+        </family>
+        <family name="fmSoundOnOff" plugin-id="Sprite" sid="622774763774440">
+            <members>
+                <member>btConfAudio</member>
+                <member>btConfAudio_Jogo</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="Touched" sid="368575374594810" type="boolean" />
+            </instance-variables>
+        </family>
+    </families>
     <layout-folder>
-        <layout>LEVEL SELECT.xml</layout>
-        <layout>GAME_FASE_01.xml</layout>
-        <layout>GAME_TUTORIAL_FORCA.xml</layout>
-        <layout>MAQ_ESTADO_JOGADOR.xml</layout>
-        <layout>GAME_TUTORIAL_AGILIDADE.xml</layout>
+        <layout>_TESTE.xml</layout>
+        <layout>_EVENTOS_JOGADOR.xml</layout>
+        <layout>_MENU_LEVEL_SELECT.xml</layout>
+        <layout>SPLASH.xml</layout>
+        <layout>MENU_PRINCIPAL.xml</layout>
+        <layout>MENU_CONFIGURACOES.xml</layout>
+        <layout>MENU_CREDITOS.xml</layout>
+        <layout>FASE_01_TUTORIAL_VIDA.xml</layout>
+        <layout>FASE_02_TUTORIAL_FORCA.xml</layout>
+        <layout>FASE_03_TUTORIAL_AGILIDADE.xml</layout>
+        <layout>FASE_04_FUNDOPOCO.xml</layout>
+        <layout>FASE_05_BECOSEMSAIDA.xml</layout>
+        <layout>FASE_06_LUZFIMTUNEL.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>GAME_EVENTS.xml</event-sheet>
-        <event-sheet>MAQ_ESTADO_JOGADOR.xml</event-sheet>
-        <event-sheet>GAME_TUTORIAL_AGILIDADE.xml</event-sheet>
-        <event-sheet>EVENTS_TUTORIAL_FORCA.xml</event-sheet>
-        <event-sheet>EVENTS_LEVEL_SELECT.xml</event-sheet>
+        <event-sheet>EVENTOS_GAME_GLOBAL.xml</event-sheet>
+        <event-sheet>_EVENTOS_JOGADOR.xml</event-sheet>
+        <event-sheet>FASE_03_TUTORIAL_AGILIDADE.xml</event-sheet>
+        <event-sheet>FASE_02_TUTORIAL_FORCA.xml</event-sheet>
+        <event-sheet>_MENU_LEVEL_SELECT.xml</event-sheet>
+        <event-sheet>MENU_PRINCIPAL.xml</event-sheet>
+        <event-sheet>FASE_01_TUTORIAL_VIDA.xml</event-sheet>
+        <event-sheet>FASE_04_FUNDOPOCO.xml</event-sheet>
+        <event-sheet>FASE_05_BECOSEMSAIDA.xml</event-sheet>
+        <event-sheet>FASE_06_LUZFIMTUNEL.xml</event-sheet>
+        <event-sheet>MENU_CONFIGURACOES.xml</event-sheet>
+        <event-sheet>MENU_CREDITOS.xml</event-sheet>
+        <event-sheet>SPLASH.xml</event-sheet>
+        <event-sheet>EVENTOS_MUSICA.xml</event-sheet>
+        <event-sheet>EVENTOS_NAVEGACAO.xml</event-sheet>
+        <event-sheet>_TESTE.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="26" />
@@ -511,9 +682,26 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Audio" uid="60">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="Menu - Kevin MacLeod - Zanzibar.ogg" />
+        <file name="Jogo - Kevin MacLeod - Allada.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
