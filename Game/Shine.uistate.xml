@@ -26,6 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet active="1" order="13">EVENTOS_GAME_GLOBAL</event-sheet>
         <event-sheet order="14">EVENTOS_MUSICA</event-sheet>
         <event-sheet order="15">FASE_03_TUTORIAL_AGILIDADE</event-sheet>
+        <event-sheet order="16">FASE_02_TUTORIAL_FORCA</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

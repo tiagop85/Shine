@@ -6,11 +6,6 @@
         <include>EVENTOS_GAME_GLOBAL</include>
         <include>EVENTOS_MUSICA</include>
         <include>EVENTOS_NAVEGACAO</include>
-        <variable constant="0" name="timeAgility" sid="790532514453546" static="0" type="number">5</variable>
-        <variable constant="0" name="isWithAgility" sid="881828371400508" static="0" type="number">0</variable>
-        <variable constant="0" name="AGILITY_ORB_TAG" sid="121481379303234" static="0" type="number">0</variable>
-        <variable constant="0" name="increasedSpeed" sid="190125858879807" static="0" type="number">600</variable>
-        <variable constant="0" name="normalSpeed" sid="311189222799825" static="0" type="number">330</variable>
         <event-block sid="687557356874239">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="561554710853639" type="System" />

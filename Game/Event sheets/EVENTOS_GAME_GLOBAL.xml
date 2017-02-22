@@ -18,6 +18,8 @@
         <variable constant="1" name="CT_SPAWN_ORB_VIDA" sid="933659900403555" static="0" type="number">5</variable>
         <variable constant="1" name="CT_SPAWN_ORB_FORCA" sid="748907906314745" static="0" type="number">7</variable>
         <variable constant="1" name="CT_TMP_EFEITO_ORB_FORCA" sid="289420163120827" static="0" type="number">5</variable>
+        <variable constant="0" name="CT_PLAYER_VELOCIDADE_NORMAL" sid="754391521725532" static="0" type="number">330</variable>
+        <variable constant="0" name="CT_PLAYER_VELOCIDADE_TURBO" sid="422042942587460" static="0" type="number">600</variable>
         <variable constant="1" name="CT_SPAWN_ORB_AGILIDADE" sid="496823605173277" static="0" type="number">7</variable>
         <variable constant="1" name="CT_TMP_EFEITO_ORB_AGILIDADE" sid="772652975149873" static="0" type="number">5</variable>
         <comment>&gt; Inicialização de variáveis</comment>
@@ -582,7 +584,7 @@
                             <param id="2" name="Tag">&quot;HABILIDADE_AGILIDADE&quot;</param>
                         </action>
                         <action behavior="Platform" id="1" name="Set max speed" sid="980062775529784" type="spJogador">
-                            <param id="0" name="Max Speed">increasedSpeed</param>
+                            <param id="0" name="Max Speed">CT_PLAYER_VELOCIDADE_TURBO</param>
                         </action>
                     </actions>
                 </event-block>
@@ -618,7 +620,7 @@
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="1" name="Set max speed" sid="393002738131407" type="spJogador">
-                                    <param id="0" name="Max Speed">normalSpeed</param>
+                                    <param id="0" name="Max Speed">CT_PLAYER_VELOCIDADE_NORMAL</param>
                                 </action>
                                 <action id="0" name="Set text" sid="975373899494610" type="txTempAgilidade">
                                     <param id="0" name="Text">&quot;&quot;</param>
