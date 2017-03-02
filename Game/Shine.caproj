@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -20,6 +21,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -621,6 +623,44 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="533802951713383">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="718443484102871">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298567347940224" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="566235425875028">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="566702864801066">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="531294799440020">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518955641771027" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="827207915298509">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="212198403463578">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">
@@ -656,6 +696,7 @@
         <layout>FASE_04_FUNDOPOCO.xml</layout>
         <layout>FASE_05_BECOSEMSAIDA.xml</layout>
         <layout>FASE_06_LUZFIMTUNEL.xml</layout>
+        <layout>CABELO.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>EVENTOS_GAME_GLOBAL.xml</event-sheet>
@@ -674,6 +715,7 @@
         <event-sheet>EVENTOS_MUSICA.xml</event-sheet>
         <event-sheet>EVENTOS_NAVEGACAO.xml</event-sheet>
         <event-sheet>_TESTE.xml</event-sheet>
+        <event-sheet>CABELO.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="26" />

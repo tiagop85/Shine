@@ -10,23 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">FASE_01_TUTORIAL_VIDA</layout>
-        <layout order="2">FASE_04_FUNDOPOCO</layout>
-        <layout order="3">FASE_02_TUTORIAL_FORCA</layout>
-        <layout order="4">FASE_03_TUTORIAL_AGILIDADE</layout>
-        <layout order="5">FASE_05_BECOSEMSAIDA</layout>
-        <layout order="6">FASE_06_LUZFIMTUNEL</layout>
-        <layout order="9">_TESTE</layout>
-        <layout order="10">_EVENTOS_JOGADOR</layout>
-        <event-sheet order="1">EVENTOS_NAVEGACAO</event-sheet>
-        <event-sheet order="7">FASE_01_TUTORIAL_VIDA</event-sheet>
-        <event-sheet order="8">_TESTE</event-sheet>
-        <event-sheet order="11">_EVENTOS_JOGADOR</event-sheet>
-        <event-sheet order="12">_MENU_LEVEL_SELECT</event-sheet>
-        <event-sheet active="1" order="13">EVENTOS_GAME_GLOBAL</event-sheet>
-        <event-sheet order="14">EVENTOS_MUSICA</event-sheet>
-        <event-sheet order="15">FASE_03_TUTORIAL_AGILIDADE</event-sheet>
-        <event-sheet order="16">FASE_02_TUTORIAL_FORCA</event-sheet>
+        <layout active="1" order="0">CABELO</layout>
+        <event-sheet order="1">CABELO</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -83,5 +68,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/FASE01/" />
         <folder expanded="1" path="animation-folder/FASE02/" />
         <folder expanded="1" path="animation-folder/btMenuPrincipal_jogo/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
     </folders-expanded>
 </c2uistate>
