@@ -10,8 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">CABELO</layout>
+        <layout order="0">CABELO</layout>
+        <layout order="2">Level1</layout>
         <event-sheet order="1">CABELO</event-sheet>
+        <event-sheet order="3">Level1Events</event-sheet>
+        <event-sheet active="1" order="4">_EVENTOS_JOGADOR</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,9 +28,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/buttons/" />
-        <folder expanded="1" path="object-folder/system/" />
-        <folder expanded="1" path="object-folder/cenario/" />
+        <folder expanded="0" path="object-folder/buttons/" />
+        <folder expanded="0" path="object-folder/system/" />
+        <folder expanded="0" path="object-folder/cenario/" />
         <folder expanded="1" path="object-folder/cenario/orbs/" />
         <folder expanded="1" path="object-folder/cenario/npcs/" />
         <folder expanded="1" path="object-folder/cenario/controle/" />
@@ -60,7 +63,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spPlataformaMovel/" />
         <folder expanded="1" path="animation-folder/spTempSprite01/" />
         <folder expanded="1" path="animation-folder/spTempSprite03/" />
-        <folder expanded="1" path="animation-folder/spTempJogador/" />
+        <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/spTempPiso/" />
         <folder expanded="1" path="animation-folder/spTempSprite02/" />
         <folder expanded="1" path="animation-folder/spTempSprite04/" />

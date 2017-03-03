@@ -153,7 +153,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spTempJogador" uid="25">
+                <instance type="Player" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -185,6 +185,11 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -192,11 +197,11 @@
                         <x>176</x>
                         <y>269</y>
                         <z>0</z>
-                        <width>123.550918579</width>
-                        <height>119.432548523</height>
+                        <width>396.788513184</width>
+                        <height>317.690582275</height>
                         <depth>0</depth>
-                        <hotspotX>0.519230783</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.437125742</hotspotX>
+                        <hotspotY>0.541353405</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

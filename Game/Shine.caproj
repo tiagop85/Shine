@@ -16,12 +16,12 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
-        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -476,7 +476,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="spTempJogador" sid="210293235285040">
+        <object-type name="Player" sid="210293235285040">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="CORRER" sid="286041569549284" type="number" />
@@ -490,48 +490,196 @@
                 <behavior-type name="Platform" sid="327962409740558">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="331062318033133">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="1" name="parar" pingpong="0" repeatcount="1" repeatto="0" sid="853456583929015" speed="3">
-                    <frame duration="1" hotspotX="0.519231" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.519231" hotspotY="0" />
+                <animation framecount="9" loop="1" name="parar" pingpong="0" repeatcount="1" repeatto="0" sid="853456583929015" speed="5">
+                    <frame duration="1" hotspotX="0.437126" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                        <collision-poly>
+                            <point x="0.0359281" y="0" />
+                            <point x="0.958084" y="0" />
+                            <point x="0.958084" y="1" />
+                            <point x="0.0359281" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.437126" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                        <collision-poly>
+                            <point x="0.00598802" y="0" />
+                            <point x="0.988024" y="0" />
+                            <point x="0.988024" y="1" />
+                            <point x="0.00598802" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.437126" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                        <collision-poly>
+                            <point x="0.0179641" y="0" />
+                            <point x="0.976048" y="0" />
+                            <point x="0.976048" y="1" />
+                            <point x="0.0179641" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.437126" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                        <collision-poly>
+                            <point x="0.0179641" y="0" />
+                            <point x="0.976048" y="0" />
+                            <point x="0.976048" y="1" />
+                            <point x="0.0179641" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.437126" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.431138" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.443114" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                        <collision-poly>
+                            <point x="0.0239521" y="0.0150376" />
+                            <point x="0.976048" y="0.0150376" />
+                            <point x="0.976048" y="0.984962" />
+                            <point x="0.0239521" y="0.984962" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.437126" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                        <collision-poly>
+                            <point x="0" y="0.0150376" />
+                            <point x="1" y="0.0150376" />
+                            <point x="1" y="0.984962" />
+                            <point x="0" y="0.984962" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.437126" hotspotY="0.541353">
+                        <image-point name="Cabelo" x="0.778443" y="0.172932" />
+                        <collision-poly>
+                            <point x="0.00598802" y="0.0150376" />
+                            <point x="0.988024" y="0.0150376" />
+                            <point x="0.988024" y="0.984962" />
+                            <point x="0.00598802" y="0.984962" />
+                        </collision-poly>
+                    </frame>
                 </animation>
-                <animation framecount="2" loop="1" name="andar" pingpong="0" repeatcount="1" repeatto="0" sid="713491624501289" speed="3">
-                    <frame duration="1" hotspotX="0.519231" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.519231" hotspotY="0" />
+                <animation framecount="18" loop="1" name="andar" pingpong="0" repeatcount="1" repeatto="0" sid="713491624501289" speed="24">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238">
+                        <image-point name="Cabelo" x="0.75" y="0.0571429" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.495238">
+                        <image-point name="Cabelo" x="0.746479" y="0.0571429" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495327">
+                        <image-point name="Cabelo" x="0.757143" y="0.0560748" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.490566">
+                        <image-point name="Cabelo" x="0.745455" y="0.0566038" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.495327">
+                        <image-point name="Cabelo" x="0.755102" y="0.0560748" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.495327">
+                        <image-point name="Cabelo" x="0.754386" y="0.0560748" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.490566">
+                        <image-point name="Cabelo" x="0.75" y="0.0566038" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238">
+                        <image-point name="Cabelo" x="0.75" y="0.0571429" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.495238">
+                        <image-point name="Cabelo" x="0.753425" y="0.0571429" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495238">
+                        <image-point name="Cabelo" x="0.75" y="0.0571429" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.490566">
+                        <image-point name="Cabelo" x="0.757143" y="0.0566038" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495327">
+                        <image-point name="Cabelo" x="0.75" y="0.0560748" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495327">
+                        <image-point name="Cabelo" x="0.76" y="0.0560748" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.495327">
+                        <image-point name="Cabelo" x="0.755102" y="0.0560748" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.495327">
+                        <image-point name="Cabelo" x="0.754386" y="0.0560748" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.495327">
+                        <image-point name="Cabelo" x="0.754098" y="0.0560748" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.490566">
+                        <image-point name="Cabelo" x="0.753425" y="0.0566038" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5">
+                        <image-point name="Cabelo" x="0.746479" y="0.0576923" />
+                    </frame>
                 </animation>
                 <animation framecount="2" loop="1" name="correr" pingpong="0" repeatcount="1" repeatto="0" sid="424469233948023" speed="5">
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.18" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.18" />
+                    </frame>
                 </animation>
                 <animation framecount="2" loop="1" name="agachar" pingpong="0" repeatcount="1" repeatto="0" sid="136334964003528" speed="5">
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.166667" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.179487" />
+                    </frame>
                 </animation>
-                <animation framecount="4" loop="1" name="pular" pingpong="0" repeatcount="1" repeatto="0" sid="430546333397456" speed="5">
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                <animation framecount="3" loop="0" name="pular" pingpong="0" repeatcount="1" repeatto="0" sid="430546333397456" speed="5">
+                    <frame duration="1" hotspotX="0.497076" hotspotY="0.5">
+                        <image-point name="Cabelo" x="0.684211" y="0.0877193" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.497076" hotspotY="0.5">
+                        <image-point name="Cabelo" x="0.777778" y="0.175439" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.497076" hotspotY="0.5">
+                        <image-point name="Cabelo" x="0.894737" y="0.0789474" />
+                    </frame>
                 </animation>
                 <animation framecount="2" loop="1" name="cair" pingpong="0" repeatcount="1" repeatto="0" sid="595797741452331" speed="5">
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.171875" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.171875" />
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="1" name="atacar" pingpong="0" repeatcount="1" repeatto="0" sid="357073337706711" speed="5">
                     <frame duration="1" hotspotX="0.518519" hotspotY="0">
                         <image-point name="Imagepoint 1" x="1" y="0.46" />
+                        <image-point name="Cabelo" x="0.777778" y="0.18" />
                     </frame>
                 </animation>
                 <animation framecount="1" loop="1" name="enfraquecer" pingpong="0" repeatcount="1" repeatto="0" sid="722620172936751" speed="5">
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.171875" />
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="1" name="morrer" pingpong="0" repeatcount="1" repeatto="0" sid="655180865792830" speed="5">
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.171875" />
+                    </frame>
                 </animation>
                 <animation framecount="2" loop="1" name="escalar" pingpong="0" repeatcount="1" repeatto="0" sid="103305392242986" speed="5">
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.518519" hotspotY="0" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.171875" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0">
+                        <image-point name="Cabelo" x="0.777778" y="0.171875" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -654,12 +802,22 @@
         </object-type>
         <object-type name="Particles" sid="827207915298509">
             <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="BackgroundLvl1" sid="816065933732321">
+            <plugin id="Tilemap" />
+            <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\tutorial1.png" />
+            <tiles />
+        </object-type>
+        <object-type name="ScenarioLvl1" sid="848279685251209">
+            <plugin id="Tilemap" />
             <behaviors>
-                <behavior-type name="Pin" sid="212198403463578">
-                    <behavior id="Pin" />
+                <behavior-type name="Solid" sid="926966873690112">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <texture />
+            <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\tutorial1.png" />
+            <tiles />
         </object-type>
     </object-folder>
     <families>
@@ -697,6 +855,7 @@
         <layout>FASE_05_BECOSEMSAIDA.xml</layout>
         <layout>FASE_06_LUZFIMTUNEL.xml</layout>
         <layout>CABELO.xml</layout>
+        <layout>Level1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>EVENTOS_GAME_GLOBAL.xml</event-sheet>
@@ -716,6 +875,7 @@
         <event-sheet>EVENTOS_NAVEGACAO.xml</event-sheet>
         <event-sheet>_TESTE.xml</event-sheet>
         <event-sheet>CABELO.xml</event-sheet>
+        <event-sheet>Level1Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="26" />

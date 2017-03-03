@@ -7,12 +7,7 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="944226104804017" type="System" />
             </conditions>
-            <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="613709229414256" type="Particles">
-                    <param id="0" name="Pin to">Sprite2</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-            </actions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
