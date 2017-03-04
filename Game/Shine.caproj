@@ -819,6 +819,48 @@
             <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\tutorial1.png" />
             <tiles />
         </object-type>
+        <object-type name="tmFase01" sid="941024958698037">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="548989577225914">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="457669062103255">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\TiledMaps\../Sprites/ELEMENTOS-FASE-1-SEM-BG.png" />
+            <tiles>
+                <tile id="41">
+                    <collision-poly>
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="43">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="166">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="168">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">
