@@ -12,7 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Level1</layout>
         <layout order="5">MENU_PRINCIPAL</layout>
-        <layout order="6">FASE_04_FUNDOPOCO</layout>
+        <layout active="1" order="6">FASE_04_FUNDOPOCO</layout>
         <layout order="7">FASE_02_TUTORIAL_FORCA</layout>
         <layout order="8">FASE_01_TUTORIAL_VIDA</layout>
         <layout order="10">FASE_03_TUTORIAL_AGILIDADE</layout>

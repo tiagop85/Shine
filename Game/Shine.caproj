@@ -1562,13 +1562,13 @@
         <event-sheet>Level1Events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="26" />
-        <global-instance type="Touch" uid="42">
+        <global-instance type="Keyboard" uid="154" />
+        <global-instance type="Touch" uid="155">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="60">
+        <global-instance type="Audio" uid="156">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
