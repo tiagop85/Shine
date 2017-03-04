@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -576,6 +577,19 @@
                     </tile>
                 </tiles>
             </object-type>
+            <object-type name="Level3Scene" sid="575360838983420">
+                <plugin id="Tilemap" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="439416528590836">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="741749611116619">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\ELEMENTOS-FASE-1-SEM-BG-2.png" />
+                <tiles />
+            </object-type>
         </object-folder>
         <object-type name="txTempGameOver" sid="407076942548419">
             <plugin id="Text" />
@@ -1006,6 +1020,10 @@
             </behaviors>
             <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\tutorial1.png" />
             <tiles />
+        </object-type>
+        <object-type name="TiledBackground" sid="717568270216888">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\tile-bg.png" />
         </object-type>
     </object-folder>
     <families>

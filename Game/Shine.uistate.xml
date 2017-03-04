@@ -16,7 +16,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="7">FASE_02_TUTORIAL_FORCA</layout>
         <layout order="8">FASE_01_TUTORIAL_VIDA</layout>
         <layout order="10">FASE_03_TUTORIAL_AGILIDADE</layout>
-        <layout active="1" order="11">FASE_05_BECOSEMSAIDA</layout>
+        <layout order="11">FASE_05_BECOSEMSAIDA</layout>
+        <layout active="1" order="12">FASE_06_LUZFIMTUNEL</layout>
         <event-sheet order="1">Level1Events</event-sheet>
         <event-sheet order="2">_EVENTOS_JOGADOR</event-sheet>
         <event-sheet order="3">MENU_PRINCIPAL</event-sheet>
