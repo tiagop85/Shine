@@ -646,7 +646,7 @@
                                 <action behavior="Timer" id="0" name="Start timer" sid="309466704818571" type="spOrbAgilidade">
                                     <param id="0" name="Duration">1</param>
                                     <param id="1" name="Type">0</param>
-                                    <param id="2" name="Tag">&quot;HABILIDADE_FORCA&quot;</param>
+                                    <param id="2" name="Tag">&quot;HABILIDADE_AGILIDADE&quot;</param>
                                 </action>
                                 <action id="0" name="Set text" sid="495186016040685" type="txTempAgilidade">
                                     <param id="0" name="Text">&quot;Agilidade&quot; &amp; spOrbAgilidade.tempo</param>

@@ -388,6 +388,48 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="tmFase01" sid="883843761322302">
+                <plugin id="Tilemap" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="173619366525061">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="143278149406996">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\TiledMaps\../Sprites/ELEMENTOS-FASE-1-SEM-BG.png" />
+                <tiles>
+                    <tile id="41">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="43">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="166">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="168">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                </tiles>
+            </object-type>
         </object-folder>
         <object-type name="txTempGameOver" sid="407076942548419">
             <plugin id="Text" />
@@ -804,7 +846,7 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
-        <object-type name="BackgroundLvl1" sid="816065933732321">
+        <object-type name="TiledBgLvl1" sid="816065933732321">
             <plugin id="Tilemap" />
             <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\tutorial1.png" />
             <tiles />
@@ -818,48 +860,6 @@
             </behaviors>
             <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\tutorial1.png" />
             <tiles />
-        </object-type>
-        <object-type name="tmFase01" sid="941024958698037">
-            <plugin id="Tilemap" />
-            <behaviors>
-                <behavior-type name="Solid" sid="548989577225914">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="457669062103255">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\TiledMaps\../Sprites/ELEMENTOS-FASE-1-SEM-BG.png" />
-            <tiles>
-                <tile id="41">
-                    <collision-poly>
-                        <point x="1" y="0" />
-                        <point x="1" y="1" />
-                        <point x="0" y="1" />
-                    </collision-poly>
-                </tile>
-                <tile id="43">
-                    <collision-poly>
-                        <point x="0" y="0" />
-                        <point x="1" y="1" />
-                        <point x="0" y="1" />
-                    </collision-poly>
-                </tile>
-                <tile id="166">
-                    <collision-poly>
-                        <point x="0" y="0" />
-                        <point x="1" y="0" />
-                        <point x="1" y="1" />
-                    </collision-poly>
-                </tile>
-                <tile id="168">
-                    <collision-poly>
-                        <point x="0" y="0" />
-                        <point x="1" y="0" />
-                        <point x="0" y="1" />
-                    </collision-poly>
-                </tile>
-            </tiles>
         </object-type>
     </object-folder>
     <families>
@@ -943,8 +943,8 @@
     </global-instances>
     <sounds-folder />
     <music-folder>
-        <file name="Menu - Kevin MacLeod - Zanzibar.ogg" />
-        <file name="Jogo - Kevin MacLeod - Allada.ogg" />
+        <file name="Menu - Kevin MacLeod - TheReveal.ogg" />
+        <file name="Jogo - Kevin MacLeod - Phantasm.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

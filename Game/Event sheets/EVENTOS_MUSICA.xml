@@ -30,7 +30,7 @@
                         </action>
                         <action id="33" name="Stop all" sid="676236062122539" type="Audio" />
                         <action id="0" name="Play" sid="938520990849412" type="Audio">
-                            <param id="0" name="Audio file">Menu - Kevin MacLeod - Zanzibar</param>
+                            <param id="0" name="Audio file">Menu - Kevin MacLeod - TheReveal</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;music_menu&quot;</param>
@@ -52,7 +52,7 @@
                         </action>
                         <action id="33" name="Stop all" sid="193631720723591" type="Audio" />
                         <action id="0" name="Play" sid="549798391310114" type="Audio">
-                            <param id="0" name="Audio file">Jogo - Kevin MacLeod - Allada</param>
+                            <param id="0" name="Audio file">Jogo - Kevin MacLeod - Phantasm</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;music_game&quot;</param>
@@ -67,10 +67,10 @@
             </conditions>
             <actions>
                 <action id="4" name="Preload" sid="378922509495718" type="Audio">
-                    <param id="0" name="Audio file">Menu - Kevin MacLeod - Zanzibar</param>
+                    <param id="0" name="Audio file">Menu - Kevin MacLeod - TheReveal</param>
                 </action>
                 <action id="4" name="Preload" sid="549234407230052" type="Audio">
-                    <param id="0" name="Audio file">Jogo - Kevin MacLeod - Allada</param>
+                    <param id="0" name="Audio file">Jogo - Kevin MacLeod - Phantasm</param>
                 </action>
             </actions>
         </event-block>
