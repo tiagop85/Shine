@@ -1042,7 +1042,7 @@
                     </tile>
                 </tiles>
             </object-type>
-            <object-type name="Level3Scene" sid="575360838983420">
+            <object-type name="tmFase03" sid="575360838983420">
                 <plugin id="Tilemap" />
                 <behaviors>
                     <behavior-type name="Solid" sid="439416528590836">
