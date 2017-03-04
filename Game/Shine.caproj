@@ -901,8 +901,6 @@
     </global-instances>
     <sounds-folder />
     <music-folder>
-        <file name="Menu - Kevin MacLeod - Zanzibar.ogg" />
-        <file name="Jogo - Kevin MacLeod - Allada.ogg" />
         <file name="Menu - Kevin MacLeod - TheReveal.ogg" />
         <file name="Jogo - Kevin MacLeod - Phantasm.ogg" />
     </music-folder>
