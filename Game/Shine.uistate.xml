@@ -12,10 +12,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Level1</layout>
         <layout order="5">MENU_PRINCIPAL</layout>
-        <layout active="1" order="6">FASE_04_FUNDOPOCO</layout>
+        <layout order="6">FASE_04_FUNDOPOCO</layout>
         <layout order="7">FASE_02_TUTORIAL_FORCA</layout>
         <layout order="8">FASE_01_TUTORIAL_VIDA</layout>
         <layout order="10">FASE_03_TUTORIAL_AGILIDADE</layout>
+        <layout active="1" order="11">FASE_05_BECOSEMSAIDA</layout>
         <event-sheet order="1">Level1Events</event-sheet>
         <event-sheet order="2">_EVENTOS_JOGADOR</event-sheet>
         <event-sheet order="3">MENU_PRINCIPAL</event-sheet>
@@ -25,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
-        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
@@ -37,9 +38,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/buttons/" />
         <folder expanded="0" path="object-folder/system/" />
         <folder expanded="1" path="object-folder/cenario/" />
-        <folder expanded="1" path="object-folder/cenario/orbs/" />
-        <folder expanded="1" path="object-folder/cenario/npcs/" />
-        <folder expanded="1" path="object-folder/cenario/controle/" />
+        <folder expanded="0" path="object-folder/cenario/orbs/" />
+        <folder expanded="0" path="object-folder/cenario/npcs/" />
+        <folder expanded="0" path="object-folder/cenario/controle/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
