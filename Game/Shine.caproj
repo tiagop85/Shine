@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -947,6 +948,113 @@
                     </tile>
                 </tiles>
             </object-type>
+            <object-type name="tmFase02" sid="979814303703474">
+                <plugin id="Tilemap" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="951754589745149">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="206305473074962">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\TiledMaps\../Sprites/ELEMENTOS-FASE-1-SEM-BG.png" />
+                <tiles>
+                    <tile id="41">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="43">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="159">
+                        <collision-poly>
+                            <point x="0" y="0.125" />
+                            <point x="1" y="0.125" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="160">
+                        <collision-poly>
+                            <point x="0" y="0.140625" />
+                            <point x="1" y="0.140625" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="161">
+                        <collision-poly>
+                            <point x="0" y="0.109375" />
+                            <point x="0.515625" y="0.148438" />
+                            <point x="0.765625" y="0.304688" />
+                            <point x="0.988281" y="0.5625" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="162">
+                        <collision-poly>
+                            <point x="0.0078125" y="0.578125" />
+                            <point x="0.109375" y="0.773438" />
+                            <point x="0.140625" y="0.992188" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="166">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="168">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="186">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.992188" y="0.609375" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.492188" y="0.984375" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="187">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.148438" y="0" />
+                            <point x="0.132813" y="0.3125" />
+                            <point x="0" y="0.5625" />
+                        </collision-poly>
+                    </tile>
+                </tiles>
+            </object-type>
+            <object-type name="Level3Scene" sid="575360838983420">
+                <plugin id="Tilemap" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="439416528590836">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="741749611116619">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\ELEMENTOS-FASE-1-SEM-BG-2.png" />
+                <tiles />
+            </object-type>
         </object-folder>
         <object-type name="txTempGameOver" sid="407076942548419">
             <plugin id="Text" />
@@ -1390,6 +1498,10 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\Sprites\SHINE_INITIAL_.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="717568270216888">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\tile-bg.png" />
         </object-type>
     </object-folder>
     <families>
