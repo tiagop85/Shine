@@ -39,11 +39,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/buttons/" />
+        <folder expanded="1" path="object-folder/buttons/" />
         <folder expanded="0" path="object-folder/system/" />
         <folder expanded="1" path="object-folder/cenario/" />
-        <folder expanded="0" path="object-folder/cenario/orbs/" />
-        <folder expanded="0" path="object-folder/cenario/npcs/" />
+        <folder expanded="1" path="object-folder/cenario/orbs/" />
+        <folder expanded="1" path="object-folder/cenario/npcs/" />
         <folder expanded="0" path="object-folder/cenario/controle/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
