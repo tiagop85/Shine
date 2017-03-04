@@ -16,11 +16,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="7">FASE_02_TUTORIAL_FORCA</layout>
         <layout order="8">FASE_01_TUTORIAL_VIDA</layout>
         <layout order="10">FASE_03_TUTORIAL_AGILIDADE</layout>
+        <layout order="12">MENU_CREDITOS</layout>
+        <layout order="13">MENU_CONFIGURACOES</layout>
+        <layout order="14">SPLASH</layout>
         <event-sheet order="1">Level1Events</event-sheet>
         <event-sheet order="2">_EVENTOS_JOGADOR</event-sheet>
         <event-sheet order="3">MENU_PRINCIPAL</event-sheet>
         <event-sheet order="4">EVENTOS_MUSICA</event-sheet>
         <event-sheet order="9">EVENTOS_GAME_GLOBAL</event-sheet>
+        <event-sheet order="11">CABELO</event-sheet>
+        <event-sheet order="15">FASE_04_FUNDOPOCO</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -79,5 +84,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btMenuPrincipal_jogo/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/spConfiguracao/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
     </folders-expanded>
 </c2uistate>

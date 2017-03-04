@@ -95,7 +95,11 @@
                             <param id="0" name="Instance variable">bateu</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-8" name="Set angle" sid="604480471032622" type="spPassaro">
+                            <param id="0" name="Angle">45</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="176711252043184">
                             <conditions>
@@ -164,6 +168,9 @@
                         <action id="-13" name="Set boolean" sid="445852823606964" type="spPassaro">
                             <param id="0" name="Instance variable">bateu</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="548785114939185" type="spPassaro">
+                            <param id="0" name="Angle">0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -241,6 +248,9 @@
                             <param id="1" name="Type">0</param>
                             <param id="2" name="Tag">&quot;VOAR_CIMA&quot;</param>
                         </action>
+                        <action id="-8" name="Set angle" sid="764457673625188" type="spPassaro">
+                            <param id="0" name="Angle">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="371033748805181">
@@ -257,6 +267,9 @@
                             <param id="0" name="Duration">0.5+random(0.30)</param>
                             <param id="1" name="Type">0</param>
                             <param id="2" name="Tag">&quot;VOAR_BAIXO&quot;</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="704488015028138" type="spPassaro">
+                            <param id="0" name="Angle">45</param>
                         </action>
                     </actions>
                 </event-block>

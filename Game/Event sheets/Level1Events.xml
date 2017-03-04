@@ -5,5 +5,11 @@
     <events>
         <include>EVENTOS_GAME_GLOBAL</include>
         <include>_EVENTOS_JOGADOR</include>
+        <event-block sid="791604424103297">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="525995832330866" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>
