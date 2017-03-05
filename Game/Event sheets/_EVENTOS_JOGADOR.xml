@@ -99,6 +99,10 @@
                         <action behavior="Platform" id="1" name="Set max speed" sid="183539827874859" type="Player">
                             <param id="0" name="Max Speed">350</param>
                         </action>
+                        <action id="-10" name="Set value" sid="635699573554238" type="Player">
+                            <param id="0" name="Instance variable">CORRER</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="794996630792971">
@@ -107,12 +111,7 @@
                             <param id="0" name="Key">32 (Space)</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="635699573554238" type="Player">
-                            <param id="0" name="Instance variable">CORRER</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="544462017520105">
                     <conditions>

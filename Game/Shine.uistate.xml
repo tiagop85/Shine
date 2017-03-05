@@ -12,6 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout active="1" order="1">FASE_06_LUZFIMTUNEL</layout>
         <event-sheet order="0">FASE_06_LUZFIMTUNEL</event-sheet>
+        <event-sheet order="2">Player_Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,11 +26,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/buttons/" />
+        <folder expanded="0" path="object-folder/buttons/" />
         <folder expanded="0" path="object-folder/system/" />
         <folder expanded="1" path="object-folder/cenario/" />
-        <folder expanded="1" path="object-folder/cenario/orbs/" />
-        <folder expanded="1" path="object-folder/cenario/npcs/" />
+        <folder expanded="0" path="object-folder/cenario/orbs/" />
+        <folder expanded="0" path="object-folder/cenario/npcs/" />
         <folder expanded="0" path="object-folder/cenario/controle/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />

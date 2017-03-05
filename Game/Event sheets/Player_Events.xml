@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Player_Events</name>
+    <events>
+        <variable constant="0" name="isPushing" sid="328906025422721" static="0" type="number">0</variable>
+        <variable constant="0" name="isFalling" sid="607147654024448" static="0" type="number">0</variable>
+        <variable constant="0" name="level" sid="222716677499555" static="0" type="text"></variable>
+        <event-group description="" sid="166696419865158" title="Init">
+            <sub-events>
+                <event-block sid="581339416366175">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="499021734920829" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="891539040281361" type="System">
+                            <param id="0" name="Variable">level</param>
+                            <param id="1" name="Value">LayoutName</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="515716571642400">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="525982417246715" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="112971306492727" type="Particles">
+                    <param id="0" name="Object">spJogador</param>
+                    <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="853164895480604" title="Controles">
+            <sub-events>
+                <event-block sid="463908279828026">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="308031361378805" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="837522938976641" type="spJogador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="472970378999902" type="Particles">
+                            <param id="0" name="Angle">45</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="158088354805005">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="224715506630979" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="596508705817146" type="spJogador">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="655988510163495" type="Particles">
+                            <param id="0" name="Angle">135</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="836231895432203" title="Animações">
+            <sub-events>
+                <event-block sid="363991345822792">
+                    <conditions>
+                        <condition behavior="Platform" id="4" name="Is falling" sid="174759447172694" type="spJogador" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="992553432600280">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="771047193635712" type="System">
+                                    <param id="0" name="Variable">level</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FASE_04_FUNDOPOCO&quot;</param>
+                                </condition>
+                                <condition id="9" inverted="1" name="Is overlapping at offset" sid="318811790782594" type="spJogador">
+                                    <param id="0" name="Object">tmFase01</param>
+                                    <param id="1" name="Offset X">0</param>
+                                    <param id="2" name="Offset Y">64</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="542231668008018" type="System">
+                                    <param id="0" name="Variable">isFalling</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="432450240170716">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="411791891154969" type="System">
+                                    <param id="0" name="Variable">level</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FASE_05_BECOSEMSAIDA&quot;</param>
+                                </condition>
+                                <condition id="9" inverted="1" name="Is overlapping at offset" sid="189520509964854" type="spJogador">
+                                    <param id="0" name="Object">tmFase02</param>
+                                    <param id="1" name="Offset X">0</param>
+                                    <param id="2" name="Offset Y">64</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="539074077628219" type="System">
+                                    <param id="0" name="Variable">isFalling</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="823914644116709">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="847362262198469" type="System">
+                                    <param id="0" name="Variable">level</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FASE_06_LUZFIMTUNEL&quot;</param>
+                                </condition>
+                                <condition id="9" inverted="1" name="Is overlapping at offset" sid="694753669336056" type="spJogador">
+                                    <param id="0" name="Object">tmFase03</param>
+                                    <param id="1" name="Offset X">0</param>
+                                    <param id="2" name="Offset Y">64</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="260030797886069" type="System">
+                                    <param id="0" name="Variable">isFalling</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="235728957915878">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="347690044944732" type="System">
+                                    <param id="0" name="Variable">isFalling</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="869124571845971" type="spJogador">
+                                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="399879481718797">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="934554138493824" type="spJogador" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="651469751909540" type="System">
+                            <param id="0" name="Variable">isFalling</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="699357797062753">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="356559888181424" type="spJogador" />
+                                <condition id="-14" name="Compare variable" sid="194022247245627" type="System">
+                                    <param id="0" name="Variable">isPushing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="711237926647674" type="spJogador">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="489200465548445">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="630985287210994" type="spJogador" />
+                                <condition id="-14" name="Compare variable" sid="763205760175287" type="System">
+                                    <param id="0" name="Variable">isPushing</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="552489491853662" type="spJogador">
+                                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="153415310120971">
+                    <conditions>
+                        <condition behavior="Platform" id="3" name="Is jumping" sid="173709499458954" type="spJogador" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="215618898793656" type="spJogador">
+                            <param id="0" name="Animation">&quot;Jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="307561164031762">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="560388453376007" type="spOrbForca">
+                    <param id="0" name="Instance variable">tempo</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="566796597312659">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="167200056247418" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="141247153563798" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="205267090941965">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="200636297214397" type="spJogador">
+                                    <param id="0" name="Object">spBlocoPesado</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="750292371962634" type="spJogador">
+                                    <param id="0" name="Animation">&quot;Push&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="913591847200755" type="System">
+                                    <param id="0" name="Variable">isPushing</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="734608476176134">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="719642680219029" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="691372160152537" type="System">
+                            <param id="0" name="Variable">isPushing</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="832028252027895">
+            <conditions>
+                <condition id="-22" name="Else" sid="169197381488234" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="737159795290906" type="System">
+                    <param id="0" name="Variable">isPushing</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

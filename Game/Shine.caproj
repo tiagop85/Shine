@@ -724,14 +724,157 @@
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459429964536469" speed="5">
-                            <frame duration="1" hotspotX="0.495413" hotspotY="0.504587">
+                        <animation framecount="3" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="459429964536469" speed="2">
+                            <frame duration="1" hotspotX="0.495495" hotspotY="0.495495" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\shine_asset_idle.png">
+                                <image-point name="Cabelo" x="0.423423" y="0.045045" />
                                 <collision-poly>
-                                    <point x="0.266055" y="0" />
-                                    <point x="0.715596" y="0" />
-                                    <point x="0.706422" y="1" />
-                                    <point x="0.256881" y="1" />
+                                    <point x="0.252252" y="0.018018" />
+                                    <point x="0.675676" y="0" />
+                                    <point x="0.684685" y="1" />
+                                    <point x="0.261261" y="1" />
                                 </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.495495" hotspotY="0.495495">
+                                <image-point name="Cabelo" x="0.423423" y="0.045045" />
+                                <collision-poly>
+                                    <point x="0.252252" y="0.018018" />
+                                    <point x="0.675676" y="0" />
+                                    <point x="0.684685" y="1" />
+                                    <point x="0.261261" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.495495" hotspotY="0.495495">
+                                <image-point name="Cabelo" x="0.423423" y="0.045045" />
+                                <collision-poly>
+                                    <point x="0.252252" y="0.018018" />
+                                    <point x="0.675676" y="0" />
+                                    <point x="0.684685" y="1" />
+                                    <point x="0.261261" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="18" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="420860165300905" speed="24">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-10.png">
+                                <image-point name="Cabelo" x="0.763889" y="0.047619" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.509615" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-02.png">
+                                <image-point name="Cabelo" x="0.760563" y="0.0480769" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.492958" hotspotY="0.504762" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-03.png">
+                                <image-point name="Cabelo" x="0.760563" y="0.047619" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.485714" hotspotY="0.5" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-04.png">
+                                <image-point name="Cabelo" x="0.757143" y="0.0471698" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-05.png">
+                                <image-point name="Cabelo" x="0.759259" y="0.0471698" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.48" hotspotY="0.504673" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-06.png">
+                                <image-point name="Cabelo" x="0.76" y="0.046729" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.473684" hotspotY="0.504673" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-07.png">
+                                <image-point name="Cabelo" x="0.77193" y="0.046729" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.483333" hotspotY="0.5" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-08.png">
+                                <image-point name="Cabelo" x="0.766667" y="0.0471698" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-09.png">
+                                <image-point name="Cabelo" x="0.763889" y="0.047619" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504762" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-11.png">
+                                <image-point name="Cabelo" x="0.763889" y="0.047619" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.485714" hotspotY="0.5" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-12.png">
+                                <image-point name="Cabelo" x="0.757143" y="0.0471698" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-13.png">
+                                <image-point name="Cabelo" x="0.765625" y="0.0471698" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-14.png">
+                                <image-point name="Cabelo" x="0.76" y="0.0471698" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504673" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-15.png">
+                                <image-point name="Cabelo" x="0.76" y="0.046729" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.473684" hotspotY="0.504673" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-16.png">
+                                <image-point name="Cabelo" x="0.77193" y="0.046729" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.47541" hotspotY="0.504673" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-17.png">
+                                <image-point name="Cabelo" x="0.770492" y="0.046729" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-18.png">
+                                <image-point name="Cabelo" x="0.763889" y="0.0471698" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.507042" hotspotY="0.509615" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Run\shine_asset_run-19.png">
+                                <image-point name="Cabelo" x="0.760563" y="0.0480769" />
+                            </frame>
+                        </animation>
+                        <animation framecount="3" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="298673242171050" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.594595" y="0.0196078" />
+                                <collision-poly>
+                                    <point x="0.222973" y="0" />
+                                    <point x="0.702702" y="0" />
+                                    <point x="0.702702" y="1" />
+                                    <point x="0.222973" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.594595" y="0.0196078" />
+                                <collision-poly>
+                                    <point x="0.222973" y="0" />
+                                    <point x="0.702702" y="0" />
+                                    <point x="0.702702" y="1" />
+                                    <point x="0.222973" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.594595" y="0.0196078" />
+                                <collision-poly>
+                                    <point x="0.222973" y="0" />
+                                    <point x="0.702702" y="0" />
+                                    <point x="0.702702" y="1" />
+                                    <point x="0.222973" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="872473174746931" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\shine_asset_fall.png">
+                                <image-point name="Cabelo" x="0.426471" y="0.0458716" />
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="Landed" pingpong="0" repeatcount="1" repeatto="0" sid="654284593697532" speed="5">
+                            <frame duration="1" hotspotX="0.844595" hotspotY="1.22549">
+                                <image-point name="Cabelo" x="0.608108" y="0.0294118" />
+                                <collision-poly>
+                                    <point x="0.22973" y="0" />
+                                    <point x="0.689189" y="0" />
+                                    <point x="0.689189" y="1" />
+                                    <point x="0.22973" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="7" loop="1" name="Push" pingpong="0" repeatcount="1" repeatto="0" sid="636225851431294" speed="12">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\shine_asset_push.png">
+                                <image-point name="Cabelo" x="0.763158" y="0.0277778" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.710526" y="0.0833333" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.75" y="0.12963" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.776316" y="0.166667" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.763158" y="0.101852" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.75" y="0.0833333" />
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <image-point name="Cabelo" x="0.763158" y="0.0277778" />
                             </frame>
                         </animation>
                     </animation-folder>
@@ -1061,6 +1204,10 @@
                 </behaviors>
                 <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\ELEMENTOS-FASE-1-SEM-BG-2.png" />
                 <tiles />
+            </object-type>
+            <object-type name="TiledBackground" sid="717568270216888">
+                <plugin id="TiledBg" />
+                <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\tile-bg.png" />
             </object-type>
         </object-folder>
         <object-type name="txTempGameOver" sid="407076942548419">
@@ -1506,10 +1653,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="717568270216888">
-            <plugin id="TiledBg" />
-            <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\tile-bg.png" />
-        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">
@@ -1567,6 +1710,7 @@
         <event-sheet>_TESTE.xml</event-sheet>
         <event-sheet>CABELO.xml</event-sheet>
         <event-sheet>Level1Events.xml</event-sheet>
+        <event-sheet>Player_Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="187" />

@@ -327,11 +327,11 @@
                         <x>37</x>
                         <y>1895</y>
                         <z>0</z>
-                        <width>94.270271301</width>
-                        <height>64</height>
+                        <width>96</width>
+                        <height>65.174308777</height>
                         <depth>0</depth>
-                        <hotspotX>0.495412856</hotspotX>
-                        <hotspotY>0.504587173</hotspotY>
+                        <hotspotX>0.495495498</hotspotX>
+                        <hotspotY>0.495495498</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
