@@ -10,26 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Level1</layout>
-        <layout order="5">MENU_PRINCIPAL</layout>
-        <layout order="6">FASE_04_FUNDOPOCO</layout>
-        <layout order="7">FASE_02_TUTORIAL_FORCA</layout>
-        <layout order="8">FASE_01_TUTORIAL_VIDA</layout>
-        <layout order="10">FASE_03_TUTORIAL_AGILIDADE</layout>
-        <layout order="12">MENU_CREDITOS</layout>
-        <layout order="13">MENU_CONFIGURACOES</layout>
-        <layout order="14">SPLASH</layout>
-        <layout active="1" order="16">FASE_06_LUZFIMTUNEL</layout>
-        <layout active="1" order="18">FASE_05_BECOSEMSAIDA</layout>
-        <event-sheet order="1">Level1Events</event-sheet>
-        <event-sheet order="2">_EVENTOS_JOGADOR</event-sheet>
-        <event-sheet order="3">MENU_PRINCIPAL</event-sheet>
-        <event-sheet order="4">EVENTOS_MUSICA</event-sheet>
-        <event-sheet order="9">EVENTOS_GAME_GLOBAL</event-sheet>
-        <event-sheet order="11">CABELO</event-sheet>
-        <event-sheet order="15">FASE_04_FUNDOPOCO</event-sheet>
-        <event-sheet order="17">FASE_05_BECOSEMSAIDA</event-sheet>
-        <event-sheet order="19">FASE_06_LUZFIMTUNEL</event-sheet>
+        <layout active="1" order="1">FASE_06_LUZFIMTUNEL</layout>
+        <event-sheet order="0">FASE_06_LUZFIMTUNEL</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

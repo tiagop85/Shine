@@ -725,7 +725,14 @@
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459429964536469" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.504587" />
+                            <frame duration="1" hotspotX="0.495413" hotspotY="0.504587">
+                                <collision-poly>
+                                    <point x="0.266055" y="0" />
+                                    <point x="0.715596" y="0" />
+                                    <point x="0.706422" y="1" />
+                                    <point x="0.256881" y="1" />
+                                </collision-poly>
+                            </frame>
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -1562,13 +1569,13 @@
         <event-sheet>Level1Events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="154" />
-        <global-instance type="Touch" uid="155">
+        <global-instance type="Keyboard" uid="187" />
+        <global-instance type="Touch" uid="188">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="156">
+        <global-instance type="Audio" uid="189">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
