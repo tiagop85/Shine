@@ -19,7 +19,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="12">MENU_CREDITOS</layout>
         <layout order="13">MENU_CONFIGURACOES</layout>
         <layout order="14">SPLASH</layout>
-        <layout order="16">FASE_06_LUZFIMTUNEL</layout>
+        <layout active="1" order="16">FASE_06_LUZFIMTUNEL</layout>
         <layout active="1" order="18">FASE_05_BECOSEMSAIDA</layout>
         <event-sheet order="1">Level1Events</event-sheet>
         <event-sheet order="2">_EVENTOS_JOGADOR</event-sheet>
