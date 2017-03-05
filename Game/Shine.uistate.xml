@@ -12,29 +12,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="1">FASE_06_LUZFIMTUNEL</layout>
         <layout order="3">FASE_04_FUNDOPOCO</layout>
-        <layout active="1" order="5">FASE_05_BECOSEMSAIDA</layout>
-        <layout order="18">_EVENTOS_JOGADOR</layout>
-        <layout order="23">Level1</layout>
-        <layout order="24">CABELO</layout>
+        <layout order="5">FASE_05_BECOSEMSAIDA</layout>
         <event-sheet order="0">FASE_06_LUZFIMTUNEL</event-sheet>
         <event-sheet order="2">Player_Events</event-sheet>
         <event-sheet order="4">FASE_04_FUNDOPOCO</event-sheet>
         <event-sheet order="6">FASE_05_BECOSEMSAIDA</event-sheet>
         <event-sheet order="7">EVENTOS_GAME_GLOBAL</event-sheet>
-        <event-sheet order="8">CABELO</event-sheet>
-        <event-sheet order="9">_TESTE</event-sheet>
-        <event-sheet order="10">_MENU_LEVEL_SELECT</event-sheet>
-        <event-sheet order="11">_EVENTOS_JOGADOR</event-sheet>
-        <event-sheet order="12">Level1Events</event-sheet>
-        <event-sheet order="13">EVENTOS_NAVEGACAO</event-sheet>
-        <event-sheet order="14">EVENTOS_MUSICA</event-sheet>
-        <event-sheet order="15">FASE_03_TUTORIAL_AGILIDADE</event-sheet>
-        <event-sheet order="16">FASE_02_TUTORIAL_FORCA</event-sheet>
-        <event-sheet order="17">FASE_01_TUTORIAL_VIDA</event-sheet>
-        <event-sheet order="19">MENU_PRINCIPAL</event-sheet>
-        <event-sheet order="20">MENU_CREDITOS</event-sheet>
-        <event-sheet order="21">MENU_CONFIGURACOES</event-sheet>
-        <event-sheet order="22">SPLASH</event-sheet>
+        <event-sheet order="8">_MENU_LEVEL_SELECT</event-sheet>
+        <event-sheet order="9">_EVENTOS_JOGADOR</event-sheet>
+        <event-sheet order="10">EVENTOS_NAVEGACAO</event-sheet>
+        <event-sheet order="11">EVENTOS_MUSICA</event-sheet>
+        <event-sheet order="12">FASE_03_TUTORIAL_AGILIDADE</event-sheet>
+        <event-sheet order="13">FASE_02_TUTORIAL_FORCA</event-sheet>
+        <event-sheet active="1" order="14">FASE_01_TUTORIAL_VIDA</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -47,10 +37,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="fmSoundOnOff" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="0" path="object-folder/buttons/" />
         <folder expanded="0" path="object-folder/system/" />
-        <folder expanded="1" path="object-folder/cenario/" />
+        <folder expanded="0" path="object-folder/cenario/" />
         <folder expanded="0" path="object-folder/cenario/orbs/" />
         <folder expanded="0" path="object-folder/cenario/npcs/" />
         <folder expanded="0" path="object-folder/cenario/controle/" />

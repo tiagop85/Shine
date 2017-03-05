@@ -1688,8 +1688,6 @@
         <layout>FASE_04_FUNDOPOCO.xml</layout>
         <layout>FASE_05_BECOSEMSAIDA.xml</layout>
         <layout>FASE_06_LUZFIMTUNEL.xml</layout>
-        <layout>CABELO.xml</layout>
-        <layout>Level1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>EVENTOS_GAME_GLOBAL.xml</event-sheet>
@@ -1708,8 +1706,6 @@
         <event-sheet>EVENTOS_MUSICA.xml</event-sheet>
         <event-sheet>EVENTOS_NAVEGACAO.xml</event-sheet>
         <event-sheet>_TESTE.xml</event-sheet>
-        <event-sheet>CABELO.xml</event-sheet>
-        <event-sheet>Level1Events.xml</event-sheet>
         <event-sheet>Player_Events.xml</event-sheet>
     </event-folder>
     <global-instances>

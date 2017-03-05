@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player_Events</name>
     <events>
-        <include>CABELO</include>
         <variable constant="0" name="isPushing" sid="328906025422721" static="0" type="number">0</variable>
         <variable constant="0" name="isFalling" sid="607147654024448" static="0" type="number">0</variable>
         <variable constant="0" name="level" sid="222716677499555" static="0" type="text"></variable>
