@@ -18,8 +18,8 @@
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0.1</x>
+                <y>0.1</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -41,7 +41,7 @@
                         <y>0</y>
                         <z>0</z>
                         <width>1664</width>
-                        <height>1440</height>
+                        <height>750</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -1077,7 +1077,7 @@
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
+                        <font>Arial,-37,400,0</font>
                         <color>255,153,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -1088,11 +1088,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>428</x>
-                        <y>268</y>
+                        <x>109.5</x>
+                        <y>55</y>
                         <z>0</z>
-                        <width>1161</width>
-                        <height>87</height>
+                        <width>236</width>
+                        <height>107</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
