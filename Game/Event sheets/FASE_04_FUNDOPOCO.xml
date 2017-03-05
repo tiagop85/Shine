@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>FASE_04_FUNDOPOCO</name>
     <events>
+        <include>Player_Events</include>
         <include>EVENTOS_GAME_GLOBAL</include>
         <include>EVENTOS_MUSICA</include>
         <include>EVENTOS_NAVEGACAO</include>

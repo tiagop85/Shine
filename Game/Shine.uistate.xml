@@ -10,9 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">FASE_06_LUZFIMTUNEL</layout>
+        <layout order="1">FASE_06_LUZFIMTUNEL</layout>
+        <layout order="3">FASE_04_FUNDOPOCO</layout>
+        <layout order="5">FASE_05_BECOSEMSAIDA</layout>
         <event-sheet order="0">FASE_06_LUZFIMTUNEL</event-sheet>
         <event-sheet order="2">Player_Events</event-sheet>
+        <event-sheet order="4">FASE_04_FUNDOPOCO</event-sheet>
+        <event-sheet active="1" order="6">FASE_05_BECOSEMSAIDA</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
