@@ -12,7 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Level1</layout>
         <layout order="5">MENU_PRINCIPAL</layout>
-        <layout active="1" order="6">FASE_04_FUNDOPOCO</layout>
+        <layout order="6">FASE_04_FUNDOPOCO</layout>
         <layout order="7">FASE_02_TUTORIAL_FORCA</layout>
         <layout order="8">FASE_01_TUTORIAL_VIDA</layout>
         <layout order="10">FASE_03_TUTORIAL_AGILIDADE</layout>
@@ -20,7 +20,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="13">MENU_CONFIGURACOES</layout>
         <layout order="14">SPLASH</layout>
         <layout order="16">FASE_06_LUZFIMTUNEL</layout>
-        <layout order="18">FASE_05_BECOSEMSAIDA</layout>
+        <layout active="1" order="18">FASE_05_BECOSEMSAIDA</layout>
         <event-sheet order="1">Level1Events</event-sheet>
         <event-sheet order="2">_EVENTOS_JOGADOR</event-sheet>
         <event-sheet order="3">MENU_PRINCIPAL</event-sheet>
