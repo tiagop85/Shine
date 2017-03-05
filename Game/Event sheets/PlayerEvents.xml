@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Player_Events</name>
+    <name>PlayerEvents</name>
     <events>
         <variable constant="0" name="isPushing" sid="328906025422721" static="0" type="number">0</variable>
         <variable constant="0" name="isFalling" sid="607147654024448" static="0" type="number">0</variable>
@@ -16,6 +16,17 @@
                         <action id="-9" name="Set value" sid="891539040281361" type="System">
                             <param id="0" name="Variable">level</param>
                             <param id="1" name="Value">LayoutName</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="211236611567022">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="710739853723806" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="991460518619769" type="Particles">
+                            <param id="0" name="Object">spJogador</param>
+                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
                         </action>
                     </actions>
                 </event-block>

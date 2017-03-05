@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>_MENU_LEVEL_SELECT</name>
     <events>
-        <include>EVENTOS_MUSICA</include>
-        <include>EVENTOS_NAVEGACAO</include>
+        <include>MusicEvents</include>
+        <include>NavigationEvents</include>
         <event-block sid="531609059662195">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="441408812369160" type="System" />

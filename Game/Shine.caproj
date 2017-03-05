@@ -39,7 +39,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>SPLASH</first-layout>
+    <first-layout>Splash</first-layout>
     <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -1675,38 +1675,50 @@
         </family>
     </families>
     <layout-folder>
+        <layout-folder name="Levels">
+            <layout>Lv1_FundoDoPoço.xml</layout>
+            <layout>Lv2_BecoSemSaida.xml</layout>
+            <layout>Lv3_LuzNoFimDoTunel.xml</layout>
+        </layout-folder>
+        <layout-folder name="Tutoriais">
+            <layout>FASE_01_TUTORIAL_VIDA.xml</layout>
+            <layout>FASE_02_TUTORIAL_FORCA.xml</layout>
+            <layout>FASE_03_TUTORIAL_AGILIDADE.xml</layout>
+        </layout-folder>
+        <layout-folder name="Menus">
+            <layout>Splash.xml</layout>
+            <layout>MainMenu.xml</layout>
+            <layout>ConfigMenu.xml</layout>
+            <layout>CreditsMenu.xml</layout>
+        </layout-folder>
         <layout>_TESTE.xml</layout>
         <layout>_EVENTOS_JOGADOR.xml</layout>
         <layout>_MENU_LEVEL_SELECT.xml</layout>
-        <layout>SPLASH.xml</layout>
-        <layout>MENU_PRINCIPAL.xml</layout>
-        <layout>MENU_CONFIGURACOES.xml</layout>
-        <layout>MENU_CREDITOS.xml</layout>
-        <layout>FASE_01_TUTORIAL_VIDA.xml</layout>
-        <layout>FASE_02_TUTORIAL_FORCA.xml</layout>
-        <layout>FASE_03_TUTORIAL_AGILIDADE.xml</layout>
-        <layout>FASE_04_FUNDOPOCO.xml</layout>
-        <layout>FASE_05_BECOSEMSAIDA.xml</layout>
-        <layout>FASE_06_LUZFIMTUNEL.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>EVENTOS_GAME_GLOBAL.xml</event-sheet>
+        <event-folder name="Tutoriais">
+            <event-sheet>FASE_01_TUTORIAL_VIDA.xml</event-sheet>
+            <event-sheet>FASE_02_TUTORIAL_FORCA.xml</event-sheet>
+            <event-sheet>FASE_03_TUTORIAL_AGILIDADE.xml</event-sheet>
+        </event-folder>
+        <event-folder name="Levels">
+            <event-sheet>Lv1Events.xml</event-sheet>
+            <event-sheet>Lv2Events.xml</event-sheet>
+            <event-sheet>Lvl3Events.xml</event-sheet>
+        </event-folder>
+        <event-folder name="Menus">
+            <event-sheet>ConfigMenuEvents.xml</event-sheet>
+            <event-sheet>CreditsMenuEvents.xml</event-sheet>
+            <event-sheet>MainMenuEvents.xml</event-sheet>
+            <event-sheet>SplasEvents.xml</event-sheet>
+            <event-sheet>_MENU_LEVEL_SELECT.xml</event-sheet>
+        </event-folder>
+        <event-sheet>GlobalEvents.xml</event-sheet>
         <event-sheet>_EVENTOS_JOGADOR.xml</event-sheet>
-        <event-sheet>FASE_03_TUTORIAL_AGILIDADE.xml</event-sheet>
-        <event-sheet>FASE_02_TUTORIAL_FORCA.xml</event-sheet>
-        <event-sheet>_MENU_LEVEL_SELECT.xml</event-sheet>
-        <event-sheet>MENU_PRINCIPAL.xml</event-sheet>
-        <event-sheet>FASE_01_TUTORIAL_VIDA.xml</event-sheet>
-        <event-sheet>FASE_04_FUNDOPOCO.xml</event-sheet>
-        <event-sheet>FASE_05_BECOSEMSAIDA.xml</event-sheet>
-        <event-sheet>FASE_06_LUZFIMTUNEL.xml</event-sheet>
-        <event-sheet>MENU_CONFIGURACOES.xml</event-sheet>
-        <event-sheet>MENU_CREDITOS.xml</event-sheet>
-        <event-sheet>SPLASH.xml</event-sheet>
-        <event-sheet>EVENTOS_MUSICA.xml</event-sheet>
-        <event-sheet>EVENTOS_NAVEGACAO.xml</event-sheet>
+        <event-sheet>MusicEvents.xml</event-sheet>
+        <event-sheet>NavigationEvents.xml</event-sheet>
         <event-sheet>_TESTE.xml</event-sheet>
-        <event-sheet>Player_Events.xml</event-sheet>
+        <event-sheet>PlayerEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="187" />

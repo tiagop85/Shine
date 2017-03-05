@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>_TESTE</name>
     <events>
-        <include>EVENTOS_GAME_GLOBAL</include>
-        <include>EVENTOS_MUSICA</include>
-        <include>EVENTOS_NAVEGACAO</include>
+        <include>GlobalEvents</include>
+        <include>MusicEvents</include>
+        <include>NavigationEvents</include>
     </events>
 </c2eventsheet>

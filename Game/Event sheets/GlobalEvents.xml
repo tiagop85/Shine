@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GlobalEvents</name>
+    <events>
+        <variable constant="1" name="CT_VEL_PASSARO_X_A" sid="267125588878804" static="0" type="number">400</variable>
+        <variable constant="1" name="CT_VEL_PASSARO_X_B" sid="190611704130018" static="0" type="number">200</variable>
+        <variable constant="1" name="CT_VEL_PASSARO_Y_A" sid="838562660175407" static="0" type="number">400</variable>
+        <variable constant="1" name="CT_VEL_PASSARO_Y_B" sid="677508196421749" static="0" type="number">150</variable>
+        <variable constant="1" name="CT_TEMPO_PASSARO_CRIACAO" sid="336557428524957" static="0" type="number">2</variable>
+        <variable constant="1" name="CT_OPACIDADE_DELTA" sid="824493558812994" static="0" type="number">10</variable>
+        <variable constant="0" name="TEMPO_PASSARO_DELTA" sid="462446907674713" static="0" type="number">0.1</variable>
+        <variable constant="1" name="CT_TEMPO_PASSARO_DELTA" sid="760678436164550" static="0" type="number">1.5</variable>
+        <variable constant="1" name="CT_MAX_TEMPO_PASSARO_DELTA" sid="930183153686915" static="0" type="number">1.5</variable>
+        <variable constant="0" name="STATUS_JOGO" sid="822400607069572" static="0" type="number">0</variable>
+        <variable constant="1" name="CT_STATUS_GAME_STARTED" sid="966405773029048" static="0" type="number">1</variable>
+        <variable constant="1" name="CT_STATUS_GAME_OVER" sid="611864205139506" static="0" type="number">2</variable>
+        <variable constant="1" name="CT_SPAWN_ORB_VIDA" sid="933659900403555" static="0" type="number">5</variable>
+        <variable constant="1" name="CT_SPAWN_ORB_FORCA" sid="748907906314745" static="0" type="number">7</variable>
+        <variable constant="1" name="CT_TMP_EFEITO_ORB_FORCA" sid="289420163120827" static="0" type="number">5</variable>
+        <variable constant="0" name="CT_PLAYER_VELOCIDADE_NORMAL" sid="754391521725532" static="0" type="number">330</variable>
+        <variable constant="0" name="CT_PLAYER_VELOCIDADE_TURBO" sid="422042942587460" static="0" type="number">600</variable>
+        <variable constant="1" name="CT_SPAWN_ORB_AGILIDADE" sid="496823605173277" static="0" type="number">7</variable>
+        <variable constant="1" name="CT_TMP_EFEITO_ORB_AGILIDADE" sid="772652975149873" static="0" type="number">5</variable>
+        <comment>&gt; Inicialização de variáveis</comment>
+        <event-block sid="474046295914867">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="851583563433726" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="726888635569807" type="System">
+                    <param id="0" name="Variable">STATUS_JOGO</param>
+                    <param id="1" name="Value">CT_STATUS_GAME_STARTED</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="370786895849178" type="System">
+                    <param id="0" name="Time scale">1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="718367522100255" type="spJogador">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="385730081063111" type="spSombra">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="0" name="Set text" sid="254567630009300" type="txTempLife">
+                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>&gt; Spawn de pássaros - a Idéia é que os pássaros surjam mais rápido a cada vez que a vida é diminuída</comment>
+        <event-group description="" sid="349927752212866" title="Pássaros">
+            <sub-events>
+                <comment>&gt; Spawn de pássaro</comment>
+                <event-block sid="451843014420360">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="896096331987683" type="System">
+                            <param id="0" name="Interval (seconds)">2-TEMPO_PASSARO_DELTA</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="912100686971905" type="System">
+                            <param id="0" name="Variable">STATUS_JOGO</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CT_STATUS_GAME_STARTED</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="277890450165296" type="System">
+                            <param id="0" name="Object to create">spPassaro</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="280645666729508" type="spPassaro">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Bullet_x" id="0" name="Set speed" sid="706510476423379" type="spPassaro">
+                            <param id="0" name="Speed">CT_VEL_PASSARO_X_A</param>
+                        </action>
+                        <action behavior="Bullet_x" id="5" name="Set enabled" sid="874455116861597" type="spPassaro">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="613997734461942" type="spPassaro">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Bullet_y" id="0" name="Set speed" sid="461291038385976" type="spPassaro">
+                            <param id="0" name="Speed">CT_VEL_PASSARO_Y_A</param>
+                        </action>
+                        <action behavior="Bullet_y" id="5" name="Set enabled" sid="951535404555375" type="spPassaro">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Procurar Player</comment>
+                <event-block sid="466204086589779">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="437706052029675" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="604480471032622" type="spPassaro">
+                            <param id="0" name="Angle">45</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="176711252043184">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="112555432306391" type="spPassaro">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">spJogador.X -10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="167666664950733" type="spPassaro">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="498607281354286">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="586633522776807" type="spPassaro">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">spJogador.X + 10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="412006562790705" type="spPassaro">
+                                    <param id="0" name="Angle">-180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="500229572540252">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="689175687605472" type="spPassaro">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">spJogador.Y -10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="528377323968404" type="spPassaro">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="102307658985463">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="356108324676139" type="spPassaro">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">spJogador.Y -10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="445360661685888" type="spPassaro">
+                                    <param id="0" name="Angle">-90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="844412013525307">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="511267781372277" type="spPassaro">
+                            <param id="0" name="Object">spJogador</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="765677147482565" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="445852823606964" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="548785114939185" type="spPassaro">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>&gt; Delta Pássaro: diminuir tempo de spawn dos pássaros</comment>
+                        <event-block sid="805605700979823">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="644373940504955" type="System">
+                                    <param id="0" name="Variable">TEMPO_PASSARO_DELTA</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">CT_MAX_TEMPO_PASSARO_DELTA</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="705217291873961" type="System">
+                                    <param id="0" name="Variable">TEMPO_PASSARO_DELTA</param>
+                                    <param id="1" name="Value">TEMPO_PASSARO_DELTA * CT_TEMPO_PASSARO_DELTA</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>&gt; Levantar vôo</comment>
+                <event-block sid="969036929690090">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="994015776385303" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="468260017608003" type="spPassaro">
+                            <param id="0" name="Instance variable">retornando</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="210463395938290" type="spPassaro">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="871541480506534" type="spPassaro">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="737650168771692" type="spPassaro">
+                            <param id="0" name="Instance variable">retornando</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet_x" id="0" name="Set speed" sid="751019199791931" type="spPassaro">
+                            <param id="0" name="Speed">CT_VEL_PASSARO_X_B</param>
+                        </action>
+                        <action behavior="Bullet_y" id="0" name="Set speed" sid="936683636742928" type="spPassaro">
+                            <param id="0" name="Speed">CT_VEL_PASSARO_Y_B</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="264709872809518" type="spSombra">
+                            <param id="0" name="Opacity">Self.Opacity + CT_OPACIDADE_DELTA</param>
+                        </action>
+                        <action id="0" name="Set text" sid="181381455002647" type="txTempLife">
+                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="557450684888242" type="spPassaro">
+                            <param id="0" name="Duration">0.5+random(0.30)</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;VOAR_BAIXO&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Efeito Voo pássaro após bicar player</comment>
+                <event-block sid="423939835494226">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="718796691927590" type="spPassaro">
+                            <param id="0" name="Tag">&quot;VOAR_BAIXO&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="208739369759884" type="spPassaro">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="345416143608137" type="spPassaro">
+                            <param id="0" name="Duration">random(0.30)</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;VOAR_CIMA&quot;</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="764457673625188" type="spPassaro">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="371033748805181">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="473999772885266" type="spPassaro">
+                            <param id="0" name="Tag">&quot;VOAR_CIMA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="205935517936949" type="spPassaro">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="454663032401957" type="spPassaro">
+                            <param id="0" name="Duration">0.5+random(0.30)</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;VOAR_BAIXO&quot;</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="704488015028138" type="spPassaro">
+                            <param id="0" name="Angle">45</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="518161871464946">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="148197844900196" type="spPassaro">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">LayoutWidth</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="506799634998874" type="spPassaro">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="880474083258725" type="spPassaro" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="778049049451925" title="Controle">
+            <sub-events>
+                <comment>&gt; Game over: Bicadas</comment>
+                <event-block sid="399916653467037">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="592836531012027" type="spSombra">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="852896145657279" type="System">
+                            <param id="0" name="Variable">STATUS_JOGO</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">CT_STATUS_GAME_OVER</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="260225878755947" type="System">
+                            <param id="0" name="Variable">STATUS_JOGO</param>
+                            <param id="1" name="Value">CT_STATUS_GAME_OVER</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Game over: Caiu no chão com espinhos</comment>
+                <event-block sid="886497406283005">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="728086390038135" type="spJogador">
+                            <param id="0" name="Object">spChaoEspinhos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="581979438949787" type="System">
+                            <param id="0" name="Variable">STATUS_JOGO</param>
+                            <param id="1" name="Value">CT_STATUS_GAME_OVER</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Restart</comment>
+                <event-block sid="890262888573079">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="871540947756911" type="System">
+                            <param id="0" name="Variable">STATUS_JOGO</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CT_STATUS_GAME_OVER</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="174101423238403" type="spJogador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="306473103180879" type="txTempGameOver">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="559230232418629" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="685655418609618" type="System" />
+                        <action id="-26" name="Restart layout" sid="433071235192740" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="780480294766981" title="Orbs">
+            <sub-events>
+                <comment>&gt; Orb de Vida: restaura vida e espanta os pássaros que estiverem criados</comment>
+                <event-block sid="691352958782765">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="568194066509974" type="spOrbEnergia">
+                            <param id="0" name="Object">spJogador</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="771319049537823" type="spOrbEnergia" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="848019220755788" type="spOrbEnergia">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="532375217191732" type="System">
+                            <param id="0" name="Variable">TEMPO_PASSARO_DELTA</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="141850088686176" type="spPassaro">
+                            <param id="0" name="Instance variable">bateu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="429682653457340" type="spSombra">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="916127969618600" type="txTempLife">
+                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="593519347937914">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="734507059593821" type="System">
+                                    <param id="0" name="Count">5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>&gt; retornando a luz aos poucos</comment>
+                                <event-block sid="675883415666935">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="808322028853658" type="spSombra">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Opacity">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Set opacity" sid="394418395301306" type="spSombra">
+                                            <param id="0" name="Opacity">self.Opacity - 20</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="992438653870304" type="txTempLife">
+                                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                                        </action>
+                                        <action id="-13" name="Set boolean" sid="354544033195015" type="spPassaro">
+                                            <param id="0" name="Instance variable">bateu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="724993357783869" type="System">
+                                            <param id="0" name="Seconds">0.25</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="422952044355947">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Wait" sid="173945957024062" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="540186655879946" type="System">
+                                    <param id="0" name="Variable">TEMPO_PASSARO_DELTA</param>
+                                    <param id="1" name="Value">0.1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="616316650441671" type="spPassaro">
+                                    <param id="0" name="Instance variable">bateu</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="174271457715819" type="spSombra">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="830355931584606" type="txTempLife">
+                                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="659854202452639" type="spOrbEnergia">
+                                    <param id="0" name="Duration">CT_SPAWN_ORB_VIDA</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;SPAWN_ENERGIA&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>&gt; Orb de Vida: spawn</comment>
+                <event-block sid="179171284424537">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="599314701185256" type="spOrbEnergia">
+                            <param id="0" name="Tag">&quot;SPAWN_ENERGIA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="756343408663632" type="spOrbEnergia">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Orb de Força: faz com que o jogador possa mover objetos pesados</comment>
+                <event-block sid="905015138796805">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="224232538319899" type="spOrbForca">
+                            <param id="0" name="Object">spJogador</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="596521893720562" type="spOrbForca" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="398977285496336" type="spOrbForca">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="889196857446464" type="spOrbForca">
+                            <param id="0" name="Duration">CT_SPAWN_ORB_FORCA</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;SPAWN_FORCA&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="391057732042886" type="spOrbForca">
+                            <param id="0" name="Instance variable">tempo</param>
+                            <param id="1" name="Value">CT_TMP_EFEITO_ORB_FORCA</param>
+                        </action>
+                        <action id="0" name="Set text" sid="359612279357867" type="txTempForca">
+                            <param id="0" name="Text">&quot;Força&quot; &amp; spOrbForca.tempo</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="510279508246141" type="txTempForca">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="128232118868501" type="spOrbForca">
+                            <param id="0" name="Duration">1</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;HABILIDADE_FORCA&quot;</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="292869865370490" type="spBlocoPesado">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Orb de Força: spawn</comment>
+                <event-block sid="209654260434029">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="477754662739725" type="spOrbForca">
+                            <param id="0" name="Tag">&quot;SPAWN_FORCA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="882824131963325" type="spOrbForca">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Orb de Força: final do efeito</comment>
+                <event-block sid="926612751963997">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="162962424472198" type="spOrbForca">
+                            <param id="0" name="Tag">&quot;HABILIDADE_FORCA&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="975903689529325">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="659219367993537" type="spOrbForca">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="21" name="Set immovable" sid="957714826045361" type="spBlocoPesado">
+                                    <param id="0" name="Setting">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="542443162272843" type="txTempForca">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="480005511718314" type="txTempForca">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="171933760575842">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="612776532768448" type="spOrbForca">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="740351420467195" type="spOrbForca">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="518212412905136" type="spOrbForca">
+                                    <param id="0" name="Duration">1</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;HABILIDADE_FORCA&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="653909793260390" type="txTempForca">
+                                    <param id="0" name="Text">&quot;Força&quot; &amp; spOrbForca.tempo</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="196936634877470" type="txTempForca">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>&gt; Orb de Agilidade: faz com que o jogador possa correr mais rápido</comment>
+                <event-block sid="282550301126637">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="680521421730018" type="spOrbAgilidade">
+                            <param id="0" name="Object">spJogador</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="703030153972989" type="spOrbAgilidade" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="137660845233668" type="spOrbAgilidade">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="424826236716096" type="spOrbAgilidade">
+                            <param id="0" name="Duration">CT_SPAWN_ORB_AGILIDADE</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;SPAWN_AGILIDADE&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="945273051269120" type="spOrbAgilidade">
+                            <param id="0" name="Instance variable">tempo</param>
+                            <param id="1" name="Value">CT_TMP_EFEITO_ORB_AGILIDADE</param>
+                        </action>
+                        <action id="0" name="Set text" sid="613732485725549" type="txTempAgilidade">
+                            <param id="0" name="Text">&quot;Agilidade&quot; &amp; spOrbAgilidade.tempo</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="728729201729690" type="txTempAgilidade">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="257362100067368" type="spOrbAgilidade">
+                            <param id="0" name="Duration">1</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;HABILIDADE_AGILIDADE&quot;</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="980062775529784" type="spJogador">
+                            <param id="0" name="Max Speed">CT_PLAYER_VELOCIDADE_TURBO</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Orb de Agilidade: spawn</comment>
+                <event-block sid="689412761495087">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="703934295680530" type="spOrbAgilidade">
+                            <param id="0" name="Tag">&quot;SPAWN_AGILIDADE&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="443122816106224" type="spOrbAgilidade">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Orb de Agilidade: final do efeito</comment>
+                <event-block sid="870867393756858">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="148394650647551" type="spOrbAgilidade">
+                            <param id="0" name="Tag">&quot;HABILIDADE_AGILIDADE&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="227268078299077">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="724377380743471" type="spOrbAgilidade">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="393002738131407" type="spJogador">
+                                    <param id="0" name="Max Speed">CT_PLAYER_VELOCIDADE_NORMAL</param>
+                                </action>
+                                <action id="0" name="Set text" sid="975373899494610" type="txTempAgilidade">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="585676522135680" type="txTempAgilidade">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="329468734476300">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="564737416042817" type="spOrbAgilidade">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="598420067681726" type="spOrbAgilidade">
+                                    <param id="0" name="Instance variable">tempo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="309466704818571" type="spOrbAgilidade">
+                                    <param id="0" name="Duration">1</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;HABILIDADE_AGILIDADE&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="495186016040685" type="txTempAgilidade">
+                                    <param id="0" name="Text">&quot;Agilidade&quot; &amp; spOrbAgilidade.tempo</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="892828185716755" type="txTempAgilidade">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="531382626545825" title="Objetos">
+            <sub-events>
+                <comment>&gt; Plataforma desabando</comment>
+                <event-block sid="121699000714645">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="158264269886059" type="spJogador">
+                            <param id="0" name="Object">spPlataformaMovel</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="341989766308874" type="spPlataformaMovel">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>&gt; Plataforma destruída</comment>
+                <event-block sid="987853790331288">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="773276442590530" type="spPlataformaMovel">
+                            <param id="0" name="Object">spChaoEspinhos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="965239643444986" type="spPlataformaMovel" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>FASE_02_TUTORIAL_FORCA</name>
     <events>
-        <include>EVENTOS_GAME_GLOBAL</include>
-        <include>EVENTOS_MUSICA</include>
-        <include>EVENTOS_NAVEGACAO</include>
+        <include>GlobalEvents</include>
+        <include>MusicEvents</include>
+        <include>NavigationEvents</include>
         <event-block sid="418682091309153">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="655376962515314" type="System" />
