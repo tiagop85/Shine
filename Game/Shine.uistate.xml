@@ -19,6 +19,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="12">MENU_CREDITOS</layout>
         <layout order="13">MENU_CONFIGURACOES</layout>
         <layout order="14">SPLASH</layout>
+        <layout order="16">FASE_06_LUZFIMTUNEL</layout>
+        <layout order="18">FASE_05_BECOSEMSAIDA</layout>
         <event-sheet order="1">Level1Events</event-sheet>
         <event-sheet order="2">_EVENTOS_JOGADOR</event-sheet>
         <event-sheet order="3">MENU_PRINCIPAL</event-sheet>
@@ -26,6 +28,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="9">EVENTOS_GAME_GLOBAL</event-sheet>
         <event-sheet order="11">CABELO</event-sheet>
         <event-sheet order="15">FASE_04_FUNDOPOCO</event-sheet>
+        <event-sheet order="17">FASE_05_BECOSEMSAIDA</event-sheet>
+        <event-sheet order="19">FASE_06_LUZFIMTUNEL</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

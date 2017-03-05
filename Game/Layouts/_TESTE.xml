@@ -305,11 +305,11 @@
                         <x>125</x>
                         <y>312</y>
                         <z>0</z>
-                        <width>19</width>
-                        <height>47</height>
+                        <width>5.624000072</width>
+                        <height>20.49200058</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.504587173</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

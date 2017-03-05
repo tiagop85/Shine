@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground" uid="140">
+                <instance type="TiledBackground" uid="42">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -239,7 +239,7 @@
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.504587173</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -281,13 +281,13 @@
                         <width>121</width>
                         <height>115</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.507936537</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spOrbForca" uid="139">
+                <instance type="spOrbForca" uid="60">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -309,13 +309,13 @@
                         <width>26.457513809</width>
                         <height>26.457513809</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.50248754</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="141">
+                <instance type="spPlataformaMovel" uid="96">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -353,12 +353,12 @@
                         <height>117</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.9375</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="142">
+                <instance type="spPlataformaMovel" uid="97">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -396,12 +396,12 @@
                         <height>117</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.9375</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="143">
+                <instance type="spPlataformaMovel" uid="115">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -439,12 +439,12 @@
                         <height>117</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.9375</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="144">
+                <instance type="spPlataformaMovel" uid="116">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -482,12 +482,12 @@
                         <height>117</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.9375</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="145">
+                <instance type="spPlataformaMovel" uid="117">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -525,7 +525,7 @@
                         <height>117</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.9375</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
@@ -549,7 +549,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="txTempGameOver" uid="96">
+                <instance type="txTempGameOver" uid="118">
                     <properties>
                         <text>GAME OVER</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -576,7 +576,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempLife" uid="97">
+                <instance type="txTempLife" uid="119">
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -603,7 +603,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btMenuPrincipal_jogo" uid="115">
+                <instance type="btMenuPrincipal_jogo" uid="120">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -628,7 +628,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btConfAudio_Jogo" uid="116">
+                <instance type="btConfAudio_Jogo" uid="121">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -653,7 +653,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btPausa" uid="117">
+                <instance type="btPausa" uid="122">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
