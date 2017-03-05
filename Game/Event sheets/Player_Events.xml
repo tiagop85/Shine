@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player_Events</name>
     <events>
+        <include>CABELO</include>
         <variable constant="0" name="isPushing" sid="328906025422721" static="0" type="number">0</variable>
         <variable constant="0" name="isFalling" sid="607147654024448" static="0" type="number">0</variable>
         <variable constant="0" name="level" sid="222716677499555" static="0" type="text"></variable>
@@ -21,17 +22,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="515716571642400">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="525982417246715" type="System" />
-            </conditions>
-            <actions>
-                <action id="-4" name="Set position to another object" sid="112971306492727" type="Particles">
-                    <param id="0" name="Object">spJogador</param>
-                    <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="" sid="853164895480604" title="Controles">
             <sub-events>
                 <event-block sid="463908279828026">

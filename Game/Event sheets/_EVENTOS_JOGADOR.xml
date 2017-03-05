@@ -292,17 +292,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="965236362191798" title="Cabelo" />
-        <event-block sid="122891216885003">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="912229196005095" type="System" />
-            </conditions>
-            <actions>
-                <action id="-4" name="Set position to another object" sid="302647747691879" type="Particles">
-                    <param id="0" name="Object">Player</param>
-                    <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
