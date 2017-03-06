@@ -260,23 +260,26 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spSombra" uid="51">
+                <instance type="spIluminacao" uid="51">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>762</x>
                         <y>221.5</y>
                         <z>0</z>
-                        <width>1606</width>
-                        <height>609</height>
+                        <width>6250.551757813</width>
+                        <height>2382.407958984</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.500513852</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>0.100000001</opacity>
@@ -423,6 +426,9 @@
                         </behavior-instance>
                         <behavior-instance type="Timer" />
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Luminosity" />
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

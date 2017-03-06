@@ -11,6 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout active="1" order="0">Lv1_FundoDoPoco</layout>
+        <event-sheet order="6">Lv1Events</event-sheet>
+        <event-sheet active="1" order="7">GlobalEvents</event-sheet>
+        <event-sheet order="10">Lv2Events</event-sheet>
+        <event-sheet order="11">_EVENTOS_JOGADOR</event-sheet>
+        <event-sheet order="12">PlayerEvents</event-sheet>
+        <event-sheet order="13">Lvl3Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,12 +29,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="fmSoundOnOff" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/buttons/" />
         <folder expanded="0" path="object-folder/system/" />
-        <folder expanded="0" path="object-folder/cenario/" />
-        <folder expanded="0" path="object-folder/cenario/orbs/" />
-        <folder expanded="0" path="object-folder/cenario/npcs/" />
+        <folder expanded="1" path="object-folder/cenario/" />
+        <folder expanded="1" path="object-folder/cenario/orbs/" />
+        <folder expanded="1" path="object-folder/cenario/npcs/" />
         <folder expanded="0" path="object-folder/cenario/controle/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Levels/" />
@@ -55,7 +61,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spOrbForca/" />
         <folder expanded="1" path="animation-folder/spPassaro/" />
         <folder expanded="1" path="animation-folder/spJogador/" />
-        <folder expanded="1" path="animation-folder/spSombra/" />
+        <folder expanded="1" path="animation-folder/spIluminacao/" />
         <folder expanded="1" path="animation-folder/spChegada/" />
         <folder expanded="1" path="animation-folder/spChaoEspinhos/" />
         <folder expanded="1" path="animation-folder/spEscada/" />

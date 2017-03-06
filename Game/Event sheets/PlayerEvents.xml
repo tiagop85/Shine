@@ -28,6 +28,10 @@
                             <param id="0" name="Object">spJogador</param>
                             <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
                         </action>
+                        <action id="-4" name="Set position to another object" sid="658991222147435" type="spIluminacao">
+                            <param id="0" name="Object">spJogador</param>
+                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

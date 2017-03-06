@@ -38,11 +38,19 @@
                 <action behavior="Platform" id="11" name="Set enabled" sid="718367522100255" type="spJogador">
                     <param id="0" name="State">1</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="385730081063111" type="spSombra">
-                    <param id="0" name="Opacity">0</param>
+                <action id="-16" name="Set opacity" sid="385730081063111" type="spIluminacao">
+                    <param id="0" name="Opacity">100</param>
                 </action>
                 <action id="0" name="Set text" sid="254567630009300" type="txTempLife">
-                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( spIluminacao.Opacity ) &amp;&quot;%&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="468506340602124" type="spIluminacao">
+                    <param id="0" name="X">spJogador.X</param>
+                    <param id="1" name="Y">spJogador.Y</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="517020633218251" type="spIluminacao">
+                    <param id="0" name="Pin to">spJogador</param>
+                    <param id="1" name="Mode">0</param>
                 </action>
             </actions>
         </event-block>
@@ -219,11 +227,11 @@
                         <action behavior="Bullet_y" id="0" name="Set speed" sid="936683636742928" type="spPassaro">
                             <param id="0" name="Speed">CT_VEL_PASSARO_Y_B</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="264709872809518" type="spSombra">
-                            <param id="0" name="Opacity">Self.Opacity + CT_OPACIDADE_DELTA</param>
+                        <action id="-16" name="Set opacity" sid="264709872809518" type="spIluminacao">
+                            <param id="0" name="Opacity">Self.Opacity - CT_OPACIDADE_DELTA</param>
                         </action>
                         <action id="0" name="Set text" sid="181381455002647" type="txTempLife">
-                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( spIluminacao.Opacity ) &amp;&quot;%&quot;</param>
                         </action>
                         <action behavior="Timer" id="0" name="Start timer" sid="557450684888242" type="spPassaro">
                             <param id="0" name="Duration">0.5+random(0.30)</param>
@@ -295,9 +303,9 @@
                 <comment>&gt; Game over: Bicadas</comment>
                 <event-block sid="399916653467037">
                     <conditions>
-                        <condition id="-10" name="Compare opacity" sid="592836531012027" type="spSombra">
-                            <param id="0" name="Comparison">5</param>
-                            <param id="1" name="Opacity">100</param>
+                        <condition id="-10" name="Compare opacity" sid="592836531012027" type="spIluminacao">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Opacity">0</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="852896145657279" type="System">
                             <param id="0" name="Variable">STATUS_JOGO</param>
@@ -373,11 +381,11 @@
                             <param id="0" name="Instance variable">bateu</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="429682653457340" type="spSombra">
-                            <param id="0" name="Opacity">0</param>
+                        <action id="-16" name="Set opacity" sid="429682653457340" type="spIluminacao">
+                            <param id="0" name="Opacity">100</param>
                         </action>
                         <action id="0" name="Set text" sid="916127969618600" type="txTempLife">
-                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( spIluminacao.Opacity ) &amp;&quot;%&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -392,17 +400,17 @@
                                 <comment>&gt; retornando a luz aos poucos</comment>
                                 <event-block sid="675883415666935">
                                     <conditions>
-                                        <condition id="-10" name="Compare opacity" sid="808322028853658" type="spSombra">
+                                        <condition id="-10" name="Compare opacity" sid="808322028853658" type="spIluminacao">
                                             <param id="0" name="Comparison">4</param>
                                             <param id="1" name="Opacity">20</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-16" name="Set opacity" sid="394418395301306" type="spSombra">
-                                            <param id="0" name="Opacity">self.Opacity - 20</param>
+                                        <action id="-16" name="Set opacity" sid="394418395301306" type="spIluminacao">
+                                            <param id="0" name="Opacity">self.Opacity + 20</param>
                                         </action>
                                         <action id="0" name="Set text" sid="992438653870304" type="txTempLife">
-                                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( spIluminacao.Opacity ) &amp;&quot;%&quot;</param>
                                         </action>
                                         <action id="-13" name="Set boolean" sid="354544033195015" type="spPassaro">
                                             <param id="0" name="Instance variable">bateu</param>
@@ -429,11 +437,11 @@
                                     <param id="0" name="Instance variable">bateu</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-16" name="Set opacity" sid="174271457715819" type="spSombra">
-                                    <param id="0" name="Opacity">0</param>
+                                <action id="-16" name="Set opacity" sid="174271457715819" type="spIluminacao">
+                                    <param id="0" name="Opacity">100</param>
                                 </action>
                                 <action id="0" name="Set text" sid="830355931584606" type="txTempLife">
-                                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( 100-spSombra.Opacity ) &amp;&quot;%&quot;</param>
+                                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( spIluminacao.Opacity ) &amp;&quot;%&quot;</param>
                                 </action>
                                 <action behavior="Timer" id="0" name="Start timer" sid="659854202452639" type="spOrbEnergia">
                                     <param id="0" name="Duration">CT_SPAWN_ORB_VIDA</param>
@@ -681,10 +689,37 @@
                         <condition id="0" name="On collision with another object" sid="158264269886059" type="spJogador">
                             <param id="0" name="Object">spPlataformaMovel</param>
                         </condition>
+                        <condition id="-2" name="Compare Y" sid="737563714090394" type="spJogador">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Y co-ordinate">spPlataformaMovel.Y</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="827935588514289" type="spPlataformaMovel">
+                            <param id="0" name="Instance variable">caiu</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="-13" name="Set boolean" sid="603963938726251" type="spPlataformaMovel">
+                            <param id="0" name="Instance variable">caiu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="215221098484017" type="spPlataformaMovel">
+                            <param id="0" name="Instance variable">POS_X</param>
+                            <param id="1" name="Value">self.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="417033367089297" type="spPlataformaMovel">
+                            <param id="0" name="Instance variable">POS_Y</param>
+                            <param id="1" name="Value">self.Y</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="819609569598306" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
                         <action behavior="Physics" id="21" name="Set immovable" sid="341989766308874" type="spPlataformaMovel">
                             <param id="0" name="Setting">0</param>
+                        </action>
+                        <action behavior="Timer" id="0" name="Start timer" sid="413030864529015" type="spPlataformaMovel">
+                            <param id="0" name="Duration">3</param>
+                            <param id="1" name="Type">0</param>
+                            <param id="2" name="Tag">&quot;RESPAWN&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -697,6 +732,44 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="965239643444986" type="spPlataformaMovel" />
+                    </actions>
+                </event-block>
+                <event-block sid="791043707660653">
+                    <conditions>
+                        <condition behavior="Timer" id="0" name="On timer" sid="366011961120398" type="spPlataformaMovel">
+                            <param id="0" name="Tag">&quot;RESPAWN&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="792980887509787" type="spPlataformaMovel">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="119164733053784" type="spPlataformaMovel">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="492126139529044" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="186880632523950" type="spPlataformaMovel">
+                            <param id="0" name="Setting">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="183864601601004" type="spPlataformaMovel">
+                            <param id="0" name="X">Self.POS_X</param>
+                            <param id="1" name="Y">Self.POS_Y</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="229551782586142" type="spPlataformaMovel">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="359452505600133" type="spPlataformaMovel">
+                            <param id="0" name="Instance variable">caiu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="876539639858268" type="spPlataformaMovel">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="199819937049659" type="spPlataformaMovel">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
