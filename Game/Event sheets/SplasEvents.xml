@@ -14,25 +14,16 @@
                     <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
                     <param id="1" name="Value">CT_MUSICA_MENU</param>
                 </action>
-                <action id="0" name="Set text" sid="920831955219253" type="txTempSplash">
-                    <param id="0" name="Text">&quot;SPLASH SCREEN...3...&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="305792212291674" type="System">
-                    <param id="0" name="Seconds">1</param>
-                </action>
-                <action id="0" name="Set text" sid="459126806885268" type="txTempSplash">
-                    <param id="0" name="Text">&quot;SPLASH SCREEN...2...&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="340740146927846" type="System">
-                    <param id="0" name="Seconds">1</param>
-                </action>
-                <action id="0" name="Set text" sid="757022230449590" type="txTempSplash">
-                    <param id="0" name="Text">&quot;SPLASH SCREEN...1...&quot;</param>
-                </action>
-                <action id="-16" name="Wait" sid="631959003028048" type="System">
-                    <param id="0" name="Seconds">1</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="985353623729465" type="System">
+            </actions>
+        </event-block>
+        <event-block sid="528428553280665">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="723492910475785" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="438443735381763" type="System">
                     <param id="0" name="Layout">MainMenu</param>
                 </action>
             </actions>

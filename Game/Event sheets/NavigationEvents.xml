@@ -314,7 +314,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="150402492561310" type="System">
-                            <param id="0" name="Layout">FASE_01_TUTORIAL_VIDA</param>
+                            <param id="0" name="Layout">Lv1_FundoDoPoco</param>
                         </action>
                     </actions>
                 </event-block>
@@ -328,7 +328,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="166482850214887" type="System">
-                            <param id="0" name="Layout">FASE_02_TUTORIAL_FORCA</param>
+                            <param id="0" name="Layout">Lv2_BecoSemSaida</param>
                         </action>
                     </actions>
                 </event-block>
@@ -342,63 +342,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="183885328882011" type="System">
-                            <param id="0" name="Layout">FASE_03_TUTORIAL_AGILIDADE</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="165944443448802">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="721063977716676" type="arControl">
-                            <param id="0" name="Instance variable">FASE_ATUAL</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="242344425837649" type="System">
-                            <param id="0" name="Layout">Lv1_FundoDoPoco</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="792456113603177">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="163756606248507" type="arControl">
-                            <param id="0" name="Instance variable">FASE_ATUAL</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="572081756475091" type="System">
-                            <param id="0" name="Layout">Lv2_BecoSemSaida</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="809292482201803">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="572056665092982" type="arControl">
-                            <param id="0" name="Instance variable">FASE_ATUAL</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">6</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="819921448372588" type="System">
                             <param id="0" name="Layout">Lv3_LuzNoFimDoTunel</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="242631280663954">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="965013310877472" type="arControl">
-                            <param id="0" name="Instance variable">FASE_ATUAL</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">7</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="733202459004913" type="System">
-                            <param id="0" name="Layout">CreditsMenu</param>
                         </action>
                     </actions>
                 </event-block>

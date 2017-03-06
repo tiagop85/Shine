@@ -4,8 +4,8 @@
     <sid>571300739170134</sid>
     <event-sheet>MainMenuEvents</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>800</width>
+        <height>480</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -18,8 +18,8 @@
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>

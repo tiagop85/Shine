@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenuEvents</name>
     <events>
+        <variable comment="Opacidade da layer" constant="0" name="Opacity" sid="595996019846949" static="0" type="number">0</variable>
         <include>MusicEvents</include>
         <include>NavigationEvents</include>
         <event-block sid="777961823987806">
@@ -10,9 +11,35 @@
                 <condition id="-2" name="On start of layout" sid="257542288322062" type="System" />
             </conditions>
             <actions>
+                <action id="-18" name="Set layer opacity" sid="618910594552577" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Opacity">Opacity</param>
+                </action>
                 <action id="-10" name="Set value" sid="396334988625715" type="arControl">
                     <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
                     <param id="1" name="Value">CT_MUSICA_MENU</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="300222746744244">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="803711879591402" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="894126264131103" type="System">
+                    <param id="0" name="Variable">Opacity</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="991355244604307" type="System">
+                    <param id="0" name="Variable">Opacity</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="525277760266002" type="System">
+                    <param id="0" name="Layer">0</param>
+                    <param id="1" name="Opacity">Opacity</param>
                 </action>
             </actions>
         </event-block>

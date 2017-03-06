@@ -10,13 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Lv3_LuzNoFimDoTunel</layout>
-        <layout order="2">Lv1_FundoDoPoco</layout>
-        <layout order="4">Lv2_BecoSemSaida</layout>
-        <event-sheet order="0">Lvl3Events</event-sheet>
-        <event-sheet order="3">Lv1Events</event-sheet>
-        <event-sheet order="5">Lv2Events</event-sheet>
-        <event-sheet active="1" order="6">PlayerEvents</event-sheet>
+        <layout order="0">Splash</layout>
+        <layout order="2">MainMenu</layout>
+        <event-sheet active="1" order="1">SplasEvents</event-sheet>
+        <event-sheet order="3">MainMenuEvents</event-sheet>
+        <event-sheet order="4">NavigationEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -39,11 +37,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Levels/" />
         <folder expanded="0" path="layout-folder/Tutoriais/" />
-        <folder expanded="0" path="layout-folder/Menus/" />
+        <folder expanded="1" path="layout-folder/Menus/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/Tutoriais/" />
         <folder expanded="1" path="event-folder/Levels/" />
-        <folder expanded="0" path="event-folder/Menus/" />
+        <folder expanded="1" path="event-folder/Menus/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />

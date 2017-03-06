@@ -4,8 +4,8 @@
     <sid>280432443845049</sid>
     <event-sheet>SplasEvents</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>800</width>
+        <height>480</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -15,7 +15,7 @@
     <layers>
         <layer name="Layer 0" sid="698207955676817">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
+            <background-color>0,0,0</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -31,27 +31,27 @@
             <instances>
                 <instance type="txTempSplash" uid="55">
                     <properties>
-                        <text>SPLASH SCREEN...3...</text>
+                        <text>Shine Studio Apresenta</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,700,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>283</x>
-                        <y>214.5</y>
+                        <x>400</x>
+                        <y>240</y>
                         <z>0</z>
-                        <width>392</width>
-                        <height>51</height>
+                        <width>356</width>
+                        <height>94</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
