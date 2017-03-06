@@ -24,7 +24,7 @@
                         <condition id="-1" name="Every tick" sid="710739853723806" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-4" name="Set position to another object" sid="991460518619769" type="Particles">
+                        <action id="-4" name="Set position to another object" sid="991460518619769" type="Cabelo">
                             <param id="0" name="Object">spJogador</param>
                             <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
                         </action>
@@ -44,7 +44,7 @@
                         <action id="7" name="Set mirrored" sid="837522938976641" type="spJogador">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="472970378999902" type="Particles">
+                        <action id="-8" name="Set angle" sid="472970378999902" type="Cabelo">
                             <param id="0" name="Angle">45</param>
                         </action>
                     </actions>
@@ -59,7 +59,7 @@
                         <action id="7" name="Set mirrored" sid="596508705817146" type="spJogador">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="655988510163495" type="Particles">
+                        <action id="-8" name="Set angle" sid="655988510163495" type="Cabelo">
                             <param id="0" name="Angle">135</param>
                         </action>
                     </actions>

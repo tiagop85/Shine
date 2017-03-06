@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Lv1_FundoDoPoço</name>
+    <name>Lv1_FundoDoPoco</name>
     <sid>108234787026950</sid>
     <event-sheet>Lv1Events</event-sheet>
     <size>
@@ -958,7 +958,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Particles" uid="192">
+                <instance type="Cabelo" uid="192">
                     <properties>
                         <rate>200</rate>
                         <spray-cone>55</spray-cone>

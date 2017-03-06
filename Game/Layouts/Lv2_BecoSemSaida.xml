@@ -1259,7 +1259,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Particles" uid="191">
+                <instance type="Cabelo" uid="191">
                     <properties>
                         <rate>200</rate>
                         <spray-cone>55</spray-cone>

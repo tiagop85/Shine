@@ -11,7 +11,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">Lv3_LuzNoFimDoTunel</layout>
-        <layout order="2">Lv1_FundoDoPoço</layout>
+        <layout order="2">Lv1_FundoDoPoco</layout>
         <layout order="4">Lv2_BecoSemSaida</layout>
         <event-sheet order="0">Lvl3Events</event-sheet>
         <event-sheet order="3">Lv1Events</event-sheet>

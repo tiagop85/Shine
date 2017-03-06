@@ -3,10 +3,10 @@
     <name>Shine</name>
     <description></description>
     <version>1.0.0.0</version>
-    <author></author>
+    <author>Shine Studio</author>
     <author-email></author-email>
     <author-website>http://</author-website>
-    <app-id>com.mycompany.myapp</app-id>
+    <app-id>br.edu.uea.shinestudio</app-id>
     <unique-id>e9dy22538vrk</unique-id>
     <saved-with-version>24200</saved-with-version>
     <used-plugins>
@@ -1618,7 +1618,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Particles" sid="827207915298509">
+        <object-type name="Cabelo" sid="827207915298509">
             <plugin id="Particles" />
             <texture />
         </object-type>
@@ -1676,7 +1676,7 @@
     </families>
     <layout-folder>
         <layout-folder name="Levels">
-            <layout>Lv1_FundoDoPoço.xml</layout>
+            <layout>Lv1_FundoDoPoco.xml</layout>
             <layout>Lv2_BecoSemSaida.xml</layout>
             <layout>Lv3_LuzNoFimDoTunel.xml</layout>
         </layout-folder>
