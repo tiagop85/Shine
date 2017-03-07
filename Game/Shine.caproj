@@ -863,27 +863,42 @@
                                 </collision-poly>
                             </frame>
                         </animation>
-                        <animation framecount="7" loop="1" name="Push" pingpong="0" repeatcount="1" repeatto="0" sid="636225851431294" speed="12">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\shine_asset_push.png">
-                                <image-point name="Cabelo" x="0.763158" y="0.0277778" />
+                        <animation framecount="4" loop="1" name="Push" pingpong="0" repeatcount="1" repeatto="0" sid="636225851431294" speed="6">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504762">
+                                <image-point name="Cabelo" x="0.6" y="0.0761905" />
+                                <collision-poly>
+                                    <point x="0.26" y="0" />
+                                    <point x="0.89" y="0" />
+                                    <point x="0.89" y="1" />
+                                    <point x="0.26" y="1" />
+                                </collision-poly>
                             </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                                <image-point name="Cabelo" x="0.710526" y="0.0833333" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504762">
+                                <image-point name="Cabelo" x="0.6" y="0.0761905" />
+                                <collision-poly>
+                                    <point x="0.26" y="0" />
+                                    <point x="0.89" y="0" />
+                                    <point x="0.89" y="1" />
+                                    <point x="0.26" y="1" />
+                                </collision-poly>
                             </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                                <image-point name="Cabelo" x="0.75" y="0.12963" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504762">
+                                <image-point name="Cabelo" x="0.6" y="0.0761905" />
+                                <collision-poly>
+                                    <point x="0.26" y="0" />
+                                    <point x="0.89" y="0" />
+                                    <point x="0.89" y="1" />
+                                    <point x="0.26" y="1" />
+                                </collision-poly>
                             </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                                <image-point name="Cabelo" x="0.776316" y="0.166667" />
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                                <image-point name="Cabelo" x="0.763158" y="0.101852" />
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                                <image-point name="Cabelo" x="0.75" y="0.0833333" />
-                            </frame>
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                                <image-point name="Cabelo" x="0.763158" y="0.0277778" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504762">
+                                <image-point name="Cabelo" x="0.6" y="0.0761905" />
+                                <collision-poly>
+                                    <point x="0.26" y="0" />
+                                    <point x="0.89" y="0" />
+                                    <point x="0.89" y="1" />
+                                    <point x="0.26" y="1" />
+                                </collision-poly>
                             </frame>
                         </animation>
                     </animation-folder>
@@ -1754,13 +1769,13 @@
         <event-sheet>PlayerEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="187" />
-        <global-instance type="Touch" uid="188">
+        <global-instance type="Keyboard" uid="228" />
+        <global-instance type="Touch" uid="229">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="189">
+        <global-instance type="Audio" uid="230">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
