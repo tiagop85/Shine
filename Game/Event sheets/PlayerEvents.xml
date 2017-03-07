@@ -239,6 +239,11 @@
                                 <condition id="1" name="Is overlapping another object" sid="200636297214397" type="spJogador">
                                     <param id="0" name="Object">spBlocoPesado</param>
                                 </condition>
+                                <condition id="-8" name="Compare two values" sid="806399211822889" type="System">
+                                    <param id="0" name="First value">(spBlocoPesado.Y - spBlocoPesado.Height) + 20</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">spJogador.Y</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="4" name="Set animation" sid="750292371962634" type="spJogador">
