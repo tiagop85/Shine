@@ -10,11 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Splash</layout>
-        <layout order="2">MainMenu</layout>
-        <event-sheet active="1" order="1">SplasEvents</event-sheet>
-        <event-sheet order="3">MainMenuEvents</event-sheet>
-        <event-sheet order="4">NavigationEvents</event-sheet>
+        <layout active="1" order="0">Lv1_FundoDoPoco</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -37,8 +33,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Levels/" />
         <folder expanded="0" path="layout-folder/Tutoriais/" />
-        <folder expanded="1" path="layout-folder/Menus/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="layout-folder/Menus/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="event-folder/Tutoriais/" />
         <folder expanded="1" path="event-folder/Levels/" />
         <folder expanded="1" path="event-folder/Menus/" />
