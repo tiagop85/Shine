@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1488761653,
+	"version": 1488865482,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -28,7 +28,7 @@
 		"images/sppassaro-sheet2.png",
 		"images/spjogador-sheet0.png",
 		"images/spjogador-sheet1.png",
-		"images/spsombra-sheet0.png",
+		"images/spiluminacao-sheet0.png",
 		"images/spchegada-sheet0.png",
 		"images/spchaoespinhos-sheet0.png",
 		"images/spescada-sheet0.png",
