@@ -12,18 +12,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Lv1_FundoDoPoco</layout>
         <layout active="1" order="7">Lv3_LuzNoFimDoTunel</layout>
+        <layout order="8">Lv2_BecoSemSaida</layout>
         <event-sheet order="1">Lv1Events</event-sheet>
         <event-sheet order="2">GlobalEvents</event-sheet>
         <event-sheet order="3">Lv2Events</event-sheet>
         <event-sheet order="4">_EVENTOS_JOGADOR</event-sheet>
         <event-sheet order="5">PlayerEvents</event-sheet>
         <event-sheet order="6">Lvl3Events</event-sheet>
-        <event-sheet order="6">Lv1Events</event-sheet>
-        <event-sheet active="1" order="7">GlobalEvents</event-sheet>
-        <event-sheet order="10">Lv2Events</event-sheet>
-        <event-sheet order="11">_EVENTOS_JOGADOR</event-sheet>
-        <event-sheet order="12">PlayerEvents</event-sheet>
-        <event-sheet order="13">Lvl3Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

@@ -1769,13 +1769,13 @@
         <event-sheet>PlayerEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="228" />
-        <global-instance type="Touch" uid="229">
+        <global-instance type="Keyboard" uid="230" />
+        <global-instance type="Touch" uid="231">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="230">
+        <global-instance type="Audio" uid="232">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

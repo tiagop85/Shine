@@ -1144,33 +1144,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="txTempGameOver" uid="153">
-                    <properties>
-                        <text>GAME OVER</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
-                        <color>255,0,51</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>427</x>
-                        <y>365</y>
-                        <z>0</z>
-                        <width>979</width>
-                        <height>87</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="btMenuPrincipal_jogo" uid="155">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1246,7 +1219,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempGameOver" uid="184">
+                <instance type="txTempGameOver" uid="7">
                     <properties>
                         <text>GAME OVER</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -1261,8 +1234,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>290.75</x>
-                        <y>156.5</y>
+                        <x>400</x>
+                        <y>240</y>
                         <z>0</z>
                         <width>560</width>
                         <height>129</height>
@@ -1273,83 +1246,83 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempAgilidade" uid="185">
+                <instance type="txTempAgilidade" uid="8">
                     <properties>
                         <text>AGILIDADE</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
+                        <font>Arial,-32,400,0</font>
                         <color>255,0,51</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
+                        <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>290.75</x>
-                        <y>93.5</y>
+                        <x>0</x>
+                        <y>0</y>
                         <z>0</z>
-                        <width>471</width>
-                        <height>231</height>
+                        <width>300</width>
+                        <height>44</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempForca" uid="186">
+                <instance type="txTempForca" uid="9">
                     <properties>
                         <text>FORÇA</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
+                        <font>Arial,-32,400,0</font>
                         <color>255,0,51</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
+                        <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>277.75</x>
-                        <y>233.5</y>
+                        <x>0</x>
+                        <y>50</y>
                         <z>0</z>
-                        <width>750</width>
-                        <height>154</height>
+                        <width>300</width>
+                        <height>44</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempLife" uid="194">
+                <instance type="txTempLife" uid="10">
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-64,400,0</font>
+                        <font>Arial,-32,400,0</font>
                         <color>255,153,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Center</hotspot>
+                        <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>260.75</x>
-                        <y>204.5</y>
+                        <x>0</x>
+                        <y>0</y>
                         <z>0</z>
-                        <width>524</width>
-                        <height>94</height>
+                        <width>300</width>
+                        <height>44</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
