@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spChao" uid="1">
+                <instance type="spChao" uid="11">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -72,7 +72,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spChao" uid="7">
+                <instance type="spChao" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -115,7 +115,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPassaro" uid="2">
+                <instance type="spPassaro" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -148,6 +148,13 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Timer" />
+                        <behavior-instance type="ShadowCaster">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                                <height>100</height>
+                                <tag></tag>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
                         <effect-instance type="Luminosity" />
@@ -159,15 +166,15 @@
                         <y>599</y>
                         <z>0</z>
                         <width>29.440000534</width>
-                        <height>32.296001434</height>
+                        <height>32.208000183</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501362383</hotspotY>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spChao" uid="9">
+                <instance type="spChao" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -229,7 +236,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spOrbEnergia" uid="5">
+                <instance type="spOrbEnergia" uid="27">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -254,7 +261,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spJogador" uid="0">
+                <instance type="spJogador" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -317,7 +324,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spBlocoPesado" uid="6">
+                <instance type="spBlocoPesado" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -360,7 +367,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spOrbForca" uid="8">
+                <instance type="spOrbForca" uid="31">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -407,7 +414,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spIluminacao" uid="3">
+                <instance type="spIluminacao" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -432,7 +439,7 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
-                <instance type="txTempGameOver" uid="4">
+                <instance type="txTempGameOver" uid="33">
                     <properties>
                         <text>GAME OVER</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -459,7 +466,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempForca" uid="10">
+                <instance type="txTempForca" uid="34">
                     <properties>
                         <text>FORÇA</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -486,7 +493,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempLife" uid="11">
+                <instance type="txTempLife" uid="46">
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -518,7 +525,7 @@
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="arControl" uid="46">
+        <instance type="arControl" uid="187">
             <properties>
                 <width>1</width>
                 <height>1</height>

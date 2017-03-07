@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Lv1_FundoDoPoco</layout>
-        <layout active="1" order="7">Lv3_LuzNoFimDoTunel</layout>
+        <layout active="1" order="0">Lv1_FundoDoPoco</layout>
+        <layout order="7">Lv3_LuzNoFimDoTunel</layout>
         <layout order="8">Lv2_BecoSemSaida</layout>
         <event-sheet order="1">Lv1Events</event-sheet>
         <event-sheet order="2">GlobalEvents</event-sheet>
@@ -38,7 +38,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/cenario/orbs/" />
         <folder expanded="1" path="object-folder/cenario/npcs/" />
         <folder expanded="0" path="object-folder/cenario/controle/" />
-        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Levels/" />
         <folder expanded="0" path="layout-folder/Tutoriais/" />
         <folder expanded="0" path="layout-folder/Menus/" />
