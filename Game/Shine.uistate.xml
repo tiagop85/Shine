@@ -10,13 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">FASE_01_TUTORIAL_VIDA</layout>
+        <layout order="0">FASE_01_TUTORIAL_VIDA</layout>
         <layout order="1">Lv1_FundoDoPoco</layout>
         <layout order="10">MainMenu</layout>
         <layout order="11">FASE_02_TUTORIAL_FORCA</layout>
         <layout order="12">Lv2_BecoSemSaida</layout>
         <layout order="13">Lv3_LuzNoFimDoTunel</layout>
         <layout order="14">_EVENTOS_JOGADOR</layout>
+        <layout active="1" order="17">_TESTE</layout>
         <event-sheet order="2">Lv1Events</event-sheet>
         <event-sheet order="3">FASE_01_TUTORIAL_VIDA</event-sheet>
         <event-sheet order="4">GlobalEvents</event-sheet>
@@ -26,6 +27,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="8">Lv2Events</event-sheet>
         <event-sheet order="9">Lvl3Events</event-sheet>
         <event-sheet order="15">PlayerEvents</event-sheet>
+        <event-sheet order="16">MainMenuEvents</event-sheet>
+        <event-sheet order="18">_TESTE</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

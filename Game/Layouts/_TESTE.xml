@@ -217,8 +217,96 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Cabelo" uid="144">
+                    <properties>
+                        <rate>200</rate>
+                        <spray-cone>55</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>50</speed>
+                        <size>12</size>
+                        <opacity>80</opacity>
+                        <grow-rate>15</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>150</acceleration>
+                        <gravity>10</gravity>
+                        <angle-randomiser>0</angle-randomiser>
+                        <speed-randomiser>0</speed-randomiser>
+                        <opacity-randomiser>0</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>0.5</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4</x>
+                        <y>-72</y>
+                        <z>0</z>
+                        <width>12</width>
+                        <height>12</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>2.158788204</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
+        </layer>
+        <layer name="Layer 0" sid="273785965506229">
+            <initially-visible>1</initially-visible>
+            <background-color>12,0,0</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="spIluminacao" uid="32">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1251</x>
+                        <y>276</y>
+                        <z>0</z>
+                        <width>1755</width>
+                        <height>1070</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500513852</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects>
+                <effect-type name="Multiply">
+                    <effect id="multiply" />
+                    <effect-instance type="Multiply" />
+                </effect-type>
+            </effects>
         </layer>
         <layer name="Objects" sid="635666049454937">
             <initially-visible>1</initially-visible>
@@ -252,8 +340,8 @@
                         <x>270</x>
                         <y>263</y>
                         <z>0</z>
-                        <width>21.272232056</width>
-                        <height>21.272232056</height>
+                        <width>60.099998474</width>
+                        <height>60.39899826</height>
                         <depth>0</depth>
                         <hotspotX>0.50248754</hotspotX>
                         <hotspotY>0.50248754</hotspotY>
@@ -312,11 +400,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>125</x>
-                        <y>312</y>
+                        <x>137</x>
+                        <y>294</y>
                         <z>0</z>
-                        <width>8.436000824</width>
-                        <height>20.868000031</height>
+                        <width>64</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.495495498</hotspotX>
                         <hotspotY>0.495495498</hotspotY>
@@ -386,8 +474,8 @@
                         <x>34</x>
                         <y>261</y>
                         <z>0</z>
-                        <width>21.271841049</width>
-                        <height>21.377670288</height>
+                        <width>60.099998474</width>
+                        <height>60.39899826</height>
                         <depth>0</depth>
                         <hotspotX>0.50248754</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -414,31 +502,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spIluminacao" uid="32">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>428</x>
-                        <y>221.5</y>
-                        <z>0</z>
-                        <width>3650.696044922</width>
-                        <height>2382.407958984</height>
-                        <depth>0</depth>
-                        <hotspotX>0.500513852</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0</opacity>
-                    </world>
-                </instance>
                 <instance type="txTempGameOver" uid="33">
                     <properties>
                         <text>GAME OVER</text>
@@ -454,8 +517,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>229.5</x>
-                        <y>184</y>
+                        <x>305</x>
+                        <y>139</y>
                         <z>0</z>
                         <width>395</width>
                         <height>87</height>
