@@ -1137,7 +1137,7 @@
                         <behavior id="Physics" />
                     </behavior-type>
                 </behaviors>
-                <texture original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\TiledMaps\../Sprites/ELEMENTOS-FASE-1-SEM-BG.png" />
+                <texture original-source="C:\Users\tiago.parente\Desktop\Nova pasta\pos\_juci\Shine\Game\TiledMaps\tmFase01.png" />
                 <tiles>
                     <tile id="41">
                         <collision-poly>

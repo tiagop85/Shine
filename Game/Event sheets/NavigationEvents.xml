@@ -20,7 +20,7 @@
                 </action>
                 <action id="-10" name="Set value" sid="868937694478084" type="arControl">
                     <param id="0" name="Instance variable">FASE_ATUAL</param>
-                    <param id="1" name="Value">0</param>
+                    <param id="1" name="Value">3</param>
                 </action>
                 <action behavior="Timer" id="0" name="Start timer" sid="236971046741135" type="btStartGame">
                     <param id="0" name="Duration">0.1</param>
@@ -314,7 +314,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="150402492561310" type="System">
-                            <param id="0" name="Layout">Lv1_FundoDoPoco</param>
+                            <param id="0" name="Layout">FASE_01_TUTORIAL_VIDA</param>
                         </action>
                     </actions>
                 </event-block>
@@ -328,7 +328,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="166482850214887" type="System">
-                            <param id="0" name="Layout">Lv2_BecoSemSaida</param>
+                            <param id="0" name="Layout">FASE_02_TUTORIAL_FORCA</param>
                         </action>
                     </actions>
                 </event-block>
@@ -342,6 +342,48 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="183885328882011" type="System">
+                            <param id="0" name="Layout">FASE_03_TUTORIAL_AGILIDADE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="212183502365944">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="118350599366648" type="arControl">
+                            <param id="0" name="Instance variable">FASE_ATUAL</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="528907398195846" type="System">
+                            <param id="0" name="Layout">Lv1_FundoDoPoco</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="326997508009558">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="212522498060149" type="arControl">
+                            <param id="0" name="Instance variable">FASE_ATUAL</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="334174756690348" type="System">
+                            <param id="0" name="Layout">Lv2_BecoSemSaida</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="169903516574238">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="714868183581573" type="arControl">
+                            <param id="0" name="Instance variable">FASE_ATUAL</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="856103081145755" type="System">
                             <param id="0" name="Layout">Lv3_LuzNoFimDoTunel</param>
                         </action>
                     </actions>

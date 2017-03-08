@@ -4,9 +4,11 @@
     <name>GlobalEvents</name>
     <events>
         <variable constant="1" name="CT_VEL_PASSARO_X_A" sid="267125588878804" static="0" type="number">400</variable>
-        <variable constant="1" name="CT_VEL_PASSARO_X_B" sid="190611704130018" static="0" type="number">200</variable>
         <variable constant="1" name="CT_VEL_PASSARO_Y_A" sid="838562660175407" static="0" type="number">400</variable>
+        <variable constant="1" name="CT_ACE_PASSARO_X_A" sid="473206246673297" static="0" type="number">400</variable>
+        <variable constant="1" name="CT_VEL_PASSARO_X_B" sid="190611704130018" static="0" type="number">200</variable>
         <variable constant="1" name="CT_VEL_PASSARO_Y_B" sid="677508196421749" static="0" type="number">150</variable>
+        <variable constant="1" name="CT_ACE_PASSARO_X_B" sid="974179380257967" static="0" type="number">0</variable>
         <variable constant="1" name="CT_TEMPO_PASSARO_CRIACAO" sid="336557428524957" static="0" type="number">2</variable>
         <variable constant="1" name="CT_OPACIDADE_DELTA" sid="824493558812994" static="0" type="number">10</variable>
         <variable constant="0" name="TEMPO_PASSARO_DELTA" sid="462446907674713" static="0" type="number">0.1</variable>
@@ -61,7 +63,7 @@
                 <event-block sid="451843014420360">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="896096331987683" type="System">
-                            <param id="0" name="Interval (seconds)">2-TEMPO_PASSARO_DELTA</param>
+                            <param id="0" name="Interval (seconds)">2.5-TEMPO_PASSARO_DELTA</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="912100686971905" type="System">
                             <param id="0" name="Variable">STATUS_JOGO</param>
@@ -72,15 +74,18 @@
                     <actions>
                         <action id="-3" name="Create object" sid="277890450165296" type="System">
                             <param id="0" name="Object to create">spPassaro</param>
-                            <param id="1" name="Layer">3</param>
-                            <param id="2" name="X">0</param>
-                            <param id="3" name="Y">0</param>
+                            <param id="1" name="Layer">LayerIndex(&quot;Objects&quot;)</param>
+                            <param id="2" name="X">CanvasToLayerX(&quot;Objects&quot;,LayerToCanvasX(&quot;HUD&quot;, 0, 0) ,LayerToCanvasY(&quot;HUD&quot;, 0, 0))</param>
+                            <param id="3" name="Y">CanvasToLayerY(&quot;Objects&quot;,LayerToCanvasX(&quot;HUD&quot;, 0, 0) ,LayerToCanvasY(&quot;HUD&quot;, 0, 0))</param>
                         </action>
                         <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="280645666729508" type="spPassaro">
                             <param id="0" name="Angle">0</param>
                         </action>
                         <action behavior="Bullet_x" id="0" name="Set speed" sid="706510476423379" type="spPassaro">
                             <param id="0" name="Speed">CT_VEL_PASSARO_X_A</param>
+                        </action>
+                        <action behavior="Bullet_x" id="1" name="Set acceleration" sid="205163773665423" type="spPassaro">
+                            <param id="0" name="Acceleration">CT_ACE_PASSARO_X_A</param>
                         </action>
                         <action behavior="Bullet_x" id="5" name="Set enabled" sid="874455116861597" type="spPassaro">
                             <param id="0" name="State">1</param>
@@ -211,21 +216,36 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-13" name="Set boolean" sid="737650168771692" type="spPassaro">
+                            <param id="0" name="Instance variable">retornando</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet_x" id="5" name="Set enabled" sid="634732637431313" type="spPassaro">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet_y" id="5" name="Set enabled" sid="875581955935214" type="spPassaro">
+                            <param id="0" name="State">0</param>
+                        </action>
                         <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="210463395938290" type="spPassaro">
                             <param id="0" name="Angle">0</param>
                         </action>
                         <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="871541480506534" type="spPassaro">
                             <param id="0" name="Angle">-90</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="737650168771692" type="spPassaro">
-                            <param id="0" name="Instance variable">retornando</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                         <action behavior="Bullet_x" id="0" name="Set speed" sid="751019199791931" type="spPassaro">
                             <param id="0" name="Speed">CT_VEL_PASSARO_X_B</param>
                         </action>
                         <action behavior="Bullet_y" id="0" name="Set speed" sid="936683636742928" type="spPassaro">
                             <param id="0" name="Speed">CT_VEL_PASSARO_Y_B</param>
+                        </action>
+                        <action behavior="Bullet_x" id="1" name="Set acceleration" sid="935696283596953" type="spPassaro">
+                            <param id="0" name="Acceleration">CT_ACE_PASSARO_X_B</param>
+                        </action>
+                        <action behavior="Bullet_x" id="5" name="Set enabled" sid="251040249792893" type="spPassaro">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet_y" id="5" name="Set enabled" sid="930490160497850" type="spPassaro">
+                            <param id="0" name="State">1</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="264709872809518" type="spIluminacao">
                             <param id="0" name="Opacity">Self.Opacity - CT_OPACIDADE_DELTA</param>

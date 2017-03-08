@@ -10,15 +10,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Lv1_FundoDoPoco</layout>
-        <layout active="1" order="7">Lv3_LuzNoFimDoTunel</layout>
-        <layout order="8">Lv2_BecoSemSaida</layout>
-        <event-sheet order="1">Lv1Events</event-sheet>
-        <event-sheet order="2">GlobalEvents</event-sheet>
-        <event-sheet order="3">Lv2Events</event-sheet>
-        <event-sheet order="4">_EVENTOS_JOGADOR</event-sheet>
-        <event-sheet order="5">PlayerEvents</event-sheet>
-        <event-sheet order="6">Lvl3Events</event-sheet>
+        <layout order="0">FASE_01_TUTORIAL_VIDA</layout>
+        <layout active="1" order="1">Lv1_FundoDoPoco</layout>
+        <layout order="10">MainMenu</layout>
+        <layout order="11">FASE_02_TUTORIAL_FORCA</layout>
+        <layout order="12">Lv2_BecoSemSaida</layout>
+        <layout order="13">Lv3_LuzNoFimDoTunel</layout>
+        <event-sheet order="2">Lv1Events</event-sheet>
+        <event-sheet order="3">FASE_01_TUTORIAL_VIDA</event-sheet>
+        <event-sheet order="4">GlobalEvents</event-sheet>
+        <event-sheet order="5">FASE_02_TUTORIAL_FORCA</event-sheet>
+        <event-sheet order="6">FASE_03_TUTORIAL_AGILIDADE</event-sheet>
+        <event-sheet order="7">NavigationEvents</event-sheet>
+        <event-sheet order="8">Lv2Events</event-sheet>
+        <event-sheet order="9">Lvl3Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -40,10 +45,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/cenario/controle/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Levels/" />
-        <folder expanded="0" path="layout-folder/Tutoriais/" />
-        <folder expanded="0" path="layout-folder/Menus/" />
+        <folder expanded="1" path="layout-folder/Tutoriais/" />
+        <folder expanded="1" path="layout-folder/Menus/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="0" path="event-folder/Tutoriais/" />
+        <folder expanded="1" path="event-folder/Tutoriais/" />
         <folder expanded="1" path="event-folder/Levels/" />
         <folder expanded="1" path="event-folder/Menus/" />
         <folder expanded="0" path="file-folder/" />
