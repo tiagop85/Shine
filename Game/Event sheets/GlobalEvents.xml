@@ -344,7 +344,7 @@
                 <event-block sid="886497406283005">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="728086390038135" type="spJogador">
-                            <param id="0" name="Object">spChaoEspinhos</param>
+                            <param id="0" name="Object">spChaoMortal</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -747,11 +747,19 @@
                 <event-block sid="987853790331288">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="773276442590530" type="spPlataformaMovel">
-                            <param id="0" name="Object">spChaoEspinhos</param>
+                            <param id="0" name="Object">spChaoMortal</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="965239643444986" type="spPlataformaMovel" />
+                        <action id="-15" name="Set visible" sid="543885968130551" type="spPlataformaMovel">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="124862032956881" type="spPlataformaMovel">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="268723791033669" type="spPlataformaMovel">
+                            <param id="0" name="Mode">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="791043707660653">
@@ -767,8 +775,14 @@
                         <action behavior="Solid" id="0" name="Set enabled" sid="119164733053784" type="spPlataformaMovel">
                             <param id="0" name="State">0</param>
                         </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="567475355776187" type="spPlataformaMovel">
+                            <param id="0" name="Mode">0</param>
+                        </action>
                         <action id="-16" name="Wait" sid="492126139529044" type="System">
                             <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="727380679194651" type="spPlataformaMovel">
+                            <param id="0" name="Mode">1</param>
                         </action>
                         <action behavior="Physics" id="21" name="Set immovable" sid="186880632523950" type="spPlataformaMovel">
                             <param id="0" name="Setting">1</param>

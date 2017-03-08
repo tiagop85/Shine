@@ -68,7 +68,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="tmFase01" uid="225">
+                <instance type="tmTutorial01" uid="129">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <tile-width>32</tile-width>
@@ -385,8 +385,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>162</x>
-                        <y>932</y>
+                        <x>-118</x>
+                        <y>902</y>
                         <z>0</z>
                         <width>12</width>
                         <height>12</height>

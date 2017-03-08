@@ -68,6 +68,18 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="926721433922696">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="693612831189413" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="151085635034589" type="spJogador">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="836231895432203" title="Animações">
@@ -86,7 +98,7 @@
                                     <param id="2" name="Value">&quot;FASE_04_FUNDOPOCO&quot;</param>
                                 </condition>
                                 <condition id="9" inverted="1" name="Is overlapping at offset" sid="318811790782594" type="spJogador">
-                                    <param id="0" name="Object">tmFase01</param>
+                                    <param id="0" name="Object">tmFase01_plat</param>
                                     <param id="1" name="Offset X">0</param>
                                     <param id="2" name="Offset Y">64</param>
                                 </condition>
