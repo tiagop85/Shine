@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>_TESTE</name>
     <events>
+        <include>GlobalEvents</include>
         <include>PlayerEvents</include>
         <event-block sid="447326715175762">
             <conditions>
