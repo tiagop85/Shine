@@ -4,8 +4,16 @@
     <name>_TESTE</name>
     <events>
         <include>PlayerEvents</include>
-        <include>GlobalEvents</include>
-        <include>MusicEvents</include>
-        <include>NavigationEvents</include>
+        <event-block sid="447326715175762">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="950844854193545" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="851694129669712" type="Hair">
+                    <param id="0" name="Object">spJogador</param>
+                    <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
