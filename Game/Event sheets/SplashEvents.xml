@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SplashEvents</name>
+    <events>
+        <include>MusicEvents</include>
+        <include>NavigationEvents</include>
+        <event-block sid="362014941149647">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="477277986885735" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="416103953102427" type="arControl">
+                    <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
+                    <param id="1" name="Value">CT_MUSICA_MENU</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="602639931029132" type="txSplash" />
+            </actions>
+        </event-block>
+        <event-block sid="591171897480958">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="778838390287174" type="spSplash" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="643742594347425" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="561782453618603" type="System">
+                    <param id="0" name="Layout">MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="963385338584798">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="116736591550944" type="txSplash" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="820155562945739" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="457769868450226" type="spSplash">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="885312148459666" type="spSplash" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

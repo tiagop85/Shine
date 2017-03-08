@@ -10,25 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">FASE_01_TUTORIAL_VIDA</layout>
-        <layout order="1">Lv1_FundoDoPoco</layout>
-        <layout order="10">MainMenu</layout>
-        <layout order="11">FASE_02_TUTORIAL_FORCA</layout>
-        <layout order="12">Lv2_BecoSemSaida</layout>
-        <layout order="13">Lv3_LuzNoFimDoTunel</layout>
-        <layout order="14">_EVENTOS_JOGADOR</layout>
-        <layout active="1" order="17">_TESTE</layout>
-        <event-sheet order="2">Lv1Events</event-sheet>
-        <event-sheet order="3">FASE_01_TUTORIAL_VIDA</event-sheet>
-        <event-sheet order="4">GlobalEvents</event-sheet>
-        <event-sheet order="5">FASE_02_TUTORIAL_FORCA</event-sheet>
-        <event-sheet order="6">FASE_03_TUTORIAL_AGILIDADE</event-sheet>
-        <event-sheet order="7">NavigationEvents</event-sheet>
-        <event-sheet order="8">Lv2Events</event-sheet>
-        <event-sheet order="9">Lvl3Events</event-sheet>
-        <event-sheet order="15">PlayerEvents</event-sheet>
-        <event-sheet order="16">MainMenuEvents</event-sheet>
-        <event-sheet order="18">_TESTE</event-sheet>
+        <layout active="1" order="0">Lv1_FundoDoPoco</layout>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -42,12 +24,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/buttons/" />
-        <folder expanded="0" path="object-folder/system/" />
+        <folder expanded="1" path="object-folder/buttons/" />
+        <folder expanded="1" path="object-folder/system/" />
         <folder expanded="1" path="object-folder/cenario/" />
         <folder expanded="1" path="object-folder/cenario/orbs/" />
         <folder expanded="1" path="object-folder/cenario/npcs/" />
-        <folder expanded="0" path="object-folder/cenario/controle/" />
+        <folder expanded="1" path="object-folder/cenario/controle/" />
+        <folder expanded="1" path="object-folder/cenario/Tileds/" />
+        <folder expanded="1" path="object-folder/cenario/objects/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Levels/" />
         <folder expanded="1" path="layout-folder/Tutoriais/" />
@@ -61,13 +45,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/btConfAudio/" />
-        <folder expanded="1" path="animation-folder/btConfGame/" />
+        <folder expanded="1" path="animation-folder/zbtConfGame/" />
         <folder expanded="1" path="animation-folder/btCreditos/" />
         <folder expanded="1" path="animation-folder/btMenuPrincipal/" />
         <folder expanded="1" path="animation-folder/btStartGame/" />
         <folder expanded="1" path="animation-folder/btSkip/" />
         <folder expanded="1" path="animation-folder/btConfAudio_Jogo/" />
         <folder expanded="1" path="animation-folder/btPausa/" />
+        <folder expanded="1" path="animation-folder/btTutorial/" />
+        <folder expanded="1" path="animation-folder/btMenuPrincipal_Jogo/" />
         <folder expanded="1" path="animation-folder/spOrbAgilidade/" />
         <folder expanded="1" path="animation-folder/spOrbEnergia/" />
         <folder expanded="1" path="animation-folder/spOrbForca/" />
@@ -75,12 +61,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spJogador/" />
         <folder expanded="1" path="animation-folder/spIluminacao/" />
         <folder expanded="1" path="animation-folder/spChegada/" />
+        <folder expanded="1" path="animation-folder/spBlocoPesado/" />
         <folder expanded="1" path="animation-folder/spChaoMortal/" />
+        <folder expanded="1" path="animation-folder/spPlataformaMovel/" />
         <folder expanded="1" path="animation-folder/spEscada/" />
         <folder expanded="1" path="animation-folder/spChao/" />
-        <folder expanded="1" path="animation-folder/spBlocoPesado/" />
         <folder expanded="1" path="animation-folder/spPlataformaFixa/" />
-        <folder expanded="1" path="animation-folder/spPlataformaMovel/" />
         <folder expanded="1" path="animation-folder/spTempSprite01/" />
         <folder expanded="1" path="animation-folder/spTempSprite03/" />
         <folder expanded="1" path="animation-folder/Player/" />
@@ -90,10 +76,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/LevelSelect/" />
         <folder expanded="1" path="animation-folder/FASE01/" />
         <folder expanded="1" path="animation-folder/FASE02/" />
-        <folder expanded="1" path="animation-folder/btMenuPrincipal_jogo/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/spConfiguracao/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/spSplash/" />
     </folders-expanded>
 </c2uistate>

@@ -22,8 +22,12 @@
                     <param id="0" name="Instance variable">FASE_ATUAL</param>
                     <param id="1" name="Value">3</param>
                 </action>
+                <action id="4" name="Set animation" sid="143815047863929" type="btStartGame">
+                    <param id="0" name="Animation">&quot;pressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
                 <action behavior="Timer" id="0" name="Start timer" sid="236971046741135" type="btStartGame">
-                    <param id="0" name="Duration">0.1</param>
+                    <param id="0" name="Duration">0.25</param>
                     <param id="1" name="Type">0</param>
                     <param id="2" name="Tag">&quot;NEXT_FASE&quot;</param>
                 </action>
@@ -34,20 +38,65 @@
                     <param id="0" name="Instance variable">Touched</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="4" name="Set animation" sid="700116824324676" type="btStartGame">
+                    <param id="0" name="Animation">&quot;unpressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
-        <comment>&gt; Tela de Configurações</comment>
-        <event-block sid="381712633581156">
+        <comment>&gt; Tutorial</comment>
+        <event-block sid="973234230074757">
             <conditions>
-                <condition id="3" name="On touched object" sid="756750015089102" type="Touch">
-                    <param id="0" name="Object">btConfGame</param>
+                <condition id="3" name="On touched object" sid="162589300417125" type="Touch">
+                    <param id="0" name="Object">btTutorial</param>
                 </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="362104445046080" type="btConfGame">
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="201063583324239" type="btTutorial">
                     <param id="0" name="Instance variable">Touched</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-13" name="Set boolean" sid="631401756129068" type="btConfGame">
+                <action id="-13" name="Set boolean" sid="625352901463135" type="btTutorial">
+                    <param id="0" name="Instance variable">Touched</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="704192435203678" type="arControl">
+                    <param id="0" name="Instance variable">FASE_ATUAL</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="682336527575802" type="btTutorial">
+                    <param id="0" name="Animation">&quot;pressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Timer" id="0" name="Start timer" sid="446040342933852" type="btTutorial">
+                    <param id="0" name="Duration">0.25</param>
+                    <param id="1" name="Type">0</param>
+                    <param id="2" name="Tag">&quot;NEXT_FASE&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="110740218322190" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="231870951638379" type="btTutorial">
+                    <param id="0" name="Instance variable">Touched</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="573472215810864" type="btTutorial">
+                    <param id="0" name="Animation">&quot;unpressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>&gt; Tela de Configurações - desabilitado</comment>
+        <event-block disabled="1" sid="381712633581156">
+            <conditions>
+                <condition id="3" name="On touched object" sid="756750015089102" type="Touch">
+                    <param id="0" name="Object">zbtConfGame</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="362104445046080" type="zbtConfGame">
+                    <param id="0" name="Instance variable">Touched</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="631401756129068" type="zbtConfGame">
                     <param id="0" name="Instance variable">Touched</param>
                     <param id="1" name="Value">1</param>
                 </action>
@@ -57,36 +106,47 @@
                 <action id="-16" name="Wait" sid="816775346162332" type="System">
                     <param id="0" name="Seconds">0.5</param>
                 </action>
-                <action id="-13" name="Set boolean" sid="682057013525236" type="btConfGame">
+                <action id="-13" name="Set boolean" sid="682057013525236" type="zbtConfGame">
                     <param id="0" name="Instance variable">Touched</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
         <comment>&gt; Tela de Créditos</comment>
-        <event-block sid="892543436152840">
+        <event-block sid="468245136068889">
             <conditions>
-                <condition id="3" name="On touched object" sid="589601407308635" type="Touch">
+                <condition id="3" name="On touched object" sid="449761264549484" type="Touch">
                     <param id="0" name="Object">btCreditos</param>
                 </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="347332316537923" type="btCreditos">
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="496092356583936" type="btCreditos">
                     <param id="0" name="Instance variable">Touched</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-13" name="Set boolean" sid="820754199986975" type="btCreditos">
+                <action id="-13" name="Set boolean" sid="193929702447629" type="btCreditos">
                     <param id="0" name="Instance variable">Touched</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="306740945482588" type="System">
+                <action id="4" name="Set animation" sid="641489176166395" type="btCreditos">
+                    <param id="0" name="Animation">&quot;pressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="421717129942436" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="710162844169453" type="System">
                     <param id="0" name="Layout">CreditsMenu</param>
                 </action>
-                <action id="-16" name="Wait" sid="225725862501881" type="System">
+                <action id="-16" name="Wait" sid="476265763041940" type="System">
                     <param id="0" name="Seconds">0.5</param>
                 </action>
-                <action id="-13" name="Set boolean" sid="688535249888345" type="btCreditos">
+                <action id="-13" name="Set boolean" sid="416769333779211" type="btCreditos">
                     <param id="0" name="Instance variable">Touched</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="408219467838213" type="btCreditos">
+                    <param id="0" name="Animation">&quot;unpressed&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -291,6 +351,9 @@
                     <param id="0" name="Tag">&quot;NEXT_FASE&quot;</param>
                 </condition>
                 <condition behavior="Timer" id="0" name="On timer" sid="435643325025423" type="btStartGame">
+                    <param id="0" name="Tag">&quot;NEXT_FASE&quot;</param>
+                </condition>
+                <condition behavior="Timer" id="0" name="On timer" sid="709930899433298" type="btTutorial">
                     <param id="0" name="Tag">&quot;NEXT_FASE&quot;</param>
                 </condition>
             </conditions>

@@ -3,7 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenuEvents</name>
     <events>
-        <variable comment="Opacidade da layer" constant="0" name="Opacity" sid="595996019846949" static="0" type="number">0</variable>
+        <variable comment="Opacidade da layer" constant="0" name="OPACITY" sid="595996019846949" static="0" type="number">0</variable>
+        <variable comment="inc da Opacidade" constant="0" name="OPACITY_DELTA" sid="340311615946437" static="0" type="number">1</variable>
+        <variable constant="0" name="OPACITY_TIMER" sid="158844787080844" static="0" type="number">0.05</variable>
         <include>MusicEvents</include>
         <include>NavigationEvents</include>
         <event-block sid="777961823987806">
@@ -24,24 +26,79 @@
         <event-block sid="300222746744244">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="803711879591402" type="System">
-                    <param id="0" name="Interval (seconds)">0.1</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="894126264131103" type="System">
-                    <param id="0" name="Variable">Opacity</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">100</param>
+                    <param id="0" name="Interval (seconds)">OPACITY_TIMER</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="991355244604307" type="System">
-                    <param id="0" name="Variable">Opacity</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-18" name="Set layer opacity" sid="525277760266002" type="System">
-                    <param id="0" name="Layer">0</param>
-                    <param id="1" name="Opacity">Opacity</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="539045803010897">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="894126264131103" type="System">
+                            <param id="0" name="Variable">OPACITY</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="352075041061458" type="System">
+                            <param id="0" name="Variable">OPACITY_DELTA</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="417536010680687">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="302483312614221" type="System">
+                            <param id="0" name="Variable">OPACITY</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">65</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="583635497285620" type="System">
+                            <param id="0" name="Variable">OPACITY_DELTA</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="332216690386576" type="System">
+                            <param id="0" name="Variable">OPACITY_DELTA</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="653583511329566">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="181709031209793" type="System">
+                            <param id="0" name="Variable">OPACITY</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="779179661988317" type="System">
+                            <param id="0" name="Variable">OPACITY_DELTA</param>
+                            <param id="1" name="Value">-1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="623430792938960" type="System">
+                            <param id="0" name="Variable">OPACITY_TIMER</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="704171854129225">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="991355244604307" type="System">
+                            <param id="0" name="Variable">OPACITY</param>
+                            <param id="1" name="Value">OPACITY + OPACITY_DELTA</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="525277760266002" type="System">
+                            <param id="0" name="Layer">0</param>
+                            <param id="1" name="Opacity">Opacity</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

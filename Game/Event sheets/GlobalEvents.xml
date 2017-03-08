@@ -6,9 +6,11 @@
         <variable constant="1" name="CT_VEL_PASSARO_X_A" sid="267125588878804" static="0" type="number">400</variable>
         <variable constant="1" name="CT_VEL_PASSARO_Y_A" sid="838562660175407" static="0" type="number">400</variable>
         <variable constant="1" name="CT_ACE_PASSARO_X_A" sid="473206246673297" static="0" type="number">400</variable>
+        <variable constant="1" name="CT_ACE_PASSARO_Y_A" sid="486743164313828" static="0" type="number">0</variable>
         <variable constant="1" name="CT_VEL_PASSARO_X_B" sid="190611704130018" static="0" type="number">200</variable>
         <variable constant="1" name="CT_VEL_PASSARO_Y_B" sid="677508196421749" static="0" type="number">150</variable>
         <variable constant="1" name="CT_ACE_PASSARO_X_B" sid="974179380257967" static="0" type="number">0</variable>
+        <variable constant="1" name="CT_ACE_PASSARO_Y_B" sid="122558076395348" static="0" type="number">100</variable>
         <variable constant="1" name="CT_TEMPO_PASSARO_CRIACAO" sid="336557428524957" static="0" type="number">2</variable>
         <variable constant="1" name="CT_OPACIDADE_DELTA" sid="824493558812994" static="0" type="number">10</variable>
         <variable constant="0" name="TEMPO_PASSARO_DELTA" sid="462446907674713" static="0" type="number">0.1</variable>
@@ -95,6 +97,9 @@
                         </action>
                         <action behavior="Bullet_y" id="0" name="Set speed" sid="461291038385976" type="spPassaro">
                             <param id="0" name="Speed">CT_VEL_PASSARO_Y_A</param>
+                        </action>
+                        <action behavior="Bullet_y" id="1" name="Set acceleration" sid="703411853482944" type="spPassaro">
+                            <param id="0" name="Acceleration">CT_ACE_PASSARO_Y_A</param>
                         </action>
                         <action behavior="Bullet_y" id="5" name="Set enabled" sid="951535404555375" type="spPassaro">
                             <param id="0" name="State">1</param>
@@ -226,20 +231,26 @@
                         <action behavior="Bullet_y" id="5" name="Set enabled" sid="875581955935214" type="spPassaro">
                             <param id="0" name="State">0</param>
                         </action>
+                        <action id="-16" name="Wait" sid="685117999267494" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
                         <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="210463395938290" type="spPassaro">
                             <param id="0" name="Angle">0</param>
-                        </action>
-                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="871541480506534" type="spPassaro">
-                            <param id="0" name="Angle">-90</param>
                         </action>
                         <action behavior="Bullet_x" id="0" name="Set speed" sid="751019199791931" type="spPassaro">
                             <param id="0" name="Speed">CT_VEL_PASSARO_X_B</param>
                         </action>
+                        <action behavior="Bullet_x" id="1" name="Set acceleration" sid="935696283596953" type="spPassaro">
+                            <param id="0" name="Acceleration">CT_ACE_PASSARO_X_B</param>
+                        </action>
+                        <action behavior="Bullet_y" id="3" name="Set angle of motion" sid="871541480506534" type="spPassaro">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
                         <action behavior="Bullet_y" id="0" name="Set speed" sid="936683636742928" type="spPassaro">
                             <param id="0" name="Speed">CT_VEL_PASSARO_Y_B</param>
                         </action>
-                        <action behavior="Bullet_x" id="1" name="Set acceleration" sid="935696283596953" type="spPassaro">
-                            <param id="0" name="Acceleration">CT_ACE_PASSARO_X_B</param>
+                        <action behavior="Bullet_y" id="1" name="Set acceleration" sid="905084170783675" type="spPassaro">
+                            <param id="0" name="Acceleration">CT_ACE_PASSARO_Y_B</param>
                         </action>
                         <action behavior="Bullet_x" id="5" name="Set enabled" sid="251040249792893" type="spPassaro">
                             <param id="0" name="State">1</param>
@@ -272,7 +283,7 @@
                             <param id="0" name="Angle">90</param>
                         </action>
                         <action behavior="Timer" id="0" name="Start timer" sid="345416143608137" type="spPassaro">
-                            <param id="0" name="Duration">random(0.30)</param>
+                            <param id="0" name="Duration">random(0.20)</param>
                             <param id="1" name="Type">0</param>
                             <param id="2" name="Tag">&quot;VOAR_CIMA&quot;</param>
                         </action>
