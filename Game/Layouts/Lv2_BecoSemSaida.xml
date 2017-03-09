@@ -252,6 +252,45 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="Hair2" uid="278">
+                    <properties>
+                        <rate>50</rate>
+                        <spray-cone>12</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>64</speed>
+                        <size>25</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>0</acceleration>
+                        <gravity>59</gravity>
+                        <angle-randomiser>22</angle-randomiser>
+                        <speed-randomiser>0</speed-randomiser>
+                        <opacity-randomiser>5</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>0.5</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>865</x>
+                        <y>1381</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.52359879</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="Hair" uid="144">
                     <properties>
                         <rate>50</rate>
@@ -279,8 +318,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>910.709472656</x>
-                        <y>1346.210693359</y>
+                        <x>908</x>
+                        <y>1287</y>
                         <z>0</z>
                         <width>128</width>
                         <height>128</height>
@@ -348,8 +387,8 @@
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.495495498</hotspotX>
-                        <hotspotY>0.495495498</hotspotY>
+                        <hotspotX>0.504504502</hotspotX>
+                        <hotspotY>0.504504502</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1755,7 +1794,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="215">
+                <instance type="spPlataformaMovel" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1804,7 +1843,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="216">
+                <instance type="spPlataformaMovel" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1853,7 +1892,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="225">
+                <instance type="spPlataformaMovel" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -4079,7 +4118,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spIluminacao" uid="70">
+                <instance type="spIluminacao" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -4257,7 +4296,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempForca" uid="5">
+                <instance type="txTempForca" uid="7">
                     <properties>
                         <text>FORÇA</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -4284,7 +4323,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempLife" uid="6">
+                <instance type="txTempLife" uid="8">
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>

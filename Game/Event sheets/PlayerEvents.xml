@@ -17,6 +17,9 @@
                             <param id="0" name="Variable">level</param>
                             <param id="1" name="Value">LayoutName</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="874430141187767" type="Hair2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="211236611567022">
@@ -25,6 +28,10 @@
                     </conditions>
                     <actions>
                         <action id="-4" name="Set position to another object" sid="991460518619769" type="Hair">
+                            <param id="0" name="Object">spJogador</param>
+                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="808109218483987" type="Hair2">
                             <param id="0" name="Object">spJogador</param>
                             <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
                         </action>
@@ -48,8 +55,11 @@
                         <action id="7" name="Set mirrored" sid="837522938976641" type="spJogador">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="472970378999902" type="Hair">
-                            <param id="0" name="Angle">30</param>
+                        <action id="-15" name="Set visible" sid="472970378999902" type="Hair">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="357899753061753" type="Hair2">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -63,8 +73,11 @@
                         <action id="7" name="Set mirrored" sid="596508705817146" type="spJogador">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="655988510163495" type="Hair">
-                            <param id="0" name="Angle">150</param>
+                        <action id="-15" name="Set visible" sid="971548263791787" type="Hair">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="962079181455159" type="Hair2">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>

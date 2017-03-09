@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spChao" uid="11">
+                <instance type="spChao" uid="33">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -72,7 +72,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spChao" uid="12">
+                <instance type="spChao" uid="34">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -115,7 +115,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPassaro" uid="13">
+                <instance type="spPassaro" uid="46">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -174,7 +174,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spChao" uid="25">
+                <instance type="spChao" uid="133">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -236,7 +236,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spIluminacao" uid="32">
+                <instance type="spIluminacao" uid="137">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -285,7 +285,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spOrbEnergia" uid="27">
+                <instance type="spOrbEnergia" uid="153">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -310,7 +310,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Hair" uid="28">
+                <instance type="Hair" uid="187">
                     <properties>
                         <rate>50</rate>
                         <spray-cone>12</spray-cone>
@@ -337,19 +337,58 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>172.552566528</x>
-                        <y>281.063140869</y>
+                        <x>207</x>
+                        <y>258</y>
                         <z>0</z>
                         <width>128</width>
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0.536714792</angle>
+                        <angle>2.67741847</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spJogador" uid="29">
+                <instance type="Hair2" uid="275">
+                    <properties>
+                        <rate>50</rate>
+                        <spray-cone>12</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>64</speed>
+                        <size>25</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>0</acceleration>
+                        <gravity>59</gravity>
+                        <angle-randomiser>22</angle-randomiser>
+                        <speed-randomiser>0</speed-randomiser>
+                        <opacity-randomiser>5</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>0.5</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>141</x>
+                        <y>256</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.52359879</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spJogador" uid="188">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -406,13 +445,13 @@
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.495495498</hotspotX>
-                        <hotspotY>0.495495498</hotspotY>
+                        <hotspotX>0.504504502</hotspotX>
+                        <hotspotY>0.504504502</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spBlocoPesado" uid="31">
+                <instance type="spBlocoPesado" uid="189">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -455,7 +494,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spOrbForca" uid="33">
+                <instance type="spOrbForca" uid="191">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -502,7 +541,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="txTempGameOver" uid="34">
+                <instance type="txTempGameOver" uid="212">
                     <properties>
                         <text>GAME OVER</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -529,7 +568,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempForca" uid="46">
+                <instance type="txTempForca" uid="213">
                     <properties>
                         <text>FORÇA</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -556,7 +595,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempLife" uid="133">
+                <instance type="txTempLife" uid="221">
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -588,7 +627,7 @@
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="arControl" uid="187">
+        <instance type="arControl" uid="223">
             <properties>
                 <width>1</width>
                 <height>1</height>

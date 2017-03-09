@@ -1020,31 +1020,31 @@
                     </behaviors>
                     <animation-folder>
                         <animation framecount="3" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="459429964536469" speed="2">
-                            <frame duration="1" hotspotX="0.495495" hotspotY="0.495495" original-source="E:\projetos\PosUEA\Shine\Game\Sprites\shine_asset_idle.png">
-                                <image-point name="Cabelo" x="0.423423" y="0.153153" />
+                            <frame duration="1" hotspotX="0.504505" hotspotY="0.504505">
+                                <image-point name="Cabelo" x="0.459459" y="0.144144" />
                                 <collision-poly>
-                                    <point x="0.252252" y="0.018018" />
-                                    <point x="0.675676" y="0" />
-                                    <point x="0.684685" y="1" />
-                                    <point x="0.261261" y="1" />
+                                    <point x="0.279279" y="0" />
+                                    <point x="0.711712" y="0" />
+                                    <point x="0.711712" y="1" />
+                                    <point x="0.279279" y="1" />
                                 </collision-poly>
                             </frame>
-                            <frame duration="1" hotspotX="0.495495" hotspotY="0.495495">
-                                <image-point name="Cabelo" x="0.423423" y="0.153153" />
+                            <frame duration="1" hotspotX="0.504505" hotspotY="0.504505">
+                                <image-point name="Cabelo" x="0.459459" y="0.144144" />
                                 <collision-poly>
-                                    <point x="0.252252" y="0.018018" />
-                                    <point x="0.675676" y="0" />
-                                    <point x="0.684685" y="1" />
-                                    <point x="0.261261" y="1" />
+                                    <point x="0.279279" y="0" />
+                                    <point x="0.711712" y="0" />
+                                    <point x="0.711712" y="1" />
+                                    <point x="0.279279" y="1" />
                                 </collision-poly>
                             </frame>
-                            <frame duration="1" hotspotX="0.495495" hotspotY="0.495495">
-                                <image-point name="Cabelo" x="0.423423" y="0.153153" />
+                            <frame duration="1" hotspotX="0.504505" hotspotY="0.504505">
+                                <image-point name="Cabelo" x="0.459459" y="0.144144" />
                                 <collision-poly>
-                                    <point x="0.252252" y="0.018018" />
-                                    <point x="0.675676" y="0" />
-                                    <point x="0.684685" y="1" />
-                                    <point x="0.261261" y="1" />
+                                    <point x="0.288288" y="0" />
+                                    <point x="0.711712" y="0" />
+                                    <point x="0.711712" y="1" />
+                                    <point x="0.288288" y="1" />
                                 </collision-poly>
                             </frame>
                         </animation>
@@ -2839,6 +2839,10 @@
         <object-type name="Function" sid="734382882259466">
             <plugin id="Function" />
         </object-type>
+        <object-type name="Hair2" sid="959537783377367">
+            <plugin id="Particles" />
+            <texture original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Texturas\hair2.png" />
+        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">
@@ -2908,13 +2912,13 @@
         <event-sheet>PlayerEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="230" />
-        <global-instance type="Touch" uid="231">
+        <global-instance type="Keyboard" uid="271" />
+        <global-instance type="Touch" uid="272">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="232">
+        <global-instance type="Audio" uid="273">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -2928,7 +2932,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Function" uid="214" />
+        <global-instance type="Function" uid="274" />
     </global-instances>
     <sounds-folder />
     <music-folder>

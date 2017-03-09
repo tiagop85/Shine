@@ -189,7 +189,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="OrbEffect" uid="192">
+                <instance type="OrbEffect" uid="9">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -269,6 +269,45 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Hair2" uid="276">
+                    <properties>
+                        <rate>50</rate>
+                        <spray-cone>12</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>64</speed>
+                        <size>25</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>0</acceleration>
+                        <gravity>59</gravity>
+                        <angle-randomiser>22</angle-randomiser>
+                        <speed-randomiser>0</speed-randomiser>
+                        <opacity-randomiser>5</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>0.5</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>268</x>
+                        <y>1381</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.52359879</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="spJogador" uid="95">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -326,8 +365,8 @@
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.495495498</hotspotX>
-                        <hotspotY>0.495495498</hotspotY>
+                        <hotspotX>0.504504502</hotspotX>
+                        <hotspotY>0.504504502</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1260,7 +1299,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempGameOver" uid="7">
+                <instance type="txTempGameOver" uid="10">
                     <properties>
                         <text>GAME OVER</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -1287,7 +1326,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempAgilidade" uid="8">
+                <instance type="txTempAgilidade" uid="11">
                     <properties>
                         <text>AGILIDADE</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -1314,7 +1353,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempForca" uid="9">
+                <instance type="txTempForca" uid="12">
                     <properties>
                         <text>FORÇA</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -1341,7 +1380,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempLife" uid="10">
+                <instance type="txTempLife" uid="13">
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>
