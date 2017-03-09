@@ -124,55 +124,6 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Transparencia" sid="397126917653508">
-            <initially-visible>1</initially-visible>
-            <background-color>6,0,0</background-color>
-            <transparent>0</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <global>0</global>
-            <use-render-cells>0</use-render-cells>
-            <blend-mode>0</blend-mode>
-            <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="spIluminacao" uid="40">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>397.5</x>
-                        <y>238</y>
-                        <z>0</z>
-                        <width>841</width>
-                        <height>542</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
-            <effects>
-                <effect-type name="Multiply">
-                    <effect id="multiply" />
-                    <effect-instance type="Multiply" />
-                </effect-type>
-            </effects>
-        </layer>
         <layer name="Objects" sid="469227235939417">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -189,6 +140,45 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="Hair" uid="49">
+                    <properties>
+                        <rate>50</rate>
+                        <spray-cone>12</spray-cone>
+                        <type>Continuous spray</type>
+                        <initial-particle-properties></initial-particle-properties>
+                        <speed>64</speed>
+                        <size>25</size>
+                        <opacity>100</opacity>
+                        <grow-rate>0</grow-rate>
+                        <x-randomiser>0</x-randomiser>
+                        <y-randomiser>0</y-randomiser>
+                        <speed-randomiser->0</speed-randomiser->
+                        <size-randomiser>0</size-randomiser>
+                        <grow-rate-randomiser>0</grow-rate-randomiser>
+                        <particle-lifetime-properties></particle-lifetime-properties>
+                        <acceleration>0</acceleration>
+                        <gravity>59</gravity>
+                        <angle-randomiser>22</angle-randomiser>
+                        <speed-randomiser>0</speed-randomiser>
+                        <opacity-randomiser>5</opacity-randomiser>
+                        <destroy-mode>Fade to invisible</destroy-mode>
+                        <timeout>0.5</timeout>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>84</x>
+                        <y>927</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>2.617993832</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="spOrbEnergia" uid="47">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -360,6 +350,55 @@
                 </instance>
             </instances>
             <effects />
+        </layer>
+        <layer name="Transparencia" sid="397126917653508">
+            <initially-visible>1</initially-visible>
+            <background-color>6,0,0</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="spIluminacao" uid="40">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>397.5</x>
+                        <y>238</y>
+                        <z>0</z>
+                        <width>841</width>
+                        <height>542</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects>
+                <effect-type name="Multiply">
+                    <effect id="multiply" />
+                    <effect-instance type="Multiply" />
+                </effect-type>
+            </effects>
         </layer>
         <layer name="HUD" sid="583465955758428">
             <initially-visible>1</initially-visible>

@@ -106,8 +106,8 @@
                         <x>365</x>
                         <y>373</y>
                         <z>0</z>
-                        <width>115</width>
-                        <height>131</height>
+                        <width>141.227005005</width>
+                        <height>105.574996948</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -171,8 +171,8 @@
                         <x>368</x>
                         <y>194</y>
                         <z>0</z>
-                        <width>58.880001068</width>
-                        <height>44.01599884</height>
+                        <width>141.227005005</width>
+                        <height>105.574996948</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -226,7 +226,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>25</width>
+                        <width>53</width>
                         <height>62</height>
                         <max-width>53</max-width>
                         <max-height>62</max-height>
