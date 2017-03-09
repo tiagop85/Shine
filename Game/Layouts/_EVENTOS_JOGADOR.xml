@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spTempSprite01" uid="2">
+                <instance type="spTempSprite01" uid="137">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spTempSprite03" uid="3">
+                <instance type="spTempSprite03" uid="153">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spTempPiso" uid="133">
+                <instance type="spTempPiso" uid="188">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -102,7 +102,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spTempSprite02" uid="137">
+                <instance type="spTempSprite02" uid="189">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -131,7 +131,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spEscada" uid="153">
+                <instance type="spEscada" uid="191">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -153,7 +153,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player" uid="188">
+                <instance type="Player" uid="212">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

@@ -2396,22 +2396,8 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Cabelo" sid="827207915298509">
-            <plugin id="Particles" />
-            <texture />
-        </object-type>
         <object-type name="TiledBgLvl1" sid="816065933732321">
             <plugin id="Tilemap" />
-            <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\tutorial1.png" />
-            <tiles />
-        </object-type>
-        <object-type name="ScenarioLvl1" sid="848279685251209">
-            <plugin id="Tilemap" />
-            <behaviors>
-                <behavior-type name="Solid" sid="926966873690112">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\tutorial1.png" />
             <tiles />
         </object-type>
