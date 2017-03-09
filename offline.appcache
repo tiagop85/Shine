@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1489017987
+#1489036983
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -33,13 +33,13 @@ images/spjogador-sheet1.png
 images/spiluminacao-sheet0.png
 images/spchegada-sheet0.png
 images/tmfase01_bg.png
-images/tmfase02.png
+images/tmfase03.png
 images/tiledbackground.png
-images/spblocopesado-sheet0.png
 images/spchaomortal-sheet0.png
 images/spplataformamovel-sheet0.png
 images/spescada-sheet0.png
 images/spchao-sheet0.png
+images/spblocopesado-sheet0.png
 images/sptempsprite01-sheet0.png
 images/sptempsprite01-sheet1.png
 images/sptempsprite03-sheet0.png
@@ -53,11 +53,11 @@ images/fase01-sheet0.png
 images/fase02-sheet0.png
 images/sprite-sheet0.png
 images/sprite2-sheet0.png
-images/cabelo.png
 images/tiledbglvl1.png
 images/spconfiguracao-sheet0.png
 images/sprite3-sheet0.png
 images/spsplash-sheet0.png
+images/hair.png
 media/menu%20-%20kevin%20macleod%20-%20thereveal.ogg
 media/jogo%20-%20kevin%20macleod%20-%20phantasm.ogg
 icon-16.png
