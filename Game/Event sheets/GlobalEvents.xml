@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GlobalEvents</name>
     <events>
+        <variable constant="0" name="ON_ORB_EFFECT" sid="113696668103754" static="0" type="number">0</variable>
         <variable constant="1" name="CT_VEL_PASSARO_X_A" sid="267125588878804" static="0" type="number">400</variable>
         <variable constant="1" name="CT_VEL_PASSARO_Y_A" sid="838562660175407" static="0" type="number">400</variable>
         <variable constant="1" name="CT_ACE_PASSARO_X_A" sid="473206246673297" static="0" type="number">400</variable>
@@ -13,6 +14,7 @@
         <variable constant="1" name="CT_ACE_PASSARO_Y_B" sid="122558076395348" static="0" type="number">100</variable>
         <variable constant="1" name="CT_TEMPO_PASSARO_CRIACAO" sid="336557428524957" static="0" type="number">2</variable>
         <variable constant="0" name="OPACIDADE_DELTA" sid="824493558812994" static="0" type="number">10</variable>
+        <variable constant="0" name="ORB_EFFECT_OPACIDADE" sid="181442733146111" static="0" type="number">100</variable>
         <variable constant="0" name="TEMPO_PASSARO_DELTA" sid="462446907674713" static="0" type="number">0.1</variable>
         <variable constant="1" name="CT_TEMPO_PASSARO_DELTA" sid="760678436164550" static="0" type="number">1.5</variable>
         <variable constant="1" name="CT_MAX_TEMPO_PASSARO_DELTA" sid="930183153686915" static="0" type="number">1.5</variable>
@@ -678,6 +680,10 @@
                         <action behavior="Physics" id="21" name="Set immovable" sid="292869865370490" type="spBlocoPesado">
                             <param id="0" name="Setting">0</param>
                         </action>
+                        <action id="0" name="Call function" sid="462691335620414" type="Function">
+                            <param id="0" name="Name">&quot;onOrbEffect&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;forca&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>&gt; Orb de Força: spawn</comment>
@@ -720,6 +726,10 @@
                                 <action id="-15" name="Set visible" sid="480005511718314" type="txTempForca">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
+                                <action id="0" name="Call function" sid="925482875439779" type="Function">
+                                    <param id="0" name="Name">&quot;resetOrbEffect&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="171933760575842">
@@ -745,6 +755,10 @@
                                 </action>
                                 <action id="-15" name="Set visible" sid="196936634877470" type="txTempForca">
                                     <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="283197819730478" type="Function">
+                                    <param id="0" name="Name">&quot;decreaseOrbEffect&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -784,6 +798,10 @@
                         </action>
                         <action behavior="Platform" id="1" name="Set max speed" sid="980062775529784" type="spJogador">
                             <param id="0" name="Max Speed">CT_PLAYER_VELOCIDADE_TURBO</param>
+                        </action>
+                        <action id="0" name="Call function" sid="439453699152182" type="Function">
+                            <param id="0" name="Name">&quot;onOrbEffect&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;agilidade&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -827,6 +845,10 @@
                                 <action id="-15" name="Set visible" sid="585676522135680" type="txTempAgilidade">
                                     <param id="0" name="Visibility">0</param>
                                 </action>
+                                <action id="0" name="Call function" sid="503344194817063" type="Function">
+                                    <param id="0" name="Name">&quot;resetOrbEffect&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="329468734476300">
@@ -852,6 +874,10 @@
                                 </action>
                                 <action id="-15" name="Set visible" sid="892828185716755" type="txTempAgilidade">
                                     <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="215786234034290" type="Function">
+                                    <param id="0" name="Name">&quot;decreaseOrbEffect&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
@@ -963,6 +989,118 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="710294779606663" title="Orb Effect">
+            <sub-events>
+                <event-block sid="379443229461683">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="952000969801584" type="System" />
+                        <condition id="-14" name="Compare variable" sid="982145334221528" type="System">
+                            <param id="0" name="Variable">ON_ORB_EFFECT</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="726913217913152" type="OrbEffect">
+                            <param id="0" name="Object">spJogador</param>
+                            <param id="1" name="Image point (optional)">&quot;origin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="513851436790529">
+                    <conditions>
+                        <condition id="0" name="On function" sid="447271836753035" type="Function">
+                            <param id="0" name="Name">&quot;resetOrbEffect&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="203721524588826" type="OrbEffect">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="840602035844382" type="System">
+                            <param id="0" name="Variable">ON_ORB_EFFECT</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="147476048903175" type="System">
+                            <param id="0" name="Variable">ORB_EFFECT_OPACIDADE</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="113729541639540" type="OrbEffect">
+                            <param id="0" name="Opacity">ORB_EFFECT_OPACIDADE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="322699907735001">
+                    <conditions>
+                        <condition id="0" name="On function" sid="224171468158967" type="Function">
+                            <param id="0" name="Name">&quot;decreaseOrbEffect&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="458245213251286" type="System">
+                            <param id="0" name="Variable">ORB_EFFECT_OPACIDADE</param>
+                            <param id="1" name="Value">ORB_EFFECT_OPACIDADE - 20</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="993734890900953" type="OrbEffect">
+                            <param id="0" name="Opacity">ORB_EFFECT_OPACIDADE</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="976927116929656">
+                    <conditions>
+                        <condition id="0" name="On function" sid="888345777290511" type="Function">
+                            <param id="0" name="Name">&quot;onOrbEffect&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="916776163664448" type="System">
+                            <param id="0" name="Variable">ON_ORB_EFFECT</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="485918168912028" type="OrbEffect">
+                            <param id="0" name="Object">spJogador</param>
+                            <param id="1" name="Image point (optional)">&quot;origin&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="520871817662223">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="841054051255999" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;forca&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="788074906639880" type="OrbEffect">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="694881719260403" type="OrbEffect">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="587313717173554">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="300528980940619" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;agilidade&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="763179126904583" type="OrbEffect">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="557955650401408" type="OrbEffect">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -850,6 +851,37 @@
                                     <point x="0.716418" y="0.717822" />
                                     <point x="0.497512" y="0.89604" />
                                     <point x="0.303483" y="0.69802" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="OrbEffect" sid="330788613473677">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146793172631561" speed="5">
+                            <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\Users\PAULO\Documents\Shine\Game\Sprites\luz_blue.png">
+                                <collision-poly>
+                                    <point x="0.382323" y="0.380368" />
+                                    <point x="0.499486" y="0.332311" />
+                                    <point x="0.617677" y="0.380368" />
+                                    <point x="0.668037" y="0.5" />
+                                    <point x="0.618705" y="0.620654" />
+                                    <point x="0.499486" y="0.669734" />
+                                    <point x="0.380267" y="0.621677" />
+                                    <point x="0.329908" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\Users\PAULO\Documents\Shine\Game\Sprites\luz_red.png">
+                                <collision-poly>
+                                    <point x="0.382323" y="0.380368" />
+                                    <point x="0.499486" y="0.332311" />
+                                    <point x="0.617677" y="0.380368" />
+                                    <point x="0.668037" y="0.5" />
+                                    <point x="0.618705" y="0.620654" />
+                                    <point x="0.499486" y="0.669734" />
+                                    <point x="0.380267" y="0.621677" />
+                                    <point x="0.329908" y="0.5" />
                                 </collision-poly>
                             </frame>
                         </animation>
@@ -2530,6 +2562,9 @@
             <plugin id="Particles" />
             <texture original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Texturas\hair2.png" />
         </object-type>
+        <object-type name="Function" sid="734382882259466">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">
@@ -2619,6 +2654,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Function" uid="214" />
     </global-instances>
     <sounds-folder />
     <music-folder>

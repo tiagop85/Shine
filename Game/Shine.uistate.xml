@@ -59,6 +59,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spOrbAgilidade/" />
         <folder expanded="1" path="animation-folder/spOrbEnergia/" />
         <folder expanded="1" path="animation-folder/spOrbForca/" />
+        <folder expanded="1" path="animation-folder/OrbEffect/" />
         <folder expanded="1" path="animation-folder/spPassaro/" />
         <folder expanded="1" path="animation-folder/spJogador/" />
         <folder expanded="1" path="animation-folder/spIluminacao/" />
