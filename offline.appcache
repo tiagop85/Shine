@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1489036983
+#1489078464
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -25,6 +25,8 @@ images/sporbenergia-sheet2.png
 images/sporbforca-sheet0.png
 images/sporbforca-sheet1.png
 images/sporbforca-sheet2.png
+images/orbeffect-sheet0.png
+images/orbeffect-sheet1.png
 images/sppassaro-sheet0.png
 images/sppassaro-sheet1.png
 images/sppassaro-sheet2.png

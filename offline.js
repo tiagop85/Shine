@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1489036983,
+	"version": 1489078464,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -26,6 +26,8 @@
 		"images/sporbforca-sheet0.png",
 		"images/sporbforca-sheet1.png",
 		"images/sporbforca-sheet2.png",
+		"images/orbeffect-sheet0.png",
+		"images/orbeffect-sheet1.png",
 		"images/sppassaro-sheet0.png",
 		"images/sppassaro-sheet1.png",
 		"images/sppassaro-sheet2.png",
