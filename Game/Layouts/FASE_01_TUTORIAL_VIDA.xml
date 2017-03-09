@@ -126,7 +126,7 @@
         </layer>
         <layer name="Transparencia" sid="397126917653508">
             <initially-visible>1</initially-visible>
-            <background-color>0,0,0</background-color>
+            <background-color>6,0,0</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -153,11 +153,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>400</x>
-                        <y>240</y>
+                        <x>397.5</x>
+                        <y>238</y>
                         <z>0</z>
-                        <width>780</width>
-                        <height>784</height>
+                        <width>841</width>
+                        <height>542</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

@@ -12,7 +12,7 @@
         <variable constant="1" name="CT_ACE_PASSARO_X_B" sid="974179380257967" static="0" type="number">0</variable>
         <variable constant="1" name="CT_ACE_PASSARO_Y_B" sid="122558076395348" static="0" type="number">100</variable>
         <variable constant="1" name="CT_TEMPO_PASSARO_CRIACAO" sid="336557428524957" static="0" type="number">2</variable>
-        <variable constant="1" name="CT_OPACIDADE_DELTA" sid="824493558812994" static="0" type="number">10</variable>
+        <variable constant="0" name="OPACIDADE_DELTA" sid="824493558812994" static="0" type="number">10</variable>
         <variable constant="0" name="TEMPO_PASSARO_DELTA" sid="462446907674713" static="0" type="number">0.1</variable>
         <variable constant="1" name="CT_TEMPO_PASSARO_DELTA" sid="760678436164550" static="0" type="number">1.5</variable>
         <variable constant="1" name="CT_MAX_TEMPO_PASSARO_DELTA" sid="930183153686915" static="0" type="number">1.5</variable>
@@ -258,18 +258,165 @@
                         <action behavior="Bullet_y" id="5" name="Set enabled" sid="930490160497850" type="spPassaro">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="264709872809518" type="spIluminacao">
-                            <param id="0" name="Opacity">Self.Opacity - CT_OPACIDADE_DELTA</param>
-                        </action>
-                        <action id="0" name="Set text" sid="181381455002647" type="txTempLife">
-                            <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( spIluminacao.Opacity ) &amp;&quot;%&quot;</param>
-                        </action>
                         <action behavior="Timer" id="0" name="Start timer" sid="557450684888242" type="spPassaro">
                             <param id="0" name="Duration">0.5+random(0.30)</param>
                             <param id="1" name="Type">0</param>
                             <param id="2" name="Tag">&quot;VOAR_BAIXO&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="618348300290559">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="309284023887864" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="174726852538717" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="760938848936236">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="892848159434711" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="394637381490685" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="289463267158661">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="384813372144661" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="453741159376305" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="101813832391044">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="336179886437421" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="371445691267577" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="657549341179363">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="828353815327640" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="597808968143207" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="783250204677180">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="834034968128623" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">60</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="715460397932176" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">20</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="585422522068715">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="872488645577177" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">30</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="196018189224982" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="612105050833515">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="342191813078758" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">45</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="782319531521593" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="753553762629503">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="544538190412947" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">60</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="798618966846574" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="553318702466698">
+                            <conditions>
+                                <condition id="-10" name="Compare opacity" sid="716738116073600" type="spIluminacao">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Opacity">80</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="346751285109343" type="System">
+                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                    <param id="1" name="Value">20</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="484062414664746">
+                            <conditions />
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="949241993182214" type="spIluminacao">
+                                    <param id="0" name="Opacity">Self.Opacity - OPACIDADE_DELTA</param>
+                                </action>
+                                <action id="0" name="Set text" sid="935452684056857" type="txTempLife">
+                                    <param id="0" name="Text">&quot;LIFE: &quot; &amp; ( spIluminacao.Opacity ) &amp;&quot;%&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>&gt; Efeito Voo pássaro após bicar player</comment>
                 <event-block sid="423939835494226">
