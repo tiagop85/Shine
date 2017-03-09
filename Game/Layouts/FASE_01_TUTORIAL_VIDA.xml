@@ -114,7 +114,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>326</width>
+                        <width>55</width>
                         <height>44</height>
                         <max-width>326</max-width>
                         <max-height>44</max-height>
@@ -126,7 +126,7 @@
         </layer>
         <layer name="Transparencia" sid="397126917653508">
             <initially-visible>1</initially-visible>
-            <background-color>12,0,0</background-color>
+            <background-color>0,0,0</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -153,13 +153,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>340</x>
-                        <y>172</y>
+                        <x>400</x>
+                        <y>240</y>
                         <z>0</z>
-                        <width>1167.655517578</width>
-                        <height>786.12902832</height>
+                        <width>780</width>
+                        <height>784</height>
                         <depth>0</depth>
-                        <hotspotX>0.500513852</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

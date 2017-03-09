@@ -249,13 +249,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1251</x>
-                        <y>276</y>
+                        <x>400</x>
+                        <y>240</y>
                         <z>0</z>
-                        <width>3787.769775391</width>
-                        <height>2297.546142578</height>
+                        <width>780</width>
+                        <height>784</height>
                         <depth>0</depth>
-                        <hotspotX>0.500513852</hotspotX>
+                        <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>0</opacity>

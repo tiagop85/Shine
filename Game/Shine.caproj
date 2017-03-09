@@ -1276,16 +1276,16 @@
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256698543319380" speed="5">
-                            <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\Sprites\Light.png">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\Sprites\Light.png">
                                 <collision-poly>
-                                    <point x="0.382323" y="0.380368" />
-                                    <point x="0.499486" y="0.332311" />
-                                    <point x="0.617677" y="0.380368" />
-                                    <point x="0.668037" y="0.5" />
-                                    <point x="0.618705" y="0.620654" />
-                                    <point x="0.499486" y="0.669734" />
-                                    <point x="0.380267" y="0.621677" />
-                                    <point x="0.329908" y="0.5" />
+                                    <point x="0.382564" y="0.380612" />
+                                    <point x="0.499487" y="0.332653" />
+                                    <point x="0.617436" y="0.380612" />
+                                    <point x="0.667692" y="0.5" />
+                                    <point x="0.618461" y="0.620408" />
+                                    <point x="0.499487" y="0.669388" />
+                                    <point x="0.380513" y="0.621429" />
+                                    <point x="0.330257" y="0.5" />
                                 </collision-poly>
                             </frame>
                         </animation>
