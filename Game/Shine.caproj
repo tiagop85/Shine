@@ -2802,6 +2802,26 @@
             <plugin id="Particles" />
             <texture original-source="E:\projetos\PosUEA\Shine\Game\Sprites\Texturas\hair2.png" />
         </object-type>
+        <object-type name="aguaParticulas" sid="213159936069902">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\PAULO\Documents\waterparticle.png" />
+        </object-type>
+        <object-type name="aguaTanque" sid="561478361548467">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="364563062413920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="aguaSubindo" sid="234237488918375">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808942357238923" speed="5">
+                    <frame duration="1" hotspotX="0.524" hotspotY="0.992" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">

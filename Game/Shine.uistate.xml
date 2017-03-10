@@ -12,9 +12,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Lv2_BecoSemSaida</layout>
         <layout order="1">Lv1_FundoDoPoco</layout>
-        <layout order="2">Lv3_LuzNoFimDoTunel</layout>
-        <layout active="1" order="3">_TESTE</layout>
+        <layout active="1" order="2">Lv3_LuzNoFimDoTunel</layout>
+        <layout order="3">_TESTE</layout>
         <event-sheet order="4">PlayerEvents</event-sheet>
+        <event-sheet order="5">Lvl3Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -36,11 +37,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/cenario/controle/" />
         <folder expanded="1" path="object-folder/cenario/Tileds/" />
         <folder expanded="1" path="object-folder/cenario/objects/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/Levels/" />
         <folder expanded="1" path="layout-folder/Tutoriais/" />
         <folder expanded="1" path="layout-folder/Menus/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Tutoriais/" />
         <folder expanded="1" path="event-folder/Levels/" />
         <folder expanded="1" path="event-folder/Menus/" />
@@ -86,5 +87,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spConfiguracao/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/spSplash/" />
+        <folder expanded="1" path="animation-folder/aguaTanque/" />
+        <folder expanded="1" path="animation-folder/aguaSubindo/" />
     </folders-expanded>
 </c2uistate>

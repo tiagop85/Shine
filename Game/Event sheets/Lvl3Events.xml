@@ -20,6 +20,44 @@
                     <param id="0" name="Instance variable">FAIXA_A_TOCAR</param>
                     <param id="1" name="Value">CT_MUSICA_GAME</param>
                 </action>
+                <action id="-5" name="Set width" sid="835875299034438" type="spIluminacao">
+                    <param id="0" name="Width">3000</param>
+                </action>
+                <action id="-6" name="Set height" sid="408106932982761" type="spIluminacao">
+                    <param id="0" name="Height">3000</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="199347681646682">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="322279449972985" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="764724946888047" type="System">
+                    <param id="0" name="Variable">STATUS_JOGO</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">CT_STATUS_GAME_OVER</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="399239024948278" type="aguaSubindo">
+                    <param id="0" name="Height">aguaSubindo.Height + 10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="605918898898543">
+            <conditions>
+                <condition id="9" name="Is overlapping at offset" sid="673263222884315" type="aguaSubindo">
+                    <param id="0" name="Object">spJogador</param>
+                    <param id="1" name="Offset X">0</param>
+                    <param id="2" name="Offset Y">spJogador.Height</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="885847345793512" type="System">
+                    <param id="0" name="Variable">STATUS_JOGO</param>
+                    <param id="1" name="Value">CT_STATUS_GAME_OVER</param>
+                </action>
             </actions>
         </event-block>
     </events>
