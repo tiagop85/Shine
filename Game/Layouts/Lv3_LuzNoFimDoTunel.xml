@@ -221,6 +221,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="LuzFimTunel" uid="150">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1116</x>
+                        <y>422</y>
+                        <z>0</z>
+                        <width>580</width>
+                        <height>667</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500513852</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -459,8 +481,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>88</x>
-                        <y>954</y>
+                        <x>1402</x>
+                        <y>660</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -823,8 +845,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>815</x>
-                        <y>640</y>
+                        <x>868</x>
+                        <y>704</y>
                         <z>0</z>
                         <width>60.099998474</width>
                         <height>60.39899826</height>
