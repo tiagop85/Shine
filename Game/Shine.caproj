@@ -341,6 +341,11 @@
             </object-type>
             <object-type name="btMenuPrincipal_Jogo" sid="350869216995828">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="628876106524445">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="643080135566774" speed="5">
                         <frame duration="1" hotspotX="0.512195" hotspotY="0.487805" original-source="C:\Users\tiago.parente\Downloads\botões-20170308T210555Z-001\botões\home_on.png">
@@ -374,6 +379,11 @@
             </object-type>
             <object-type name="btReset" sid="595000987935276">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Timer" sid="882118092632664">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="868407722423292" speed="5">
                         <frame duration="1" hotspotX="0.512195" hotspotY="0.487805" original-source="C:\Users\tiago.parente\Downloads\botões-20170308T210555Z-001\botões\back_on.png">
@@ -1349,6 +1359,33 @@
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682256918826924" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\Sprites\Light.png">
+                                <collision-poly>
+                                    <point x="0.382564" y="0.380612" />
+                                    <point x="0.499487" y="0.332653" />
+                                    <point x="0.617436" y="0.380612" />
+                                    <point x="0.667692" y="0.5" />
+                                    <point x="0.618461" y="0.620408" />
+                                    <point x="0.499487" y="0.669388" />
+                                    <point x="0.380513" y="0.621429" />
+                                    <point x="0.330257" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="spIluminacaoBird" sid="511493769739249">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="ID_ORB" sid="668072090096081" type="number" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Pin" sid="315312440861370">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994973075839753" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\Sprites\Light.png">
                                 <collision-poly>
                                     <point x="0.382564" y="0.380612" />
@@ -2962,6 +2999,7 @@
             <layout>MainMenu.xml</layout>
             <layout>ConfigMenu.xml</layout>
             <layout>CreditsMenu.xml</layout>
+            <layout>GameOver.xml</layout>
         </layout-folder>
         <layout>_TESTE.xml</layout>
         <layout>_EVENTOS_JOGADOR.xml</layout>
@@ -2984,6 +3022,7 @@
             <event-sheet>MainMenuEvents.xml</event-sheet>
             <event-sheet>SplashEvents.xml</event-sheet>
             <event-sheet>_MENU_LEVEL_SELECT.xml</event-sheet>
+            <event-sheet>GameOver.xml</event-sheet>
         </event-folder>
         <event-sheet>GlobalEvents.xml</event-sheet>
         <event-sheet>_EVENTOS_JOGADOR.xml</event-sheet>

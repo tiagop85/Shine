@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameOver</name>
+    <events>
+        <include>PlayerEvents</include>
+        <include>GlobalEvents</include>
+        <include>MusicEvents</include>
+        <include>NavigationEvents</include>
+        <event-block sid="596169479729315">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="407852996858512" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="0" name="Restart fade" sid="653290461453275" type="spGameOver" />
+                <action id="-15" name="Set visible" sid="963557105593649" type="spGameOver">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="817002822228267">
+            <conditions>
+                <condition behavior="Fade" id="1" name="On fade-in finished" sid="880843781461462" type="spGameOver" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="778378561865389" type="btReset">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="230614446752374" type="btMenuPrincipal_Jogo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

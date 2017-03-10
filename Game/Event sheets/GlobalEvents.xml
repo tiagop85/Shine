@@ -176,6 +176,16 @@
                             <param id="2" name="X">CanvasToLayerX(&quot;Objects&quot;,LayerToCanvasX(&quot;HUD&quot;, 0, 0) ,LayerToCanvasY(&quot;HUD&quot;, 0, 0))</param>
                             <param id="3" name="Y">CanvasToLayerY(&quot;Objects&quot;,LayerToCanvasX(&quot;HUD&quot;, 0, 0) ,LayerToCanvasY(&quot;HUD&quot;, 0, 0))</param>
                         </action>
+                        <action id="-3" name="Create object" sid="119674494519726" type="System">
+                            <param id="0" name="Object to create">spIluminacaoBird</param>
+                            <param id="1" name="Layer">&quot;Transparencia&quot;</param>
+                            <param id="2" name="X">CanvasToLayerX(&quot;Transparencia&quot;,LayerToCanvasX(&quot;Objects&quot;, spPassaro.X, spPassaro.Y) ,LayerToCanvasY(&quot;Objects&quot;, spPassaro.X, spPassaro.Y))</param>
+                            <param id="3" name="Y">CanvasToLayerY(&quot;Transparencia&quot;,LayerToCanvasY(&quot;Objects&quot;, spPassaro.X, spPassaro.Y) ,LayerToCanvasY(&quot;Objects&quot;, spPassaro.X, spPassaro.Y))</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="341082293794028" type="spIluminacaoBird">
+                            <param id="0" name="Pin to">spPassaro</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
                         <action behavior="Bullet_x" id="3" name="Set angle of motion" sid="280645666729508" type="spPassaro">
                             <param id="0" name="Angle">0</param>
                         </action>
@@ -686,7 +696,6 @@
                         <condition id="-6" name="Every X seconds" sid="901834965113731" type="System">
                             <param id="0" name="Interval (seconds)">0.3</param>
                         </condition>
-                        <condition id="-9" inverted="1" name="Is visible" sid="486208933546968" type="spGameOver" />
                     </conditions>
                     <actions>
                         <action id="-15" name="Set visible" sid="723257000997862" type="btMenuPrincipal_Jogo">
@@ -763,26 +772,10 @@
                                             <param id="0" name="Comparison">3</param>
                                             <param id="1" name="Opacity">0</param>
                                         </condition>
-                                        <condition id="-9" inverted="1" name="Is visible" sid="157086271462271" type="btMenuPrincipal_Jogo" />
                                     </conditions>
                                     <actions>
-                                        <action disabled="1" id="-16" name="Wait" sid="509168252002548" type="System">
-                                            <param id="0" name="Seconds">3</param>
-                                        </action>
-                                        <action id="-9" name="Destroy" sid="415052411309872" type="spGameOver" />
-                                        <action id="-3" name="Create object" sid="517232859279261" type="System">
-                                            <param id="0" name="Object to create">spGameOver</param>
-                                            <param id="1" name="Layer">&quot;HUD&quot;</param>
-                                            <param id="2" name="X">400</param>
-                                            <param id="3" name="Y">240</param>
-                                        </action>
-                                        <action behavior="Fade" id="0" name="Restart fade" sid="405725151675748" type="spGameOver" />
-                                        <action id="-15" name="Set visible" sid="648618298907804" type="spGameOver">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                        <action id="-24" name="Move to top" sid="987206486361644" type="spGameOver" />
-                                        <action id="-16" name="Wait" sid="265048536086433" type="System">
-                                            <param id="0" name="Seconds">2</param>
+                                        <action id="-2" name="Go to layout" sid="845074446078649" type="System">
+                                            <param id="0" name="Layout">GameOver</param>
                                         </action>
                                     </actions>
                                 </event-block>
