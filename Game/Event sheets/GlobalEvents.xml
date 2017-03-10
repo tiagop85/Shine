@@ -28,7 +28,7 @@
         <variable constant="0" name="CT_PLAYER_VELOCIDADE_TURBO" sid="422042942587460" static="0" type="number">600</variable>
         <variable constant="1" name="CT_SPAWN_ORB_AGILIDADE" sid="496823605173277" static="0" type="number">7</variable>
         <variable constant="1" name="CT_TMP_EFEITO_ORB_AGILIDADE" sid="772652975149873" static="0" type="number">5</variable>
-        <variable constant="0" name="CT_TEXTOS_AUX" sid="867858967484948" static="0" type="number">1</variable>
+        <variable constant="0" name="CT_TEXTOS_AUX" sid="867858967484948" static="0" type="number">0</variable>
         <comment>&gt; Inicialização de variáveis</comment>
         <event-block sid="474046295914867">
             <conditions>

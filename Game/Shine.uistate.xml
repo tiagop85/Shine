@@ -12,6 +12,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Lv2_BecoSemSaida</layout>
         <layout order="2">Lv1_FundoDoPoco</layout>
+        <layout order="3">GameOver</layout>
         <event-sheet active="1" order="1">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
