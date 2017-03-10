@@ -372,6 +372,39 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="btReset" sid="595000987935276">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="868407722423292" speed="5">
+                        <frame duration="1" hotspotX="0.512195" hotspotY="0.487805" original-source="C:\Users\tiago.parente\Downloads\botões-20170308T210555Z-001\botões\back_on.png">
+                            <collision-poly>
+                                <point x="0.219512" y="0.219512" />
+                                <point x="0.487805" y="0.097561" />
+                                <point x="0.804878" y="0.195122" />
+                                <point x="0.902439" y="0.487805" />
+                                <point x="0.756098" y="0.756098" />
+                                <point x="0.487805" y="0.902439" />
+                                <point x="0.219512" y="0.780488" />
+                                <point x="0.097561" y="0.487805" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="pressed" pingpong="0" repeatcount="1" repeatto="0" sid="132547529281131" speed="5">
+                        <frame duration="1" hotspotX="0.512195" hotspotY="0.512195" original-source="C:\Users\tiago.parente\Downloads\botões-20170308T210555Z-001\botões\back_off.png">
+                            <collision-poly>
+                                <point x="0.219512" y="0.219512" />
+                                <point x="0.487805" y="0.097561" />
+                                <point x="0.804878" y="0.195122" />
+                                <point x="0.902439" y="0.487805" />
+                                <point x="0.780488" y="0.780488" />
+                                <point x="0.487805" y="0.902439" />
+                                <point x="0.219512" y="0.780488" />
+                                <point x="0.097561" y="0.487805" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="system">
             <object-type name="Audio" sid="321884059870014">
@@ -1263,6 +1296,9 @@
                     <behaviors>
                         <behavior-type name="Pin" sid="469477151993131">
                             <behavior id="Pin" />
+                        </behavior-type>
+                        <behavior-type name="Timer" sid="841553833769643">
+                            <behavior id="Timer" />
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
@@ -2797,7 +2833,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="299860765763568">
+        <object-type name="spMenuPrincipal" sid="299860765763568">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="905241917042381" speed="5">
@@ -2871,12 +2907,29 @@
         <object-type name="acabouTxt" sid="159352663962846">
             <plugin id="Text" />
         </object-type>
+        <object-type name="spGameOver" sid="414726473572522">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="171151624073370">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="617421571376458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tiago.parente\Downloads\telas-20170308T210547Z-001\telas\shine_game_over_screen.png">
+                        <image-point name="menu" x="0.8" y="0.789583" />
+                        <image-point name="replay" x="0.18" y="0.789583" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">
             <members>
                 <member>btMenuPrincipal</member>
                 <member>btMenuPrincipal_Jogo</member>
+                <member>btReset</member>
             </members>
             <instance-variables>
                 <instance-variable name="Touched" sid="466099626032568" type="boolean" />
@@ -2962,7 +3015,10 @@
         </global-instance>
         <global-instance type="Function" uid="274" />
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Scary_Sound_-_Birds_of_Prey_Sound_Effect_1_.m4a" />
+        <file name="Scary_Sound_-_Birds_of_Prey_Sound_Effect_1_.ogg" />
+    </sounds-folder>
     <music-folder>
         <file name="Menu - Kevin MacLeod - TheReveal.ogg" />
         <file name="Jogo - Kevin MacLeod - Phantasm.ogg" />

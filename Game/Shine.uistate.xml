@@ -10,8 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Lv1_FundoDoPoco</layout>
-        <event-sheet order="1">GlobalEvents</event-sheet>
+        <layout order="0">Lv2_BecoSemSaida</layout>
+        <layout active="1" order="1">Lv1_FundoDoPoco</layout>
+        <event-sheet order="2">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/buttons/" />
+        <folder expanded="1" path="object-folder/buttons/" />
         <folder expanded="1" path="object-folder/system/" />
         <folder expanded="1" path="object-folder/cenario/" />
         <folder expanded="1" path="object-folder/cenario/orbs/" />
@@ -55,6 +56,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btPausa/" />
         <folder expanded="1" path="animation-folder/btTutorial/" />
         <folder expanded="1" path="animation-folder/btMenuPrincipal_Jogo/" />
+        <folder expanded="1" path="animation-folder/btReset/" />
         <folder expanded="1" path="animation-folder/spOrbAgilidade/" />
         <folder expanded="1" path="animation-folder/spOrbEnergia/" />
         <folder expanded="1" path="animation-folder/spOrbForca/" />
@@ -82,10 +84,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/spConfiguracao/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/spMenuPrincipal/" />
         <folder expanded="1" path="animation-folder/spSplash/" />
         <folder expanded="1" path="animation-folder/aguaTanque/" />
         <folder expanded="1" path="animation-folder/aguaSubindo/" />
         <folder expanded="1" path="animation-folder/LuzFimTunel/" />
+        <folder expanded="1" path="animation-folder/spGameOver/" />
     </folders-expanded>
 </c2uistate>

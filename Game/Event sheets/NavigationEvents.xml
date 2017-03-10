@@ -45,44 +45,79 @@
             </actions>
         </event-block>
         <comment>&gt; Tutorial</comment>
-        <event-block sid="973234230074757">
+        <event-block sid="177878912189865">
             <conditions>
-                <condition id="3" name="On touched object" sid="162589300417125" type="Touch">
+                <condition id="3" name="On touched object" sid="780991045097881" type="Touch">
                     <param id="0" name="Object">btTutorial</param>
                 </condition>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="201063583324239" type="btTutorial">
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="459071623541035" type="btTutorial">
                     <param id="0" name="Instance variable">Touched</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-13" name="Set boolean" sid="625352901463135" type="btTutorial">
+                <action id="-13" name="Set boolean" sid="112369300220433" type="btTutorial">
                     <param id="0" name="Instance variable">Touched</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-10" name="Set value" sid="704192435203678" type="arControl">
+                <action id="-10" name="Set value" sid="982048761939331" type="arControl">
                     <param id="0" name="Instance variable">FASE_ATUAL</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="682336527575802" type="btTutorial">
+                <action id="4" name="Set animation" sid="369787807119124" type="btTutorial">
                     <param id="0" name="Animation">&quot;pressed&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action behavior="Timer" id="0" name="Start timer" sid="446040342933852" type="btTutorial">
+                <action behavior="Timer" id="0" name="Start timer" sid="968038238350748" type="btTutorial">
                     <param id="0" name="Duration">0.25</param>
                     <param id="1" name="Type">0</param>
                     <param id="2" name="Tag">&quot;NEXT_FASE&quot;</param>
                 </action>
-                <action id="-16" name="Wait" sid="110740218322190" type="System">
+                <action id="-16" name="Wait" sid="403582518470981" type="System">
                     <param id="0" name="Seconds">0.5</param>
                 </action>
-                <action id="-13" name="Set boolean" sid="231870951638379" type="btTutorial">
+                <action id="-13" name="Set boolean" sid="157812027073400" type="btTutorial">
                     <param id="0" name="Instance variable">Touched</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="573472215810864" type="btTutorial">
+                <action id="4" name="Set animation" sid="929058071210684" type="btTutorial">
                     <param id="0" name="Animation">&quot;unpressed&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+            </actions>
+        </event-block>
+        <comment>&gt; Reset</comment>
+        <event-block sid="973234230074757">
+            <conditions>
+                <condition id="3" name="On touched object" sid="162589300417125" type="Touch">
+                    <param id="0" name="Object">btReset</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="201063583324239" type="btReset">
+                    <param id="0" name="Instance variable">Touched</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="625352901463135" type="btReset">
+                    <param id="0" name="Instance variable">Touched</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="682336527575802" type="btReset">
+                    <param id="0" name="Animation">&quot;pressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="110740218322190" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="231870951638379" type="btReset">
+                    <param id="0" name="Instance variable">Touched</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="573472215810864" type="btReset">
+                    <param id="0" name="Animation">&quot;unpressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="598945366195147" type="System" />
+                <action id="-26" name="Restart layout" sid="883018811398024" type="System" />
+                <action id="-9" name="Destroy" sid="690469104811367" type="btReset" />
             </actions>
         </event-block>
         <comment>&gt; Tela de Configurações - desabilitado</comment>
@@ -462,6 +497,28 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="264959309115502">
+            <conditions>
+                <condition behavior="Fade" id="1" name="On fade-in finished" sid="801689315063983" type="spGameOver" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="395954219449145" type="System">
+                    <param id="0" name="Object to create">btReset</param>
+                    <param id="1" name="Layer">&quot;HUD&quot;</param>
+                    <param id="2" name="X">spGameOver.ImagePointX(1)</param>
+                    <param id="3" name="Y">spGameOver.ImagePointY(1)</param>
+                </action>
+                <action id="-24" name="Move to top" sid="189000283266121" type="btReset" />
+                <action id="-3" name="Set position" sid="459053383454484" type="btMenuPrincipal_Jogo">
+                    <param id="0" name="X">spGameOver.ImagePointX(2)</param>
+                    <param id="1" name="Y">spGameOver.ImagePointY(2)</param>
+                </action>
+                <action id="-24" name="Move to top" sid="384055169492498" type="btMenuPrincipal_Jogo" />
+                <action id="-15" name="Set visible" sid="568318812149936" type="btMenuPrincipal_Jogo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
