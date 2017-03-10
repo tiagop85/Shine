@@ -108,7 +108,7 @@
                                 <condition id="-14" name="Compare variable" sid="771047193635712" type="System">
                                     <param id="0" name="Variable">level</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;FASE_04_FUNDOPOCO&quot;</param>
+                                    <param id="2" name="Value">&quot;Lv1_FundoDoPoco&quot;</param>
                                 </condition>
                                 <condition id="9" inverted="1" name="Is overlapping at offset" sid="318811790782594" type="spJogador">
                                     <param id="0" name="Object">tmFase01_plat</param>
@@ -128,7 +128,7 @@
                                 <condition id="-14" name="Compare variable" sid="411791891154969" type="System">
                                     <param id="0" name="Variable">level</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;FASE_05_BECOSEMSAIDA&quot;</param>
+                                    <param id="2" name="Value">&quot;Lv2_BecoSemSaida&quot;</param>
                                 </condition>
                                 <condition id="9" inverted="1" name="Is overlapping at offset" sid="189520509964854" type="spJogador">
                                     <param id="0" name="Object">tmFase02</param>
@@ -148,7 +148,7 @@
                                 <condition id="-14" name="Compare variable" sid="847362262198469" type="System">
                                     <param id="0" name="Variable">level</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;FASE_06_LUZFIMTUNEL&quot;</param>
+                                    <param id="2" name="Value">&quot;Lv3_LuzNoFimDoTunel&quot;</param>
                                 </condition>
                                 <condition id="9" inverted="1" name="Is overlapping at offset" sid="694753669336056" type="spJogador">
                                     <param id="0" name="Object">tmFase03</param>
