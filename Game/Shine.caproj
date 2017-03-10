@@ -1399,7 +1399,7 @@
                             <behavior id="Physics" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\ELEMENTOS-FASE-1-SEM-BG-2.png" />
+                    <texture original-source="C:\Users\PAULO\Documents\Shine2\Game\Assets\Levels\ELEMENTOS-FASE-1-SEM-BG-2.png" />
                     <tiles />
                 </object-type>
                 <object-type name="tmTutorial01" sid="588918155167409">

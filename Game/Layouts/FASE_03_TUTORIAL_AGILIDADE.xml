@@ -107,7 +107,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tmTutorial3_bg" uid="14">
+                <instance type="tmTutorial3_bg" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <tile-width>32</tile-width>
@@ -132,7 +132,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>55</width>
+                        <width>326</width>
                         <height>44</height>
                         <max-width>326</max-width>
                         <max-height>44</max-height>
@@ -185,7 +185,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>55</width>
+                        <width>326</width>
                         <height>44</height>
                         <max-width>326</max-width>
                         <max-height>44</max-height>
@@ -233,7 +233,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spJogador" uid="15">
+                <instance type="spJogador" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -346,7 +346,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="16">
+                <instance type="spPlataformaMovel" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -395,7 +395,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="17">
+                <instance type="spPlataformaMovel" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -444,7 +444,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="18">
+                <instance type="spPlataformaMovel" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -689,7 +689,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="214">
+                <instance type="spPlataformaMovel" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -738,7 +738,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="215">
+                <instance type="spPlataformaMovel" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -787,7 +787,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spPlataformaMovel" uid="216">
+                <instance type="spPlataformaMovel" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -904,7 +904,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="txTempAgilidade" uid="20">
+                <instance type="txTempAgilidade" uid="27">
                     <properties>
                         <text>AGILIDADE</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -931,7 +931,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempLife" uid="24">
+                <instance type="txTempLife" uid="28">
                     <properties>
                         <text>LIFE</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -958,7 +958,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txTempGameOver" uid="22">
+                <instance type="txTempGameOver" uid="29">
                     <properties>
                         <text>GAME OVER</text>
                         <initial-visibility>Invisible</initial-visibility>
