@@ -16,6 +16,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="3">_TESTE</layout>
         <event-sheet order="4">PlayerEvents</event-sheet>
         <event-sheet order="5">Lvl3Events</event-sheet>
+        <event-sheet order="6">FASE_01_TUTORIAL_VIDA</event-sheet>
+        <event-sheet order="7">GlobalEvents</event-sheet>
+        <event-sheet order="8">_EVENTOS_JOGADOR</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

@@ -2841,6 +2841,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="acabouTxt" sid="159352663962846">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">

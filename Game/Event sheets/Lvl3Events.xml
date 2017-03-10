@@ -28,6 +28,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>agua subindo</comment>
         <event-block sid="199347681646682">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="322279449972985" type="System">
@@ -45,6 +46,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>jogador morre afogado</comment>
         <event-block sid="605918898898543">
             <conditions>
                 <condition id="9" name="Is overlapping at offset" sid="673263222884315" type="aguaSubindo">
@@ -57,6 +59,19 @@
                 <action id="-9" name="Set value" sid="885847345793512" type="System">
                     <param id="0" name="Variable">STATUS_JOGO</param>
                     <param id="1" name="Value">CT_STATUS_GAME_OVER</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>acaba quando o jogador chega na luz do fim do tunel</comment>
+        <event-block sid="509075172975366">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="703068989317482" type="spJogador">
+                    <param id="0" name="Object">LuzFimTunel</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="306721627525172" type="acabouTxt">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>

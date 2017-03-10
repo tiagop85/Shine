@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>832</position-x>
-        <position-y>823.913</position-y>
+        <position-y>651.749</position-y>
         <position-z>229.552</position-z>
         <lookat-x>832</lookat-x>
-        <lookat-y>823.913</lookat-y>
+        <lookat-y>651.749</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -25,8 +25,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="Cenario" />
     <layers>
-        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Cenario" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Cenario" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Transparencia" parallax-in-editor="0" visible="0" />
         <layer locked="0" name="OrbEffect" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Objects" parallax-in-editor="0" visible="1" />
