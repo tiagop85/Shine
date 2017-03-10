@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1489078464,
+	"version": 1489114213,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -61,6 +61,7 @@
 		"images/sprite3-sheet0.png",
 		"images/spsplash-sheet0.png",
 		"images/hair.png",
+		"images/hair2.png",
 		"media/menu - kevin macleod - thereveal.ogg",
 		"media/jogo - kevin macleod - phantasm.ogg",
 		"icon-16.png",
