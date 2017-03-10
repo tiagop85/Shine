@@ -58,7 +58,79 @@
                     <param id="0" name="Pin to">spJogador</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action id="-9" name="Destroy" sid="453783182664106" type="spIluminacaoOrb" />
             </actions>
+            <sub-events>
+                <event-block sid="215739876240020">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="964406845152483" type="System">
+                            <param id="0" name="Object">spOrbAgilidade</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="459221493540433" type="System">
+                            <param id="0" name="Object to create">spIluminacaoOrb</param>
+                            <param id="1" name="Layer">&quot;Transparencia&quot;</param>
+                            <param id="2" name="X">spOrbAgilidade.X</param>
+                            <param id="3" name="Y">spOrbAgilidade.Y</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="219575790308391" type="spIluminacaoOrb">
+                            <param id="0" name="Pin to">spOrbAgilidade</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="568315593347524" type="spIluminacaoOrb">
+                            <param id="0" name="Instance variable">ID_ORB</param>
+                            <param id="1" name="Value">spOrbAgilidade.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="758049999959092">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="671090259759323" type="System">
+                            <param id="0" name="Object">spOrbForca</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="547661122543730" type="System">
+                            <param id="0" name="Object to create">spIluminacaoOrb</param>
+                            <param id="1" name="Layer">&quot;Transparencia&quot;</param>
+                            <param id="2" name="X">spOrbForca.X</param>
+                            <param id="3" name="Y">spOrbForca.Y</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="469317821580022" type="spIluminacaoOrb">
+                            <param id="0" name="Pin to">spOrbForca</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="732424873781819" type="spIluminacaoOrb">
+                            <param id="0" name="Instance variable">ID_ORB</param>
+                            <param id="1" name="Value">spOrbForca.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="443180137550881">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="300496054391835" type="System">
+                            <param id="0" name="Object">spOrbEnergia</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="685396232166451" type="System">
+                            <param id="0" name="Object to create">spIluminacaoOrb</param>
+                            <param id="1" name="Layer">&quot;Transparencia&quot;</param>
+                            <param id="2" name="X">spOrbEnergia.X</param>
+                            <param id="3" name="Y">spOrbEnergia.Y</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="993253726587799" type="spIluminacaoOrb">
+                            <param id="0" name="Pin to">spOrbEnergia</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="260304525405894" type="spIluminacaoOrb">
+                            <param id="0" name="Instance variable">ID_ORB</param>
+                            <param id="1" name="Value">spOrbEnergia.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>&gt; Spawn de pássaros - a Idéia é que os pássaros surjam mais rápido a cada vez que a vida é diminuída</comment>
         <event-group description="" sid="349927752212866" title="Pássaros">
@@ -267,145 +339,176 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="618348300290559">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="309284023887864" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="174726852538717" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
+                        <comment>&gt; Iluminação</comment>
+                        <event-block sid="972319590292561">
+                            <conditions />
+                            <actions />
+                            <sub-events>
+                                <comment>&gt; Efeito 01</comment>
+                                <event-block sid="144204721728485">
+                                    <conditions />
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="618348300290559">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="309284023887864" type="spIluminacao">
+                                                    <param id="0" name="Comparison">5</param>
+                                                    <param id="1" name="Opacity">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="174726852538717" type="System">
+                                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="760938848936236">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="892848159434711" type="spIluminacao">
+                                                    <param id="0" name="Comparison">5</param>
+                                                    <param id="1" name="Opacity">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="394637381490685" type="System">
+                                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                                    <param id="1" name="Value">3</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="289463267158661">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="384813372144661" type="spIluminacao">
+                                                    <param id="0" name="Comparison">5</param>
+                                                    <param id="1" name="Opacity">15</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="453741159376305" type="System">
+                                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="101813832391044">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="336179886437421" type="spIluminacao">
+                                                    <param id="0" name="Comparison">5</param>
+                                                    <param id="1" name="Opacity">25</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="371445691267577" type="System">
+                                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                                    <param id="1" name="Value">10</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="657549341179363">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="828353815327640" type="spIluminacao">
+                                                    <param id="0" name="Comparison">5</param>
+                                                    <param id="1" name="Opacity">40</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="597808968143207" type="System">
+                                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                                    <param id="1" name="Value">15</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="783250204677180">
+                                            <conditions>
+                                                <condition id="-10" name="Compare opacity" sid="834034968128623" type="spIluminacao">
+                                                    <param id="0" name="Comparison">5</param>
+                                                    <param id="1" name="Opacity">60</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="715460397932176" type="System">
+                                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                                    <param id="1" name="Value">20</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <event-block sid="760938848936236">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="892848159434711" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">4</param>
-                                </condition>
-                            </conditions>
+                        <comment>&gt; Efeito 02: de 10% em 10%</comment>
+                        <event-block disabled="1" sid="283719507934581">
+                            <conditions />
                             <actions>
-                                <action id="-9" name="Set value" sid="394637381490685" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">3</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="289463267158661">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="384813372144661" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">15</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="453741159376305" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">5</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="101813832391044">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="336179886437421" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">25</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="371445691267577" type="System">
+                                <action id="-9" name="Set value" sid="609283483684554" type="System">
                                     <param id="0" name="Variable">OPACIDADE_DELTA</param>
                                     <param id="1" name="Value">10</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="657549341179363">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="828353815327640" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">40</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="597808968143207" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">15</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="783250204677180">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="834034968128623" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">60</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="715460397932176" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">20</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="585422522068715">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="872488645577177" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">30</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="196018189224982" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">5</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="612105050833515">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="342191813078758" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">45</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="782319531521593" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">10</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="753553762629503">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="544538190412947" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">60</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="798618966846574" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">15</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="553318702466698">
-                            <conditions>
-                                <condition id="-10" name="Compare opacity" sid="716738116073600" type="spIluminacao">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Opacity">80</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="346751285109343" type="System">
-                                    <param id="0" name="Variable">OPACIDADE_DELTA</param>
-                                    <param id="1" name="Value">20</param>
-                                </action>
-                            </actions>
+                        <comment>&gt; Efeito 03</comment>
+                        <event-block sid="839138686288396">
+                            <conditions />
+                            <actions />
+                            <sub-events>
+                                <event-block disabled="1" sid="319025344571858">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="412688517066291" type="spIluminacao">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Opacity">30</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="303680599636020" type="System">
+                                            <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="243090070125736">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="402954435330358" type="spIluminacao">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Opacity">45</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="620288462477221" type="System">
+                                            <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="454753639295273">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="799882140241397" type="spIluminacao">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Opacity">60</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="195740237896718" type="System">
+                                            <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                            <param id="1" name="Value">15</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="773895417089150">
+                                    <conditions>
+                                        <condition id="-10" name="Compare opacity" sid="732027286547869" type="spIluminacao">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Opacity">80</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="994963129774171" type="System">
+                                            <param id="0" name="Variable">OPACIDADE_DELTA</param>
+                                            <param id="1" name="Value">20</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="484062414664746">
                             <conditions />
@@ -569,6 +672,21 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="827835301187709">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="858620516064473" type="System">
+                                    <param id="0" name="Object">spIluminacaoOrb</param>
+                                    <param id="1" name="Expression">spIluminacaoOrb.ID_ORB</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">spOrbEnergia.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="680627387206222" type="spIluminacaoOrb">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="593519347937914">
                             <conditions>
                                 <condition id="-12" name="Repeat" sid="734507059593821" type="System">
@@ -644,6 +762,23 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="897288079909939">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="492136624022404" type="System">
+                                    <param id="0" name="Object">spIluminacaoOrb</param>
+                                    <param id="1" name="Expression">spIluminacaoOrb.ID_ORB</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">spOrbEnergia.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="874494763162338" type="spIluminacaoOrb">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>&gt; Orb de Força: faz com que o jogador possa mover objetos pesados</comment>
                 <event-block sid="905015138796805">
@@ -685,6 +820,23 @@
                             <param id="1" name="Parameter {n}">&quot;forca&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="771788306004950">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="845944060383853" type="System">
+                                    <param id="0" name="Object">spIluminacaoOrb</param>
+                                    <param id="1" name="Expression">spIluminacaoOrb.ID_ORB</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">spOrbForca.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="788914635950784" type="spIluminacaoOrb">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>&gt; Orb de Força: spawn</comment>
                 <event-block sid="209654260434029">
@@ -698,6 +850,23 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="312044294908149">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="153932088775909" type="System">
+                                    <param id="0" name="Object">spIluminacaoOrb</param>
+                                    <param id="1" name="Expression">spIluminacaoOrb.ID_ORB</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">spOrbForca.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="102092989953865" type="spIluminacaoOrb">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>&gt; Orb de Força: final do efeito</comment>
                 <event-block sid="926612751963997">
@@ -804,6 +973,23 @@
                             <param id="1" name="Parameter {n}">&quot;agilidade&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="261843241272999">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="974183612271553" type="System">
+                                    <param id="0" name="Object">spIluminacaoOrb</param>
+                                    <param id="1" name="Expression">spIluminacaoOrb.ID_ORB</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">spOrbAgilidade.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="898446139823870" type="spIluminacaoOrb">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>&gt; Orb de Agilidade: spawn</comment>
                 <event-block sid="689412761495087">
@@ -817,6 +1003,23 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="274315349664034">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="618892060596564" type="System">
+                                    <param id="0" name="Object">spIluminacaoOrb</param>
+                                    <param id="1" name="Expression">spIluminacaoOrb.ID_ORB</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">spOrbAgilidade.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="298666685420869" type="spIluminacaoOrb">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <comment>&gt; Orb de Agilidade: final do efeito</comment>
                 <event-block sid="870867393756858">
