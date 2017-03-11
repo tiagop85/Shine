@@ -36,6 +36,7 @@
     <used-effects>
         <effect author="Scirra" id="lumblend">Luminosity</effect>
         <effect author="Scirra" id="multiply">Multiply</effect>
+        <effect author="Viktor Korsun" id="waterbg">Water background</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -1878,6 +1879,11 @@
             <object-folder name="objects">
                 <object-type name="spChaoMortal" sid="690266605249103">
                     <plugin id="Sprite" />
+                    <effects>
+                        <effect-type name="WaterBackground">
+                            <effect id="waterbg" />
+                        </effect-type>
+                    </effects>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239705522070296" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -1993,7 +1999,7 @@
                         <behavior id="Physics" />
                     </behavior-type>
                 </behaviors>
-                <texture original-source="C:\Users\tiago.parente\Desktop\Nova pasta\pos\_juci\Shine\Game\Sprites\ELEMENTOS-FASE-1.png" />
+                <texture original-source="E:\projetos\PosUEA\Shine\Game\Assets\Levels\../../Sprites/ELEMENTOS-FASE-1.png" />
                 <tiles>
                     <tile id="41">
                         <collision-poly>
@@ -2327,6 +2333,14 @@
                             <point x="0.3125" y="0" />
                             <point x="0.3125" y="1" />
                             <point x="0" y="1" />
+                        </collision-poly>
+                    </tile>
+                    <tile id="268">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.742188" y="0.796875" />
+                            <point x="0" y="0.8125" />
                         </collision-poly>
                     </tile>
                     <tile id="274">
@@ -2908,6 +2922,11 @@
         </object-type>
         <object-type name="aguaTanque" sid="561478361548467">
             <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WaterBackground">
+                    <effect id="waterbg" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="364563062413920" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -2916,6 +2935,11 @@
         </object-type>
         <object-type name="aguaSubindo" sid="234237488918375">
             <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WaterBackground">
+                    <effect id="waterbg" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808942357238923" speed="5">
                     <frame duration="1" hotspotX="0.524" hotspotY="0.992" />

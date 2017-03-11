@@ -52,7 +52,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Cenario" sid="195158264035132">
+        <layer name="Watter" sid="847201927285137">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -75,14 +75,29 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="WaterBackground">
+                            <parameters>
+                                <angle>5</angle>
+                                <delta>40</delta>
+                                <emboss>0.1</emboss>
+                                <frequency>6</frequency>
+                                <intensity>6</intensity>
+                                <reflectivity>300</reflectivity>
+                                <speed>0.1</speed>
+                                <x-speed>0.1</x-speed>
+                                <y-speed>0.1</y-speed>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>305</x>
+                        <x>304</x>
                         <y>1027.480834961</y>
                         <z>0</z>
-                        <width>226</width>
-                        <height>391.038574219</height>
+                        <width>278</width>
+                        <height>391</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -90,6 +105,25 @@
                         <opacity>0.800000012</opacity>
                     </world>
                 </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Cenario" sid="195158264035132">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
                 <instance type="tmFase03" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -747,13 +781,28 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="WaterBackground">
+                            <parameters>
+                                <angle>7</angle>
+                                <delta>20</delta>
+                                <emboss>0.3</emboss>
+                                <frequency>4</frequency>
+                                <intensity>3</intensity>
+                                <reflectivity>400</reflectivity>
+                                <speed>0.1</speed>
+                                <x-speed>0.3</x-speed>
+                                <y-speed>0.3</y-speed>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>870.999938965</x>
+                        <x>949.539794922</x>
                         <y>1440.235351563</y>
                         <z>0</z>
-                        <width>1661</width>
+                        <width>1996</width>
                         <height>1</height>
                         <depth>0</depth>
                         <hotspotX>0.523999989</hotspotX>

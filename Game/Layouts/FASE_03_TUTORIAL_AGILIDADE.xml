@@ -132,7 +132,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>55</width>
+                        <width>326</width>
                         <height>44</height>
                         <max-width>326</max-width>
                         <max-height>44</max-height>
@@ -185,7 +185,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>55</width>
+                        <width>326</width>
                         <height>44</height>
                         <max-width>326</max-width>
                         <max-height>44</max-height>
@@ -199,6 +199,21 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="WaterBackground">
+                            <parameters>
+                                <angle>7</angle>
+                                <delta>20</delta>
+                                <emboss>0.3</emboss>
+                                <frequency>4</frequency>
+                                <intensity>3</intensity>
+                                <reflectivity>400</reflectivity>
+                                <speed>0.1</speed>
+                                <x-speed>0.3</x-speed>
+                                <y-speed>0.3</y-speed>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
