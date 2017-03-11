@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1489212838,
+	"version": 1489267345,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -69,6 +69,8 @@
 		"images/sptheend-sheet0.png",
 		"media/birds.m4a",
 		"media/birds.ogg",
+		"media/bird_sound.m4a",
+		"media/bird_sound.ogg",
 		"media/menu - kevin macleod - thereveal.ogg",
 		"media/jogo - kevin macleod - phantasm.ogg",
 		"icon-16.png",
