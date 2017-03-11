@@ -374,9 +374,9 @@
                             <param id="2" name="Tag">&quot;VOAR_BAIXO&quot;</param>
                         </action>
                         <action id="0" name="Play" sid="293086801156210" type="Audio">
-                            <param id="0" name="Audio file">birds</param>
+                            <param id="0" name="Audio file">bird_sound</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-40</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action behavior="Timer" id="0" name="Start timer" sid="512961930484858" type="spIluminacao">

@@ -3099,6 +3099,8 @@
     <sounds-folder>
         <file name="birds.m4a" />
         <file name="birds.ogg" />
+        <file name="bird_sound.m4a" />
+        <file name="bird_sound.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Menu - Kevin MacLeod - TheReveal.ogg" />
