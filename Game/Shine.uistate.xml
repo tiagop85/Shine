@@ -10,9 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Lv2_BecoSemSaida</layout>
-        <layout order="2">Lv1_FundoDoPoco</layout>
-        <layout order="3">GameOver</layout>
+        <layout order="0">MainMenu</layout>
         <event-sheet active="1" order="1">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
@@ -92,5 +90,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/aguaSubindo/" />
         <folder expanded="1" path="animation-folder/LuzFimTunel/" />
         <folder expanded="1" path="animation-folder/spGameOver/" />
+        <folder expanded="1" path="animation-folder/spTheEnd/" />
     </folders-expanded>
 </c2uistate>

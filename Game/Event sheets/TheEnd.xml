@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TheEnd</name>
+    <events>
+        <include>PlayerEvents</include>
+        <include>GlobalEvents</include>
+        <include>MusicEvents</include>
+        <include>NavigationEvents</include>
+        <event-block sid="179036069992626">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="418006850956202" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="0" name="Restart fade" sid="366240277094331" type="spTheEnd" />
+                <action id="-15" name="Set visible" sid="262255093296151" type="spTheEnd">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="745070828710157">
+            <conditions>
+                <condition behavior="Fade" id="1" name="On fade-in finished" sid="637974136908419" type="spTheEnd" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="401877691029741" type="btMenuPrincipal_Jogo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

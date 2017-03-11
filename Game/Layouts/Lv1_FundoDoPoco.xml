@@ -342,8 +342,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3217</x>
-                        <y>443</y>
+                        <x>195</x>
+                        <y>630</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -1754,8 +1754,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>397.5</x>
-                        <y>238</y>
+                        <x>187</x>
+                        <y>1882</y>
                         <z>0</z>
                         <width>841</width>
                         <height>542</height>
@@ -1782,8 +1782,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1249</x>
-                        <y>1124</y>
+                        <x>1254</x>
+                        <y>2067</y>
                         <z>0</z>
                         <width>858</width>
                         <height>858</height>
@@ -1810,13 +1810,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2184</x>
-                        <y>1084</y>
+                        <x>1955</x>
+                        <y>1939</y>
                         <z>0</z>
-                        <width>477.916320801</width>
-                        <height>477.916320801</height>
+                        <width>600</width>
+                        <height>600</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.500513852</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

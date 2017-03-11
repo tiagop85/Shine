@@ -182,6 +182,10 @@
                             <param id="2" name="X">CanvasToLayerX(&quot;Transparencia&quot;,LayerToCanvasX(&quot;Objects&quot;, spPassaro.X, spPassaro.Y) ,LayerToCanvasY(&quot;Objects&quot;, spPassaro.X, spPassaro.Y))</param>
                             <param id="3" name="Y">CanvasToLayerY(&quot;Transparencia&quot;,LayerToCanvasY(&quot;Objects&quot;, spPassaro.X, spPassaro.Y) ,LayerToCanvasY(&quot;Objects&quot;, spPassaro.X, spPassaro.Y))</param>
                         </action>
+                        <action id="-10" name="Set value" sid="690550891188790" type="spIluminacaoBird">
+                            <param id="0" name="Instance variable">ID_ORB</param>
+                            <param id="1" name="Value">spPassaro.UID</param>
+                        </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="341082293794028" type="spIluminacaoBird">
                             <param id="0" name="Pin to">spPassaro</param>
                             <param id="1" name="Mode">0</param>
@@ -370,7 +374,7 @@
                             <param id="2" name="Tag">&quot;VOAR_BAIXO&quot;</param>
                         </action>
                         <action id="0" name="Play" sid="293086801156210" type="Audio">
-                            <param id="0" name="Audio file">Scary_Sound_-_Birds_of_Prey_Sound_Effect_1_</param>
+                            <param id="0" name="Audio file">birds</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
@@ -396,7 +400,7 @@
                             <conditions />
                             <actions />
                             <sub-events>
-                                <event-block sid="103417108995853">
+                                <event-block disabled="1" sid="103417108995853">
                                     <conditions>
                                         <condition id="-10" name="Compare opacity" sid="333645904395809" type="spIluminacao">
                                             <param id="0" name="Comparison">5</param>
@@ -410,7 +414,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="363698684690035">
+                                <event-block disabled="1" sid="363698684690035">
                                     <conditions>
                                         <condition id="-10" name="Compare opacity" sid="735094232919949" type="spIluminacao">
                                             <param id="0" name="Comparison">5</param>
@@ -424,7 +428,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="839132794356734">
+                                <event-block disabled="1" sid="839132794356734">
                                     <conditions>
                                         <condition id="-10" name="Compare opacity" sid="994367592167889" type="spIluminacao">
                                             <param id="0" name="Comparison">5</param>
@@ -438,7 +442,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="219480903791431">
+                                <event-block disabled="1" sid="219480903791431">
                                     <conditions>
                                         <condition id="-10" name="Compare opacity" sid="861708698600921" type="spIluminacao">
                                             <param id="0" name="Comparison">5</param>
@@ -452,7 +456,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="691333169121864">
+                                <event-block disabled="1" sid="691333169121864">
                                     <conditions>
                                         <condition id="-10" name="Compare opacity" sid="613899225080357" type="spIluminacao">
                                             <param id="0" name="Comparison">5</param>
@@ -466,7 +470,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="250043866193095">
+                                <event-block disabled="1" sid="250043866193095">
                                     <conditions>
                                         <condition id="-10" name="Compare opacity" sid="825117400896920" type="spIluminacao">
                                             <param id="0" name="Comparison">5</param>
@@ -483,7 +487,7 @@
                             </sub-events>
                         </event-block>
                         <comment>&gt; Efeito 02: de 10% em 10%</comment>
-                        <event-block disabled="1" sid="450001420731562">
+                        <event-block sid="450001420731562">
                             <conditions />
                             <actions>
                                 <action id="-9" name="Set value" sid="214339599191159" type="System">
@@ -646,6 +650,21 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="880474083258725" type="spPassaro" />
                     </actions>
+                    <sub-events>
+                        <event-block sid="811289589444421">
+                            <conditions>
+                                <condition id="-33" name="Pick by comparison" sid="343972378983778" type="System">
+                                    <param id="0" name="Object">spIluminacaoBird</param>
+                                    <param id="1" name="Expression">spIluminacaoBird.ID_ORB</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">spPassaro.UID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="597304975613448" type="spIluminacaoBird" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

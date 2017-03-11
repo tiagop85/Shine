@@ -132,7 +132,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>326</width>
+                        <width>55</width>
                         <height>44</height>
                         <max-width>326</max-width>
                         <max-height>44</max-height>
@@ -185,7 +185,7 @@
                         <opacity>1</opacity>
                     </world>
                     <tilemap-data>
-                        <width>326</width>
+                        <width>55</width>
                         <height>44</height>
                         <max-width>326</max-width>
                         <max-height>44</max-height>
@@ -194,7 +194,7 @@
                 </instance>
                 <instance type="spChaoMortal" uid="21">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -290,8 +290,8 @@
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.495495498</hotspotX>
-                        <hotspotY>0.495495498</hotspotY>
+                        <hotspotX>0.504504502</hotspotX>
+                        <hotspotY>0.504504502</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -999,14 +999,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>417</x>
-                        <y>-111</y>
+                        <x>517.346008301</x>
+                        <y>60.412998199</y>
                         <z>0</z>
-                        <width>122.608695984</width>
-                        <height>39.876541138</height>
+                        <width>175.087005615</width>
+                        <height>44.980998993</height>
                         <depth>0</depth>
-                        <hotspotX>0.548936188</hotspotX>
-                        <hotspotY>0.905882359</hotspotY>
+                        <hotspotX>0.54838711</hotspotX>
+                        <hotspotY>0.90322578</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

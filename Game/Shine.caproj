@@ -225,7 +225,7 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143091928476838" speed="5">
-                        <frame duration="1" hotspotX="0.548936" hotspotY="0.905882">
+                        <frame duration="1" hotspotX="0.548387" hotspotY="0.903226" original-source="C:\Users\Tiago\Downloads\skip_unpressed.png">
                             <collision-poly>
                                 <point x="0.00425532" y="0.0117647" />
                                 <point x="0.710638" y="0.0117647" />
@@ -310,7 +310,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="unpressed" pingpong="0" repeatcount="1" repeatto="0" sid="371589935394283" speed="5">
-                        <frame duration="1" hotspotX="0.512195" hotspotY="0.512195" original-source="C:\Users\tiago.parente\Downloads\botões-20170308T210555Z-001\botões\tutorial_on.png">
+                        <frame duration="1" hotspotX="0.511521" hotspotY="0.516129" original-source="C:\Users\Tiago\Downloads\tutorials_unpressed.png">
                             <collision-poly>
                                 <point x="0.219512" y="0.219512" />
                                 <point x="0.487805" y="0.097561" />
@@ -903,7 +903,7 @@
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146793172631561" speed="5">
-                            <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\Users\PAULO\Documents\Shine\Game\Sprites\luz_blue.png">
+                            <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\Users\Tiago\Downloads\luz_purple.png">
                                 <collision-poly>
                                     <point x="0.382323" y="0.380368" />
                                     <point x="0.499486" y="0.332311" />
@@ -1386,7 +1386,7 @@
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994973075839753" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Tiago\Desktop\_________________POS_FINAL\_Juci\shine\Game\Sprites\Light.png">
+                            <frame duration="1" hotspotX="0.500514" hotspotY="0.5" original-source="C:\Users\Tiago\Downloads\luz_bird.png">
                                 <collision-poly>
                                     <point x="0.382564" y="0.380612" />
                                     <point x="0.499487" y="0.332653" />
@@ -2960,6 +2960,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="spTheEnd" sid="684305269367725">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="718186994054155">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="551528606889046" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Tiago\Downloads\shine_screen_the_end.png">
+                        <image-point name="menu" x="0.8" y="0.789583" />
+                        <image-point name="replay" x="0.18" y="0.789583" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="fmMenuPrincipal" plugin-id="Sprite" sid="405100214131094">
@@ -3000,6 +3016,7 @@
             <layout>ConfigMenu.xml</layout>
             <layout>CreditsMenu.xml</layout>
             <layout>GameOver.xml</layout>
+            <layout>TheEnd.xml</layout>
         </layout-folder>
         <layout>_TESTE.xml</layout>
         <layout>_EVENTOS_JOGADOR.xml</layout>
@@ -3023,6 +3040,7 @@
             <event-sheet>SplashEvents.xml</event-sheet>
             <event-sheet>_MENU_LEVEL_SELECT.xml</event-sheet>
             <event-sheet>GameOver.xml</event-sheet>
+            <event-sheet>TheEnd.xml</event-sheet>
         </event-folder>
         <event-sheet>GlobalEvents.xml</event-sheet>
         <event-sheet>_EVENTOS_JOGADOR.xml</event-sheet>
@@ -3055,8 +3073,8 @@
         <global-instance type="Function" uid="274" />
     </global-instances>
     <sounds-folder>
-        <file name="Scary_Sound_-_Birds_of_Prey_Sound_Effect_1_.m4a" />
-        <file name="Scary_Sound_-_Birds_of_Prey_Sound_Effect_1_.ogg" />
+        <file name="birds.m4a" />
+        <file name="birds.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Menu - Kevin MacLeod - TheReveal.ogg" />
