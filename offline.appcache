@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1489114213
+#1489212838
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -15,7 +15,8 @@ images/btskip-sheet0.png
 images/btpausa-sheet0.png
 images/btpausa-sheet1.png
 images/bttutorial-sheet0.png
-images/bttutorial-sheet1.png
+images/btreset-sheet0.png
+images/btreset-sheet1.png
 images/sporbagilidade-sheet0.png
 images/sporbagilidade-sheet1.png
 images/sporbagilidade-sheet2.png
@@ -34,8 +35,8 @@ images/spjogador-sheet0.png
 images/spjogador-sheet1.png
 images/spiluminacao-sheet0.png
 images/spchegada-sheet0.png
+images/spiluminacaobird-sheet0.png
 images/tmfase01_bg.png
-images/tmfase03.png
 images/tiledbackground.png
 images/spchaomortal-sheet0.png
 images/spplataformamovel-sheet0.png
@@ -57,10 +58,16 @@ images/sprite-sheet0.png
 images/sprite2-sheet0.png
 images/tiledbglvl1.png
 images/spconfiguracao-sheet0.png
-images/sprite3-sheet0.png
+images/spmenuprincipal-sheet0.png
 images/spsplash-sheet0.png
 images/hair.png
 images/hair2.png
+images/aguaparticulas.png
+images/luzfimtunel-sheet0.png
+images/spgameover-sheet0.png
+images/sptheend-sheet0.png
+media/birds.m4a
+media/birds.ogg
 media/menu%20-%20kevin%20macleod%20-%20thereveal.ogg
 media/jogo%20-%20kevin%20macleod%20-%20phantasm.ogg
 icon-16.png
