@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>PlayerEvents</name>
     <events>
+        <variable comment="Fator de crescimento do cabelo" constant="0" name="deltaHair" sid="800313859078802" static="0" type="number">0</variable>
+        <variable comment="Fator de velocidade do cabelo" constant="0" name="deltaHairSpeed" sid="948395360489463" static="0" type="number">0</variable>
         <variable constant="0" name="isPushing" sid="328906025422721" static="0" type="number">0</variable>
         <variable constant="0" name="isFalling" sid="607147654024448" static="0" type="number">0</variable>
         <variable constant="0" name="level" sid="222716677499555" static="0" type="text"></variable>
@@ -20,24 +22,13 @@
                         <action id="-15" name="Set visible" sid="874430141187767" type="Hair2">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="211236611567022">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="710739853723806" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set position to another object" sid="991460518619769" type="Hair">
-                            <param id="0" name="Object">spJogador</param>
-                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                        <action id="-9" name="Set value" sid="105393250481086" type="System">
+                            <param id="0" name="Variable">deltaHair</param>
+                            <param id="1" name="Value">Hair.Timeout/spIluminacao.Opacity</param>
                         </action>
-                        <action id="-4" name="Set position to another object" sid="808109218483987" type="Hair2">
-                            <param id="0" name="Object">spJogador</param>
-                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="658991222147435" type="spIluminacao">
-                            <param id="0" name="Object">spJogador</param>
-                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                        <action id="-9" name="Set value" sid="675667954062992" type="System">
+                            <param id="0" name="Variable">deltaHairSpeed</param>
+                            <param id="1" name="Value">Hair.InitSpeed/spIluminacao.Opacity</param>
                         </action>
                     </actions>
                 </event-block>
@@ -112,6 +103,75 @@
         </event-group>
         <event-group description="" sid="836231895432203" title="Animações">
             <sub-events>
+                <event-block sid="307561164031762">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="560388453376007" type="spOrbForca">
+                            <param id="0" name="Instance variable">tempo</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="566796597312659">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="167200056247418" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="141247153563798" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="205267090941965">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="200636297214397" type="spJogador">
+                                            <param id="0" name="Object">spBlocoPesado</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="806399211822889" type="System">
+                                            <param id="0" name="First value">(spBlocoPesado.Y - spBlocoPesado.Height) + 20</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">spJogador.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="750292371962634" type="spJogador">
+                                            <param id="0" name="Animation">&quot;Push&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="913591847200755" type="System">
+                                            <param id="0" name="Variable">isPushing</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="734608476176134">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="719642680219029" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="691372160152537" type="System">
+                                    <param id="0" name="Variable">isPushing</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="832028252027895">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="169197381488234" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="737159795290906" type="System">
+                            <param id="0" name="Variable">isPushing</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="363991345822792">
                     <conditions>
                         <condition behavior="Platform" id="4" name="Is falling" sid="174759447172694" type="spJogador" />
@@ -253,74 +313,40 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="307561164031762">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="560388453376007" type="spOrbForca">
-                    <param id="0" name="Instance variable">tempo</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="753882827492011" title="Cabelo">
             <sub-events>
-                <event-block any="1" sid="566796597312659">
+                <event-block sid="211236611567022">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="167200056247418" type="Keyboard">
-                            <param id="0" name="Key">39 (Right arrow)</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="141247153563798" type="Keyboard">
-                            <param id="0" name="Key">37 (Left arrow)</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="205267090941965">
-                            <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="200636297214397" type="spJogador">
-                                    <param id="0" name="Object">spBlocoPesado</param>
-                                </condition>
-                                <condition id="-8" name="Compare two values" sid="806399211822889" type="System">
-                                    <param id="0" name="First value">(spBlocoPesado.Y - spBlocoPesado.Height) + 20</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">spJogador.Y</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="750292371962634" type="spJogador">
-                                    <param id="0" name="Animation">&quot;Push&quot;</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="913591847200755" type="System">
-                                    <param id="0" name="Variable">isPushing</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="734608476176134">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="719642680219029" type="System" />
+                        <condition id="-1" name="Every tick" sid="710739853723806" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="691372160152537" type="System">
-                            <param id="0" name="Variable">isPushing</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="-4" name="Set position to another object" sid="991460518619769" type="Hair">
+                            <param id="0" name="Object">spJogador</param>
+                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="808109218483987" type="Hair2">
+                            <param id="0" name="Object">spJogador</param>
+                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="658991222147435" type="spIluminacao">
+                            <param id="0" name="Object">spJogador</param>
+                            <param id="1" name="Image point (optional)">&quot;Cabelo&quot;</param>
+                        </action>
+                        <action id="18" name="Set timeout" sid="541744604393276" type="Hair">
+                            <param id="0" name="Timeout">deltaHair * spIluminacao.Opacity</param>
+                        </action>
+                        <action id="18" name="Set timeout" sid="752946194992223" type="Hair2">
+                            <param id="0" name="Timeout">deltaHair * spIluminacao.Opacity</param>
+                        </action>
+                        <action id="4" name="Set speed" sid="900476426379696" type="Hair">
+                            <param id="0" name="Speed">deltaHairSpeed * spIluminacao.Opacity</param>
+                        </action>
+                        <action id="4" name="Set speed" sid="724009915937398" type="Hair2">
+                            <param id="0" name="Speed">deltaHairSpeed * spIluminacao.Opacity</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="832028252027895">
-            <conditions>
-                <condition id="-22" name="Else" sid="169197381488234" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="737159795290906" type="System">
-                    <param id="0" name="Variable">isPushing</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>

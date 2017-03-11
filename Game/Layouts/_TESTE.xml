@@ -356,7 +356,7 @@
                         <spray-cone>12</spray-cone>
                         <type>Continuous spray</type>
                         <initial-particle-properties></initial-particle-properties>
-                        <speed>64</speed>
+                        <speed>65</speed>
                         <size>25</size>
                         <opacity>100</opacity>
                         <grow-rate>0</grow-rate>
