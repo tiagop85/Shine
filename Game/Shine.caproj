@@ -2880,7 +2880,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="449306595155126" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\tiago.parente\Downloads\shine_credit_screen.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\shine_credits_uea_screen.png" />
                 </animation>
             </animation-folder>
         </object-type>

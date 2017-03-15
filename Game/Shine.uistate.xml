@@ -11,8 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="2">Lv1_FundoDoPoco</layout>
-        <event-sheet order="0">PlayerEvents</event-sheet>
-        <event-sheet active="1" order="1">GlobalEvents</event-sheet>
+        <layout order="3">CreditsMenu</layout>
+        <event-sheet active="1" order="0">PlayerEvents</event-sheet>
+        <event-sheet order="1">GlobalEvents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
